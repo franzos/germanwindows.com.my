@@ -1,0 +1,606 @@
+---
+title: Quote for Aluminum Windows & Doors - Q-Windows Malaysia
+page-title: Free Window & Door Quote
+layout: page
+permalink: /quote/
+nav-title: Quote
+nav: qwin
+---
+
+<p class="highlight orange">Enquire about your custom-made, soundproof, high-security window & door solution today!</p>
+
+<div class="row">
+  <div class="col-sm-4">
+
+    <div class="contactform">
+      <div class="form-group">
+        <p><strong>Quote Details</strong>
+        <br><small>Fields marked with * are required. Please select your preferred options, we'll follow-up with details as soon as we can.</small></p>
+      </div>
+
+      <div class="form">
+        <form action="https://form.dkkma.com/process.php" method="post" data-parsley-validate>
+
+          <div class="form-group">
+            <label for="property-type">Type of Property *</label>
+
+            <select class="form-control" id="property-type" name="property-type" type="text" required>
+              <option value="Condominium">Condominium</option>
+              <option value="House">House</option>
+              <option value="Bungalow">Bungalow</option>
+              <option value="Bungalow">Commercial</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="type-window">Type of Window *</label>
+
+            {% for type in site.types %}
+            <div class="checkbox">
+              {% if type.category == "window" %}
+                <label>
+                  <input type="checkbox" id="type-window" name="type-window[]" value="{{ type.title }}">
+                  {{ type.title }}
+                </label>
+              {% endif %}
+            </div>
+            {% endfor %}
+
+            <label for="type-door">Type of Door *</label>
+
+              {% for type in site.types %}
+                {% if type.category == "door" %}
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="type-door" name="type-door[]" value="{{ type.title }}">
+                    {{ type.title }}
+                  </label>
+                </div>
+                {% endif %}
+              {% endfor %}
+
+          </div>
+
+          <div class="form-group">
+            <label for="security-level">Security Level *</label>
+
+            <select class="form-control" id="security-level" name="security-level" type="text" required>
+              <option value="Security Level One">Security Level One</option>
+              <option value="Security Level Two">Security Level Two</option>
+              <option value="Security Level Three">Security Level Three</option>
+              <option value="Security Level Four">Security Level Four</option>
+              <option value="High Security LevelOne">High Security Level One</option>
+              <option value="High Security LevelTwo">High Security Level Two</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="profile-color">Profile Color</label>
+
+            <select class="form-control" id="profile-color" name="profile-color" type="text">
+              <option value="7015M">7015M</option>
+              <option value="9016">9016</option>
+              <option value="4115">4115</option>
+              <option value="9005">9005</option>
+              <option value="4018">4018</option>
+              <option value="8019">8019</option>
+              <option value="8010">8010</option>
+              <option value="8014">8014</option>
+              <option value="80375">80375</option>
+              <option value="7028">7028</option>
+              <option value="7013">7013</option>
+              <option value="6133">6133</option>
+              <option value="7505">7505</option>
+              <option value="7004">7004</option>
+              <option value="6005">6005</option>
+              <option value="388">388</option>
+              <option value="5211">5211</option>
+              <option value="526">526</option>
+              <option value="35025">35025</option>
+              <option value="2019">2019</option>
+              <option value="1003">1003</option>
+              <option value="custom">Custom</option>
+            </select>
+
+            <p class="help-block">A selection of colors can be seen below the form.</p>
+
+          </div>
+
+          <div class="form-group">
+            <label for="glass-type">Type of Glass *</label>
+
+            <select class="form-control" id="glass-type" name="glass-type" type="text">
+              <option value="6-38">Laminated, 6.38 mm (3- 0.38 PVD-3)</option>
+              <option value="10-38">Laminated, 10.38 mm (5- 0.38 PVD-5)</option>
+              <option value="22">Insulated (IGU), 22 mm (5- 12 Air -5)</option>
+              <option value="21-76">Insulated (IGU), 21.76 mm (8.38 - 6 Air -7.38)</option>
+              <option value="custom">Custom (example: bullet proof)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="glass-color">Glass color *</label>
+
+            <select class="form-control" id="glass-color" name="glass-color" type="text">
+              <option value="Clear">Clear</option>
+              <option value="Dark Brown">Dark Brown</option>
+              <option value="Grey">Grey</option>
+              <option value="Green">Green</option>
+              <option value="Reflective Green">Reflective Green</option>
+              <option value="Reflective Blue">Reflective Blue</option>
+              <option value="custom">Custom</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="upload">File upload</label>
+            <input type="file" id="upload" name="upload">
+            <p class="help-block">Optional: If you have a drawing with measurements, an image of the opening or your property, please attach it here.</p>
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <input id="firstname" name="Firstname" type="text" class="form-control" placeholder="Name *" required>
+          </div>
+          <div class="form-group">
+            <input id="email" name="email" type="email" class="form-control" placeholder="Your email address *" required>
+          </div>
+          <div class="form-group">
+            <input id="phone" name="phone" type="number" class="form-control" placeholder="Mobile phone">
+          </div>
+          <div class="form-group">
+            <label for="street">Your Address</label>
+            <input id="street" name="street" type="text" class="form-control" placeholder="Street">
+          </div>
+          <div class="form-group">
+            <input id="city" name="city" type="text" class="form-control" placeholder="City">
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="country" name="country" type="text">
+              <option value="AU" label="Australia">Australia</option>
+              <option value="ID" label="Indonesia">Indonesia</option>
+              <option value="MY" label="Malaysia" selected>Malaysia</option>
+              <option value="SG" label="Singapore">Singapore</option>
+              <option value="TH" label="Thailand">Thailand</option>
+              <option value="VN" label="Vietnam">Vietnam</option>
+              <option value="AF" label="Afghanistan">Afghanistan</option>
+              <option value="AL" label="Albania">Albania</option>
+              <option value="DZ" label="Algeria">Algeria</option>
+              <option value="AS" label="American Samoa">American Samoa</option>
+              <option value="AD" label="Andorra">Andorra</option>
+              <option value="AO" label="Angola">Angola</option>
+              <option value="AI" label="Anguilla">Anguilla</option>
+              <option value="AQ" label="Antarctica">Antarctica</option>
+              <option value="AG" label="Antigua and Barbuda">Antigua and Barbuda</option>
+              <option value="AR" label="Argentina">Argentina</option>
+              <option value="AM" label="Armenia">Armenia</option>
+              <option value="AW" label="Aruba">Aruba</option>
+              <option value="AT" label="Austria">Austria</option>
+              <option value="AZ" label="Azerbaijan">Azerbaijan</option>
+              <option value="BS" label="Bahamas">Bahamas</option>
+              <option value="BH" label="Bahrain">Bahrain</option>
+              <option value="BD" label="Bangladesh">Bangladesh</option>
+              <option value="BB" label="Barbados">Barbados</option>
+              <option value="BY" label="Belarus">Belarus</option>
+              <option value="BE" label="Belgium">Belgium</option>
+              <option value="BZ" label="Belize">Belize</option>
+              <option value="BJ" label="Benin">Benin</option>
+              <option value="BM" label="Bermuda">Bermuda</option>
+              <option value="BT" label="Bhutan">Bhutan</option>
+              <option value="BO" label="Bolivia">Bolivia</option>
+              <option value="BA" label="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+              <option value="BW" label="Botswana">Botswana</option>
+              <option value="BV" label="Bouvet Island">Bouvet Island</option>
+              <option value="BR" label="Brazil">Brazil</option>
+              <option value="BQ" label="British Antarctic Territory">British Antarctic Territory</option>
+              <option value="IO" label="British Indian Ocean Territory">British Indian Ocean Territory</option>
+              <option value="VG" label="British Virgin Islands">British Virgin Islands</option>
+              <option value="BN" label="Brunei">Brunei</option>
+              <option value="BG" label="Bulgaria">Bulgaria</option>
+              <option value="BF" label="Burkina Faso">Burkina Faso</option>
+              <option value="BI" label="Burundi">Burundi</option>
+              <option value="KH" label="Cambodia">Cambodia</option>
+              <option value="CM" label="Cameroon">Cameroon</option>
+              <option value="CA" label="Canada">Canada</option>
+              <option value="CT" label="Canton and Enderbury Islands">Canton and Enderbury Islands</option>
+              <option value="CV" label="Cape Verde">Cape Verde</option>
+              <option value="KY" label="Cayman Islands">Cayman Islands</option>
+              <option value="CF" label="Central African Republic">Central African Republic</option>
+              <option value="TD" label="Chad">Chad</option>
+              <option value="CL" label="Chile">Chile</option>
+              <option value="CN" label="China">China</option>
+              <option value="CX" label="Christmas Island">Christmas Island</option>
+              <option value="CC" label="Cocos [Keeling] Islands">Cocos [Keeling] Islands</option>
+              <option value="CO" label="Colombia">Colombia</option>
+              <option value="KM" label="Comoros">Comoros</option>
+              <option value="CG" label="Congo - Brazzaville">Congo - Brazzaville</option>
+              <option value="CD" label="Congo - Kinshasa">Congo - Kinshasa</option>
+              <option value="CK" label="Cook Islands">Cook Islands</option>
+              <option value="CR" label="Costa Rica">Costa Rica</option>
+              <option value="HR" label="Croatia">Croatia</option>
+              <option value="CU" label="Cuba">Cuba</option>
+              <option value="CY" label="Cyprus">Cyprus</option>
+              <option value="CZ" label="Czech Republic">Czech Republic</option>
+              <option value="CI" label="Côte d’Ivoire">Côte d’Ivoire</option>
+              <option value="DK" label="Denmark">Denmark</option>
+              <option value="DJ" label="Djibouti">Djibouti</option>
+              <option value="DM" label="Dominica">Dominica</option>
+              <option value="DO" label="Dominican Republic">Dominican Republic</option>
+              <option value="NQ" label="Dronning Maud Land">Dronning Maud Land</option>
+              <option value="DD" label="East Germany">East Germany</option>
+              <option value="EC" label="Ecuador">Ecuador</option>
+              <option value="EG" label="Egypt">Egypt</option>
+              <option value="SV" label="El Salvador">El Salvador</option>
+              <option value="GQ" label="Equatorial Guinea">Equatorial Guinea</option>
+              <option value="ER" label="Eritrea">Eritrea</option>
+              <option value="EE" label="Estonia">Estonia</option>
+              <option value="ET" label="Ethiopia">Ethiopia</option>
+              <option value="FK" label="Falkland Islands">Falkland Islands</option>
+              <option value="FO" label="Faroe Islands">Faroe Islands</option>
+              <option value="FJ" label="Fiji">Fiji</option>
+              <option value="FI" label="Finland">Finland</option>
+              <option value="FR" label="France">France</option>
+              <option value="GF" label="French Guiana">French Guiana</option>
+              <option value="PF" label="French Polynesia">French Polynesia</option>
+              <option value="TF" label="French Southern Territories">French Southern Territories</option>
+              <option value="FQ" label="French Southern and Antarctic Territories">French Southern and Antarctic Territories</option>
+              <option value="GA" label="Gabon">Gabon</option>
+              <option value="GM" label="Gambia">Gambia</option>
+              <option value="GE" label="Georgia">Georgia</option>
+              <option value="DE" label="Germany">Germany</option>
+              <option value="GH" label="Ghana">Ghana</option>
+              <option value="GI" label="Gibraltar">Gibraltar</option>
+              <option value="GR" label="Greece">Greece</option>
+              <option value="GL" label="Greenland">Greenland</option>
+              <option value="GD" label="Grenada">Grenada</option>
+              <option value="GP" label="Guadeloupe">Guadeloupe</option>
+              <option value="GU" label="Guam">Guam</option>
+              <option value="GT" label="Guatemala">Guatemala</option>
+              <option value="GG" label="Guernsey">Guernsey</option>
+              <option value="GN" label="Guinea">Guinea</option>
+              <option value="GW" label="Guinea-Bissau">Guinea-Bissau</option>
+              <option value="GY" label="Guyana">Guyana</option>
+              <option value="HT" label="Haiti">Haiti</option>
+              <option value="HM" label="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
+              <option value="HN" label="Honduras">Honduras</option>
+              <option value="HK" label="Hong Kong SAR China">Hong Kong SAR China</option>
+              <option value="HU" label="Hungary">Hungary</option>
+              <option value="IS" label="Iceland">Iceland</option>
+              <option value="IN" label="India">India</option>
+              <option value="IR" label="Iran">Iran</option>
+              <option value="IQ" label="Iraq">Iraq</option>
+              <option value="IE" label="Ireland">Ireland</option>
+              <option value="IM" label="Isle of Man">Isle of Man</option>
+              <option value="IL" label="Israel">Israel</option>
+              <option value="IT" label="Italy">Italy</option>
+              <option value="JM" label="Jamaica">Jamaica</option>
+              <option value="JP" label="Japan">Japan</option>
+              <option value="JE" label="Jersey">Jersey</option>
+              <option value="JT" label="Johnston Island">Johnston Island</option>
+              <option value="JO" label="Jordan">Jordan</option>
+              <option value="KZ" label="Kazakhstan">Kazakhstan</option>
+              <option value="KE" label="Kenya">Kenya</option>
+              <option value="KI" label="Kiribati">Kiribati</option>
+              <option value="KW" label="Kuwait">Kuwait</option>
+              <option value="KG" label="Kyrgyzstan">Kyrgyzstan</option>
+              <option value="LA" label="Laos">Laos</option>
+              <option value="LV" label="Latvia">Latvia</option>
+              <option value="LB" label="Lebanon">Lebanon</option>
+              <option value="LS" label="Lesotho">Lesotho</option>
+              <option value="LR" label="Liberia">Liberia</option>
+              <option value="LY" label="Libya">Libya</option>
+              <option value="LI" label="Liechtenstein">Liechtenstein</option>
+              <option value="LT" label="Lithuania">Lithuania</option>
+              <option value="LU" label="Luxembourg">Luxembourg</option>
+              <option value="MO" label="Macau SAR China">Macau SAR China</option>
+              <option value="MK" label="Macedonia">Macedonia</option>
+              <option value="MG" label="Madagascar">Madagascar</option>
+              <option value="MW" label="Malawi">Malawi</option>
+              <option value="MV" label="Maldives">Maldives</option>
+              <option value="ML" label="Mali">Mali</option>
+              <option value="MT" label="Malta">Malta</option>
+              <option value="MH" label="Marshall Islands">Marshall Islands</option>
+              <option value="MQ" label="Martinique">Martinique</option>
+              <option value="MR" label="Mauritania">Mauritania</option>
+              <option value="MU" label="Mauritius">Mauritius</option>
+              <option value="YT" label="Mayotte">Mayotte</option>
+              <option value="FX" label="Metropolitan France">Metropolitan France</option>
+              <option value="MX" label="Mexico">Mexico</option>
+              <option value="FM" label="Micronesia">Micronesia</option>
+              <option value="MI" label="Midway Islands">Midway Islands</option>
+              <option value="MD" label="Moldova">Moldova</option>
+              <option value="MC" label="Monaco">Monaco</option>
+              <option value="MN" label="Mongolia">Mongolia</option>
+              <option value="ME" label="Montenegro">Montenegro</option>
+              <option value="MS" label="Montserrat">Montserrat</option>
+              <option value="MA" label="Morocco">Morocco</option>
+              <option value="MZ" label="Mozambique">Mozambique</option>
+              <option value="MM" label="Myanmar [Burma]">Myanmar [Burma]</option>
+              <option value="NA" label="Namibia">Namibia</option>
+              <option value="NR" label="Nauru">Nauru</option>
+              <option value="NP" label="Nepal">Nepal</option>
+              <option value="NL" label="Netherlands">Netherlands</option>
+              <option value="AN" label="Netherlands Antilles">Netherlands Antilles</option>
+              <option value="NT" label="Neutral Zone">Neutral Zone</option>
+              <option value="NC" label="New Caledonia">New Caledonia</option>
+              <option value="NZ" label="New Zealand">New Zealand</option>
+              <option value="NI" label="Nicaragua">Nicaragua</option>
+              <option value="NE" label="Niger">Niger</option>
+              <option value="NG" label="Nigeria">Nigeria</option>
+              <option value="NU" label="Niue">Niue</option>
+              <option value="NF" label="Norfolk Island">Norfolk Island</option>
+              <option value="KP" label="North Korea">North Korea</option>
+              <option value="VD" label="North Vietnam">North Vietnam</option>
+              <option value="MP" label="Northern Mariana Islands">Northern Mariana Islands</option>
+              <option value="NO" label="Norway">Norway</option>
+              <option value="OM" label="Oman">Oman</option>
+              <option value="PC" label="Pacific Islands Trust Territory">Pacific Islands Trust Territory</option>
+              <option value="PK" label="Pakistan">Pakistan</option>
+              <option value="PW" label="Palau">Palau</option>
+              <option value="PS" label="Palestinian Territories">Palestinian Territories</option>
+              <option value="PA" label="Panama">Panama</option>
+              <option value="PZ" label="Panama Canal Zone">Panama Canal Zone</option>
+              <option value="PG" label="Papua New Guinea">Papua New Guinea</option>
+              <option value="PY" label="Paraguay">Paraguay</option>
+              <option value="YD" label="People's Democratic Republic of Yemen">People's Democratic Republic of Yemen</option>
+              <option value="PE" label="Peru">Peru</option>
+              <option value="PH" label="Philippines">Philippines</option>
+              <option value="PN" label="Pitcairn Islands">Pitcairn Islands</option>
+              <option value="PL" label="Poland">Poland</option>
+              <option value="PT" label="Portugal">Portugal</option>
+              <option value="PR" label="Puerto Rico">Puerto Rico</option>
+              <option value="QA" label="Qatar">Qatar</option>
+              <option value="RO" label="Romania">Romania</option>
+              <option value="RU" label="Russia">Russia</option>
+              <option value="RW" label="Rwanda">Rwanda</option>
+              <option value="RE" label="Réunion">Réunion</option>
+              <option value="BL" label="Saint Barthélemy">Saint Barthélemy</option>
+              <option value="SH" label="Saint Helena">Saint Helena</option>
+              <option value="KN" label="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+              <option value="LC" label="Saint Lucia">Saint Lucia</option>
+              <option value="MF" label="Saint Martin">Saint Martin</option>
+              <option value="PM" label="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+              <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+              <option value="WS" label="Samoa">Samoa</option>
+              <option value="SM" label="San Marino">San Marino</option>
+              <option value="SA" label="Saudi Arabia">Saudi Arabia</option>
+              <option value="SN" label="Senegal">Senegal</option>
+              <option value="RS" label="Serbia">Serbia</option>
+              <option value="CS" label="Serbia and Montenegro">Serbia and Montenegro</option>
+              <option value="SC" label="Seychelles">Seychelles</option>
+              <option value="SL" label="Sierra Leone">Sierra Leone</option>
+              <option value="SK" label="Slovakia">Slovakia</option>
+              <option value="SI" label="Slovenia">Slovenia</option>
+              <option value="SB" label="Solomon Islands">Solomon Islands</option>
+              <option value="SO" label="Somalia">Somalia</option>
+              <option value="ZA" label="South Africa">South Africa</option>
+              <option value="GS" label="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+              <option value="KR" label="South Korea">South Korea</option>
+              <option value="ES" label="Spain">Spain</option>
+              <option value="LK" label="Sri Lanka">Sri Lanka</option>
+              <option value="SD" label="Sudan">Sudan</option>
+              <option value="SR" label="Suriname">Suriname</option>
+              <option value="SJ" label="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+              <option value="SZ" label="Swaziland">Swaziland</option>
+              <option value="SE" label="Sweden">Sweden</option>
+              <option value="CH" label="Switzerland">Switzerland</option>
+              <option value="SY" label="Syria">Syria</option>
+              <option value="ST" label="São Tomé and Príncipe">São Tomé and Príncipe</option>
+              <option value="TW" label="Taiwan">Taiwan</option>
+              <option value="TJ" label="Tajikistan">Tajikistan</option>
+              <option value="TZ" label="Tanzania">Tanzania</option>
+              <option value="TH" label="Thailand">Thailand</option>
+              <option value="TL" label="Timor-Leste">Timor-Leste</option>
+              <option value="TG" label="Togo">Togo</option>
+              <option value="TK" label="Tokelau">Tokelau</option>
+              <option value="TO" label="Tonga">Tonga</option>
+              <option value="TT" label="Trinidad and Tobago">Trinidad and Tobago</option>
+              <option value="TN" label="Tunisia">Tunisia</option>
+              <option value="TR" label="Turkey">Turkey</option>
+              <option value="TM" label="Turkmenistan">Turkmenistan</option>
+              <option value="TC" label="Turks and Caicos Islands">Turks and Caicos Islands</option>
+              <option value="TV" label="Tuvalu">Tuvalu</option>
+              <option value="UM" label="U.S. Minor Outlying Islands">U.S. Minor Outlying Islands</option>
+              <option value="PU" label="U.S. Miscellaneous Pacific Islands">U.S. Miscellaneous Pacific Islands</option>
+              <option value="VI" label="U.S. Virgin Islands">U.S. Virgin Islands</option>
+              <option value="UG" label="Uganda">Uganda</option>
+              <option value="UA" label="Ukraine">Ukraine</option>
+              <option value="SU" label="Union of Soviet Socialist Republics">Union of Soviet Socialist Republics</option>
+              <option value="AE" label="United Arab Emirates">United Arab Emirates</option>
+              <option value="GB" label="United Kingdom">United Kingdom</option>
+              <option value="US" label="United States">United States</option>
+              <option value="ZZ" label="Unknown or Invalid Region">Unknown or Invalid Region</option>
+              <option value="UY" label="Uruguay">Uruguay</option>
+              <option value="UZ" label="Uzbekistan">Uzbekistan</option>
+              <option value="VU" label="Vanuatu">Vanuatu</option>
+              <option value="VA" label="Vatican City">Vatican City</option>
+              <option value="VE" label="Venezuela">Venezuela</option>
+              <option value="WK" label="Wake Island">Wake Island</option>
+              <option value="WF" label="Wallis and Futuna">Wallis and Futuna</option>
+              <option value="EH" label="Western Sahara">Western Sahara</option>
+              <option value="YE" label="Yemen">Yemen</option>
+              <option value="ZM" label="Zambia">Zambia</option>
+              <option value="ZW" label="Zimbabwe">Zimbabwe</option>
+              <option value="AX" label="Åland Islands">Åland Islands</option>
+            </select>
+          </div>
+          <div class="form-group">
+          <label for="comments">Additional Information</label>
+            <textarea id="comments" name="comments" class="form-control" rows="3"></textarea>
+          </div>
+
+          <input type="hidden" name="form_tools_form_id" value="12" />
+
+          <button type="submit" value="Submit" class="btn btn-default" onclick="javascript:_paq.push(['trackEvent', 'Quote-Form', 'Submit']);">Request your free quote</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-sm-7 col-sm-offset-1">
+
+    <h2>Window and Door Types</h2>
+
+    <div class="row">
+    {% for type in site.types offset:1 %}
+      <div class="col-xs-3">
+        <img class="greyscale" src="{{ type.image }}">
+        <p class="hidden-xs text-center"><small>{{ type.title }}</small></p>
+      </div>
+    {% endfor %}
+    </div>
+
+    <h2>Profile Color</h2>
+
+    <div class="row">
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#1E1E1E; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>7015M</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#F6F6F6; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>9016</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#FFFFFF; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>4115</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#0A0A0A; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>9005</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#F4F4F4; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>4018</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#212121; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>8019</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#45322E; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>8010</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#382C1E; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>8014</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#5B3A29; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>80375</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#293133; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>7028</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#464531; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>7013</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#4E5754; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>6133</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#4C514A; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>7505</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#969992; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>7004</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#2F4538; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>6005</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#1E2460; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>388</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#1D1E33; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>5211</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#CC0605; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>526</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#5E2129; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>35025</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#F44611; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>2019</small></p>
+      </div>
+
+      <div class="col-xs-2 text-center">
+        <div style="background-color:#E5BE01; height:66px; width:127px;" alt="..." class="img-thumbnail"></div>
+        <p><small>1003</small></p>
+      </div>
+
+    </div>
+
+    <h2>Glass color</h2>
+
+    <div class="row" id="introduction">
+      <div class="col-xs-2">
+        <img src="/assets/images/windows-doors/glass-brown.jpg">
+        <p class="hidden-xs text-center"><small>Brown</small></p>
+      </div>
+      <div class="col-xs-2">
+        <img src="/assets/images/windows-doors/glass-dark-brown.jpg">
+        <p class="hidden-xs text-center"><small>Dark Brown</small></p>
+      </div>
+      <div class="col-xs-2">
+        <img src="/assets/images/windows-doors/glass-grey.jpg">
+        <p class="hidden-xs text-center"><small>Grey</small></p>
+      </div>
+      <div class="col-xs-2">
+        <img src="/assets/images/windows-doors/glass-green.jpg">
+        <p class="hidden-xs text-center"><small>Green</small></p>
+      </div>
+      <div class="col-xs-2">
+        <img src="/assets/images/windows-doors/reflective-green-glass.jpg">
+        <p class="hidden-xs text-center"><small>Reflective Green</small></p>
+      </div>
+      <div class="col-xs-2">
+        <img src="/assets/images/windows-doors/reflective-glass-blue.jpg">
+        <p class="hidden-xs text-center"><small>Reflective Blue</small></p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!--
+<div class="single-quote pt">
+  <img class="pull-left headshot" src="/assets/images_landing/headshot_joerg.jpg">
+  <blockquote>
+    <p>Sound proof as promised, competent service and timely delivery. The communication with Q-Windows and the service was excellent. Definitely a recommendation.</p>
+    <footer>Jörg Schmidt on <cite title="Source Title">Facebook</cite></footer>
+  </blockquote>
+</div>
+-->

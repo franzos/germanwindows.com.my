@@ -1,0 +1,54 @@
+---
+title: "German Soundproof, High-Security Windows in Singapore and Malaysia"
+page-title: The only manufacturer for
+subtitle: German Soundproof, High-Security Windows in Malaysia and Singapore
+layout: default
+feature: slider
+---
+
+<div class="container content">
+
+  <div class="row homepage">
+    <div class="col-sm-3 col-md-3">
+      <h2>I'm Replacing</h2>
+      <a href="/windows-doors/replacement"><img class="greyscale" src="/assets/images/windows-doors/window-replacement.jpg"></a>
+    </div>
+    <div class="col-sm-3 col-md-3">
+      <h2>I'm Remodeling</h2>
+      <a href="/windows-doors/remodeling"><img class="greyscale" src="/assets/images/windows-doors/window-for-renovation.jpg"></a>
+    </div>
+    <div class="col-sm-3 col-md-3">
+      <h2>I'm Building</h2>
+      <a href="/windows-doors/building"><img class="greyscale" src="/assets/images/windows-doors/window-for-construction.jpg"></a>
+    </div>
+    <div class="col-sm-3 col-md-3">
+    <h2>Reference Material</h2>
+    <a href="/windows-doors/technicals"><img class="greyscale" src="/assets/images/windows-doors/reference-library.jpg"></a>
+    </div>
+  </div>
+
+</div>
+<div class="projects-slider-homepage-bg">
+  <div class="projects-slider-homepage">
+    <div class="container-fluid">
+      <a href="/projects/"><h2 class="text-center">Project References</h2></a>
+      <div class="projects">
+      {% for image in site.static_files %}
+      {% if image.path contains 'projects/thumb' %}
+        <div class="slide"><img class="img-responsive" data-lazy="{{image.path}}"></div>
+      {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container content">
+  <div class="single-quote center">
+    <img class="pull-left headshot" src="/assets/images_landing/headshot_maarten.jpg">
+    <blockquote>
+      <p>If you're looking for quality windows and door this is the place to go. The service is personal and professional and the windows make a real difference to our lives (less noise and less heat).</p>
+      <footer>Maarten van Rijn on <cite title="Source Title">Facebook</cite></footer>
+    </blockquote>
+  </div>
+  {% include types.html %}
+</div>

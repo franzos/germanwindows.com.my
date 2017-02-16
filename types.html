@@ -1,0 +1,35 @@
+---
+title: Q-Windows Window & Door Types
+nav-title: Types Overview
+layout: page
+permalink: /types/
+nav: feature
+---
+
+<h2>Windows</h2>
+
+<div class="row">
+{% for type in site.types offset:1 %}
+  {% if type.category == "window" %}
+  <div class="col-sm-2 text-center">
+    <a href="{{ type.permalink }}"><img class="greyscale img-responsive" src="{{ type.image }}"></a>
+    <a href="{{ type.permalink }}"><h4>{{ type.title }}</h4></a>
+  </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<hr>
+
+<h2>Doors</h2>
+
+<div class="row">
+{% for type in site.types %}
+  {% if type.category == "door" %}
+  <div class="col-sm-2 text-center">
+    <a href="{{ type.permalink }}"><img class="greyscale img-responsive" src="{{ type.image }}"></a>
+    <a href="{{ type.permalink }}"><h4>{{ type.title }}</h4></a>
+  </div>
+  {% endif %}
+{% endfor %}
+</div>

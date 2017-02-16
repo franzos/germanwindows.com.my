@@ -1,0 +1,266 @@
+<div class="footer-bg">
+  <div class="footer">
+    <div class="container">
+
+      <p>Q-Windows Malaysia is the <b>only manufacturer of German soundproof, high-security aluminum windows and doors</b> in Malaysia and Singapore. For a better life and higher standard of living, select Q-Windows.</p>
+
+      <div class="row">
+        <div class="col-sm-2">
+          <ul>
+            <li class="title">Ideas & Inspiration</li>
+            {% for page in site.pages %}
+              {% if page.nav == "idea" %}
+                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <ul>
+            <li class="title">Introduction</li>
+            {% for page in site.pages %}
+              {% if page.nav == "cover" %}
+                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <ul>
+            <li class="title">Benefits & Features</li>
+            {% for page in site.pages %}
+              {% if page.nav == "feature" %}
+                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <ul>
+            <li class="title">Additional Info</li>
+            {% for page in site.pages %}
+              {% if page.nav == "info" %}
+                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <ul>
+            <li class="title">Q-Windows</li>
+            {% for page in site.pages %}
+              {% if page.nav == "qwin" %}
+                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <p><small>© 2017 Q-Windows (Malaysia) / All right reserved / Design and Development by <a target="_blank" href="https://f-a.nz/client/q-windows-malaysia/?utm_source=q-windows&utm_campaign=client_referral&utm_medium=website">F-A.NZ</a></small></p>
+
+    </div>
+  </div>
+</div>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.dkkma.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.dkkma.com/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+{% if page.url contains "videos" %}
+<link href="http://vjs.zencdn.net/5.15.1/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script src="http://vjs.zencdn.net/5.15.1/video.js"></script>
+{% endif %}
+{% if page.url contains "projects" %}
+<script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+<script>
+$('.projects').slick({
+  lazyLoad: 'progressive',
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+</script>
+{% endif %}
+{% if page.feature contains "slider" %}
+<script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+<script>
+$('.projects').slick({
+  lazyLoad: 'progressive',
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  arrows: false,
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+</script>
+{% endif %}
+{% if page.url contains "type" %}
+<script>
+$('.designs').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  centerMode: true,
+  variableWidth: true
+});
+</script>
+{% endif %}
+
+{% if page.url == "/soundproofing/" %}
+<link rel="stylesheet" type="text/css" href="/assets/soundmanager/demo/360-player/360player.css" />
+  <!-- special IE-only canvas fix -->
+  <!--[if IE]><script type="text/javascript" src="/assets/soundmanager/script/excanvas.js"></script><![endif]-->
+  <script type="text/javascript" src="/assets/soundmanager/demo/360-player/script/berniecode-animator.js"></script>
+  <script type="text/javascript" src="/assets/soundmanager/script/soundmanager2.js"></script>
+  <script type="text/javascript" src="/assets/soundmanager/demo/360-player/script/360player.js"></script>
+  <script type="text/javascript" src="/assets/js/parsley.min.js"></script>
+
+  <script type="text/javascript">
+    soundManager.setup({
+      url: '/assets/soundmanager/swf/'
+    });
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="/assets/soundmanager/demo/flashblock/flashblock.css" />
+{% endif %}
+
+<script>
+$(document).ready(function(){
+    var classCycle=['bg1','bg2','bg3','bg4','bg5','bg6','bg7','bg8','bg9','bg10','bg11'];
+    var randomNumber = Math.floor(Math.random() * classCycle.length);
+    var classToAdd = classCycle[randomNumber];
+    $('.cover-bg').addClass(classToAdd);
+});
+</script>
+
+{% if page.url == "/search/" %}
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/search.json"></script>
+
+    <script>
+    (function() {
+      function displaySearchResults(results, store) {
+        var searchResults = document.getElementById('search-results');
+
+        if (results.length) { // Are there any results?
+          var appendString = '';
+
+          for (var i = 0; i < results.length; i++) {  // Iterate over the results
+            var item = store[results[i].ref];
+            appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
+            appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+          }
+
+          searchResults.innerHTML = appendString;
+        } else {
+          searchResults.innerHTML = '<li>No results found</li>';
+        }
+      }
+
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split('&');
+
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split('=');
+
+          if (pair[0] === variable) {
+            return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
+          }
+        }
+      }
+
+      var searchTerm = getQueryVariable('query');
+
+      if (searchTerm) {
+        document.getElementById('search-box').setAttribute("value", searchTerm);
+
+        // Initalize lunr with the fields it will be searching on. I've given title
+        // a boost of 10 to indicate matches on this field are more important.
+        var idx = lunr(function () {
+          this.field('id');
+          this.field('title', { boost: 10 });
+          this.field('author');
+          this.field('category');
+          this.field('content');
+        });
+
+        for (var key in window.store) { // Add the data to lunr
+          idx.add({
+            'id': key,
+            'title': window.store[key].title,
+            'author': window.store[key].author,
+            'category': window.store[key].category,
+            'content': window.store[key].content
+          });
+
+          var results = idx.search(searchTerm); // Get lunr to perform a search
+          displaySearchResults(results, window.store); // We'll write this in the next section
+        }
+      }
+    })();
+    </script>
+{% endif %}
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40757502-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=149540935237111";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

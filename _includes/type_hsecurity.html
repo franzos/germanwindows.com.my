@@ -1,0 +1,19 @@
+<h3>High Security</h3>
+
+<p>Q- Windows satisfy even the highest requirements, protecting government officials and individuals under threats.</p>
+
+<div class="row">
+{% for level in site.security-level reversed %}
+  {% if level.category contains page.category %}
+    {% if page.security contains level.security %}
+      {% if level.title contains "High" %}
+        <div class="col-sm-4">
+          <h4>{{ level.title }}</h4>
+          <p>{{ level.content }}</p>
+          <img src="{{ level.image }}">
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>

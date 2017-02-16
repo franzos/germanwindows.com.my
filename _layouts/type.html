@@ -1,0 +1,121 @@
+---
+layout: default
+---
+
+<div class="container content types">
+  <div class="row">
+    <div class="col-sm-3">
+
+      <ul class="clean-nav">
+        <li class="title">Windows</li>
+        {% for type in site.types %}
+          {% if type.category == "window" %}
+            <li><a href="{{ type.permalink }}#{{ type.title | url_encode }}"><img class="type-preview img-responsive" src="{{ type.image }}"> {{ type.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        <li class="title">Doors</li>
+        {% for type in site.types %}
+          {% if type.category == "door" %}
+            <li><a href="{{ type.permalink }}#{{ type.title | url_encode }}"><img class="type-preview img-responsive" src="{{ type.image }}"> {{ type.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </u>
+
+    </div>
+    <div class="col-sm-9">
+
+      <h2 id="{{ page.title | url_encode }}">{{ page.title }}</h2>
+
+      <img class="preview pull-left" src="{{ page.image }}">
+
+      {{ content }}
+
+      <div class="tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            {% if page.tabs contains "glass" %}<li role="presentation" class="active"><a href="#glass" aria-controls="messages" role="tab" data-toggle="tab">Glass</a></li>{% endif %}
+            {% if page.tabs contains "security" %}<li role="presentation"><a href="#security" aria-controls="home" role="tab" data-toggle="tab">Security</a></li>{% endif %}
+            {% if page.tabs contains "hsecurity" %}<li role="presentation"><a href="#hsecurity" aria-controls="profile" role="tab" data-toggle="tab">High Security</a></li>{% endif %}
+            {% if page.tabs contains "georgian" %}<li role="presentation"><a href="#georgian" aria-controls="settings" role="tab" data-toggle="tab">Georgian</a></li>{% endif %}
+            {% if page.tabs contains "color" %}<li role="presentation"><a href="#color" aria-controls="settings" role="tab" data-toggle="tab">Color</a></li>{% endif %}
+            {% if page.tabs contains "hardware" %}<li role="presentation"><a href="#hardware" aria-controls="settings" role="tab" data-toggle="tab">Hardware</a></li>{% endif %}
+            {% if page.tabs contains "door-panel" %}<li role="presentation"><a href="#door-panel" aria-controls="settings" role="tab" data-toggle="tab">Door Panel</a></li>{% endif %}
+            {% if page.tabs contains "designs" %}<li role="presentation"><a href="#designs" aria-controls="settings" role="tab" data-toggle="tab">Designs</a></li>{% endif %}
+            {% if page.tabs contains "animation" %}<li role="presentation"><a href="#animation" aria-controls="settings" role="tab" data-toggle="tab">Animation</a></li>{% endif %}
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            {% if page.tabs contains "security" %}
+            <div role="tabpanel" class="tab-pane" id="security">
+              {% include type_security.html %}
+            </div>
+            {% endif %}
+            {% if page.tabs contains "hsecurity" %}
+            <div role="tabpanel" class="tab-pane" id="hsecurity">
+              {% include type_hsecurity.html %}
+            </div>
+            {% endif %}
+            {% if page.tabs contains "glass" %}
+            <div role="tabpanel" class="tab-pane active" id="glass">
+              {% include type_glass.html %}
+            </div>
+            {% endif %}
+            {% if page.tabs contains "georgian" %}
+            <div role="tabpanel" class="tab-pane" id="georgian">
+              {% include type_georgian.html %}
+            </div>
+            {% endif %}
+            {% if page.tabs contains "color" %}
+            <div role="tabpanel" class="tab-pane" id="color">
+              {% include type_color.html %}
+            </div>
+            {% endif %}
+            {% if page.tabs contains "hardware" %}
+            <div role="tabpanel" class="tab-pane" id="hardware">
+              {% include type_hardware.html %}
+            </div>
+            {% endif %}
+            {% if page.tabs contains "door-panel" %}
+            <div role="tabpanel" class="tab-pane" id="door-panel">
+              {% include type_door-panel.html %}
+            </div>
+            {% endif %}
+            {% if page.tabs contains "designs" %}
+            <div role="tabpanel" class="tab-pane" id="designs">
+
+              <h3>Designs</h3>
+
+              <p>These designs are for references only. Please ask for custom designs matching your demands.</p>
+
+              <div class="row designs">
+                {% for design in page.designs %}
+                <div><img src="{{ design }}"></div>
+                {% endfor %}
+              </div>
+
+            </div>
+            {% endif %}
+            {% if page.tabs contains "animation" %}
+            <div role="tabpanel" class="tab-pane" id="animation">
+
+              <div align="center" class="embed-responsive embed-responsive-16by9">
+                <video autoplay loop class="embed-responsive-item">
+                    <source src="{{ page.animation }}" type="video/mp4">
+                </video>
+              </div>
+
+              <p>Animation only works on HTML5 enabled browers such as Chrome, Firefox or Safari on iOS.</p>
+
+            </div>
+            {% endif %}
+          </div>
+
+        </div>
+
+        <a class="large link" href="/quote/">Get your FREE QUOTE today!</a>
+
+    </div>
+  </div>
+</div>

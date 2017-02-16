@@ -1,0 +1,27 @@
+---
+title: Q-Windows Videos
+nav-title: Videos
+layout: page
+permalink: /videos/
+nav: info
+---
+
+<div class="row">
+  {% for video in site.data.videos %}
+  <div class="col-sm-4 video">
+    <div class="embed-responsive embed-responsive-16by9">
+      <video id="my-video" class="video-js vjs-16-9 embed-responsive-item vjs-big-play-centered" controls preload="auto" width="296" height="166"
+      poster="/assets/images/video-poster.jpg" data-setup="{}">
+        <source src="/assets/videos/{{ video.path }}.mp4" type='video/mp4'>
+        <source src="/assets/videos/{{ video.path }}.webm" type='video/webm'>
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a web browser that
+          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+      </video>
+    </div>
+    <p class="title"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> {{ video.title }}</p>
+    <p class="description">{{ video.description }}
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,19 @@
+<h3>Security</h3>
+
+<p>Q- Windows are masterpieces in Security. Various technical refinements will stop any burglary attempt and protect you from unwelcome visitors. The fitting groove, for example, is positioned on the internal side of the sash, which makes it particularly difficult to force the window open.</p>
+
+<div class="row">
+{% for level in site.security-level reversed %}
+  {% if level.category contains page.category %}
+    {% if page.security contains level.security %}
+      {% unless level.title contains "High" %}
+        <div class="col-sm-4">
+          <h4>{{ level.title }}</h4>
+          <p>{{ level.content }}</p>
+          <img src="{{ level.image }}">
+        </div>
+      {% endunless %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>

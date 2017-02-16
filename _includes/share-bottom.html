@@ -1,0 +1,15 @@
+{% capture share-url %}{{ page.title }} on {{ site.url }}{{ page.url }}{% endcapture %}
+
+<div class="social-share-bottom">
+  <div class="container">
+    <ul class="pull-left">
+      <li class="fb-like-button no-link"><div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="400" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div></li>
+    </ul>
+    <ul class="pull-right">
+      <li class="no-link">Share this page on:</li>
+      <li class="facebook"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">Facebook</a></li>
+      <li class="twitter"><a target="_blank" href="https://twitter.com/home?status={{ share-url | url_encode }}">Twitter</a></li>
+      <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}&summary=&source=">LinkedIn</a></li>
+      <li class="google"><a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"><blue>G</blue><red>o</red><yellow>o</yellow><blue>g</blue><green>l</green><red>e</red> <blue>+</blue></a></li>
+  </div>
+</div>
