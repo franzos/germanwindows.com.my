@@ -4,7 +4,7 @@
 
     <div class="row">
       {% for type in site.types limit:6 offset:1 %}
-      <div class="col-sm-2 text-center">
+      <div class="col-xs-6 col-sm-2 text-center">
         <a href="{{ type.permalink }}"><img class="greyscale img-responsive" src="{{ type.image }}"></a>
         <a href="{{ type.permalink }}"><h4>{{ type.title }}</h4></a>
       </div>

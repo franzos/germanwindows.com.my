@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, ul.clean-nav a {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-p, ul, a {
+p, ul {
   font-size: 1.1em;
 }
 
@@ -94,10 +94,10 @@ h1 {
 }
 
 .page-title h1 {
-  text-align: center;
+  color: #fff;
+  font-size: 36px;
   margin-top:110px;
   margin-bottom:110px;
-  text-shadow: 1px 1px 0px #c5c5c5;
 }
 
 .page-title.subtitle h1 {
@@ -155,7 +155,7 @@ p, ul, img {
   color: #ff530d;
 }
 
-.footer ul {
+.footer ul, ul.clean {
   list-style: none;
   padding-left: 0px;
 }
@@ -384,14 +384,14 @@ ul li.google:hover green {
 
 .navbar>.container .navbar-brand {
   width: 133px;
-  background-image: url(../images/logo.png);
+  background-image: url(../images/q-windows-logo_white.png);
   background-size: 133px;
   margin:5px 5px 5px 0px;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a.active {
@@ -404,13 +404,12 @@ ul li.google:hover green {
 }
 
 .cover {
-  background-color: rgba(255, 255, 255, 0.60);
+  background-color: rgba(0,0,0,.4);
 }
 
 .cover-bg {
   background-size:cover;
   background-position: center;
-  color:#333;
 }
 
 .cover-bg.bg1 {
@@ -665,15 +664,16 @@ h3.sub-technical {
 }
 
 .projects {
-  margin-top:20px;
+  margin-top:40px;
 }
 
 .projects .slide {
-  margin:10px;
 }
 
 .projects .slide img {
-  margin:0px;
+  height: 260px;
+  background-color: #000;
+  border: 8px solid #fff;
 }
 
 ul.slick-dots {
@@ -701,13 +701,12 @@ ul.slick-dots li.slick-active {
 }
 
 .projects-slider-homepage-bg {
-  background-image: url(../images/bg12.jpg);
+  background-image: url(../../landing/assets/images/background-projects.jpg);
 }
 
 .projects-slider-homepage {
   padding-top:40px;
   padding-bottom: 0px;
-  background-color: rgba(0,0,0,.9);
 }
 
 .projects-slider-homepage .slick-dots {
@@ -756,6 +755,29 @@ ul.slick-dots li.slick-active {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffff00',GradientType=1 ); /* IE6-9 */
 }
 
+img.security-level {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section.orange {
+  background-color: #f14c0d;
+  color: #fff;
+}
+
+.color h2 small, .orange.color h2, .orange.color a, .color .glyphicon {
+    color: #fff;
+}
+
+.color .glyphicon {
+  font-size:0.8em;
+}
+
 @media (min-width: 970px) {
   a.large.link {
     margin-top: 40px;
@@ -794,27 +816,6 @@ ul.slick-dots li.slick-active {
 @media (max-width: 970px) {
   .navbar-default .navbar-brand {
     margin:5px;
-  }
-  .projects-slider-homepage {
-    padding:0px;
-    background-color:#fff;
-  }
-  .projects-slider-homepage-bg {
-    background-image: none;
-  }
-  .projects-slider-homepage .projects {
-    margin:0px;
-  }
-  .projects-slider-homepage .projects .slide {
-    margin:0px;
-  }
-  .projects-slider-homepage .slick-dots {
-    width: 244px;
-  }
-  .projects-slider-homepage .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin:0px;
   }
   .types .col-sm-9 {
     margin-top: 30px;
@@ -855,5 +856,8 @@ ul.slick-dots li.slick-active {
     font-size: 20px;
     text-align: center;
     margin-bottom: 16px;
+  }
+  img.security-level {
+    max-height: 160px;
   }
 }

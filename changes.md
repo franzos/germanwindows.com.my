@@ -10,6 +10,35 @@ Last update: {{ site.time }}
 
 # Changelog
 
+**TODO**
+
+- Add Homedec Logo
+
+**2017-02-22**
+
+- [EXT] Updated Q-Windows Twitter account https://twitter.com/QwindowsMY
+- [EXT] Updated Q-Windows Facebook account https://www.facebook.com/q.windows/
+- [EXT] DNS, Added DMARK to track email deliverability (first report due on 2017-02-27)
+- landing.q-windows.com.my now redirects to q-windows.com.my
+- landing.q-windows.com now redirects to q-windows.com.my
+- Updated [/aluminum-profile/](/aluminum-profile/) to show available options
+- Changed a number of words to British spelling: 'aluminum' (en-us) to 'aluminium' (en-gb)
+- Added new Sitemap, updated Google Webmaster tools
+
+**2017-02-21**
+
+- Added heat map tracking to landing page
+- Updated color scheme of website
+- Linked front page to landing page
+- Removed Facebook like button for performance reasons
+- Replaced A-Z link with Projects link
+
+**2017-02-20**
+
+- Completely revised Q-Windows landing page
+
+_est. 90min_
+
 **2017-02-11**
 
 - Fixed Sliding Door (was mixed with Lift & Slide)

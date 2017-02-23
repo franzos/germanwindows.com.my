@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /assets/_soundmanager/
+Disallow: /assets/fonts/
+Disallow: /assets/js/
+Disallow: /assets/slick/
+Disallow: /assets/soundmanager/
+Disallow: /assets/video-js/

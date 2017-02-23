@@ -1,14 +1,16 @@
----
-title: Latest Q-Windows Projects
-nav-title: References
-layout: page
-permalink: /projects/
-nav: qwin
----
+<div class="container-fluid">
+  <div class="projects">
+  {% for image in site.static_files %}
+  {% if image.path contains 'images/projects' %}
+    <div class="slide"><img class="img-responsive" data-lazy="{{image.path}}"></div>
+  {% endif %}
+  {% endfor %}
+  </div>
+</div>
 
 <div class="container">
   <p class="highlight orange">Our latest project references from all around Malaysia: With Q-Windows you get German quality, soundproof, heat-reducing, high-security windows and doors for your home - a substantial upgrade for both home value and most importantly, your standard of living.</p>
-  <p class="highlight orange"><a href="http://projects.q-windows.com.my/">Visit our projects page</a></p>
+  <p class="highlight orange"><a href="/contact/">Enquire for free - today!</a></p>
 </div>
 
 <!--
