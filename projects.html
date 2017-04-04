@@ -4,16 +4,86 @@ nav-title: References
 layout: page
 permalink: /projects/
 nav: qwin
+cover: bg18
 ---
 
-<div class="container">
-  <p class="highlight orange">Our latest project references from all around Malaysia: With Q-Windows you get German quality, soundproof, heat-reducing, high-security windows and doors for your home - a substantial upgrade for both home value and most importantly, your standard of living.</p>
-  <p class="highlight orange"><a href="http://projects.q-windows.com.my/">Visit our projects page</a></p>
-</div>
+<div>
 
-<!--
-<div class="container">
-  <p>A selection of our latest projects: Soundproof, heat-reducing, high-security windows and doors.</p>
-  <p><small>Discover hundrets of <a href="http://projects.q-windows.com.my/">reference projects</a> from all around South-East Asia</small></p>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Landed</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Condo</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Commercial</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+
+      <h2>Landed Projects</h2>
+      {% for project in site.data.landed %}
+      <div class="row">
+        <div class="col-sm-5">
+          <h4>{{ project.location }}</h4>
+          <p>{{ project.street }}, {{ project.area }}</p>
+        </div>
+        <div class="col-sm-7">
+          {% assign pictures = project.pictures_small | split: ";" %}
+          {% for picture in pictures %}
+            <a rel="gallery-{{ project.area }}" href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.jpg" class="swipebox" title="{{ project.categories }} Project in <strong>{{ project.location }}</strong>">
+              <img data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.jpg" width="100" height="100">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      <hr>
+      {% endfor %}
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+
+      <h2>Condo Projects</h2>
+      {% for project in site.data.condo %}
+      <div class="row">
+        <div class="col-sm-5">
+          <h4>{{ project.location }}</h4>
+          <p>{{ project.street }}, {{ project.area }}</p>
+        </div>
+        <div class="col-sm-7">
+          {% assign pictures = project.pictures_small | split: ";" %}
+          {% for picture in pictures %}
+            <a rel="gallery-{{ project.area }}" href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.jpg" class="swipebox" title="{{ project.categories }} Project in <strong>{{ project.location }}</strong>">
+              <img class="lazy" data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.jpg" width="100" height="100">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      <hr>
+      {% endfor %}
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+
+      <h2>Commercial Projects</h2>
+      {% for project in site.data.commercial %}
+      <div class="row">
+        <div class="col-sm-5">
+          <h4>{{ project.location }}</h4>
+          <p>{{ project.street }}, {{ project.area }}</p>
+        </div>
+        <div class="col-sm-7">
+          {% assign pictures = project.pictures_small | split: ";" %}
+          {% for picture in pictures %}
+            <a href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.jpg" class="swipebox" title="{{ project.categories }} Project in <strong>{{ project.location }}</strong>">
+              <img data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.jpg" width="100" height="100">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      <hr>
+      {% endfor %}
+
+    </div>
+  </div>
+
 </div>
--->

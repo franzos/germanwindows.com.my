@@ -1,15 +1,20 @@
 {% capture share-url %}{{ page.title }} on {{ site.url }}{{ page.url }}{% endcapture %}
 
-<div class="subnav">
+<div class="subnav{% if page.type %} index{% endif %}">
   <div class="container">
-    <ul class="pull-left">
-      <li class="no-link">German Soundproof, High-Security Aluminium Windows and Doors in Malaysia and Singapore</li>
-    </ul>
-    <ul class="pull-right">
-      <li class="no-link">Share this page on:</li>
-      <li class="facebook"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">Facebook</a></li>
-      <li class="twitter"><a target="_blank" href="https://twitter.com/home?status={{ share-url | url_encode }}">Twitter</a></li>
-      <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}&summary=&source=">LinkedIn</a></li>
-      <li class="google"><a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"><blue>G</blue><red>o</red><yellow>o</yellow><blue>g</blue><green>l</green><red>e</red> <blue>+</blue></a></li>
+    <div class="row">
+      <div class="col-sm-3 text-center">
+        <a class="soundproof{% if page.url contains "/soundproofing/" %} active{% endif %}" href="/soundproofing/">Soundproof</a>
+      </div>
+      <div class="col-sm-3 text-center">
+        <a class="security{% if page.url contains "/security/" %} active{% endif %}" href="/security/">High security</a>
+      </div>
+      <div class="col-sm-3 text-center">
+        <a class="energy-saving{% if page.url contains "/energy-saving/" %} active{% endif %}" href="/energy-saving/">Energy savings</a>
+      </div>
+      <div class="col-sm-3 text-center">
+        <a class="why-q-windows{% if page.url contains "/why-q-windows/" %} active{% endif %}" href="/why-q-windows/">Why Q-Windows</a>
+      </div>
+    </div>
   </div>
 </div>

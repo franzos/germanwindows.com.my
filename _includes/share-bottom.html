@@ -2,11 +2,14 @@
 
 <div class="social-share-bottom">
   <div class="container">
+    <ul>
+      <li class=""><a href="tel:+60374950339" onclick="javascript:_paq.push(['trackEvent', 'Contact', 'Phone (Share Bottom)']);">Quick question? Call us now! <b>+603 7495 0339</b> (Monday - Friday, 9 AM to 6 PM)</a></li>
+    </ul>
     <ul class="pull-right">
       <li class="no-link">Share this page on:</li>
-      <li class="facebook"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">Facebook</a></li>
-      <li class="twitter"><a target="_blank" href="https://twitter.com/home?status={{ share-url | url_encode }}">Twitter</a></li>
-      <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}&summary=&source=">LinkedIn</a></li>
-      <li class="google"><a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"><blue>G</blue><red>o</red><yellow>o</yellow><blue>g</blue><green>l</green><red>e</red> <blue>+</blue></a></li>
+      <li class="facebook"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="javascript:_paq.push(['trackEvent', 'Share', 'Facebook']);">Facebook</a></li>
+      <li class="twitter"><a target="_blank" href="https://twitter.com/home?status={{ share-url | url_encode }}" onclick="javascript:_paq.push(['trackEvent', 'Share', 'Twitter']);">Twitter</a></li>
+      <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}&summary=&source=" onclick="javascript:_paq.push(['trackEvent', 'Share', 'LinkedIn']);">LinkedIn</a></li>
+      <li class="google"><a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }} onclick="javascript:_paq.push(['trackEvent', 'Share', 'Google+']);""><blue>G</blue><red>o</red><yellow>o</yellow><blue>g</blue><green>l</green><red>e</red> <blue>+</blue></a></li>
   </div>
 </div>

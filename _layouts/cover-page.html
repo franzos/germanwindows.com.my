@@ -3,13 +3,7 @@ layout: default
 ---
 
 <div class="container content">
-  <div class="row">
-    <div class="col-sm-3">
-      <p class="highlight orange">{{ page.callout }}</p>
-    </div>
-    <div class="col-sm-9">
-      {{ content }}
-      <p><a class="large link{% if page.offset contains "one" %} col-sm-offset-1{% endif %}" href="{{ page.reference }}">{% if page.reference-title %}{{ page.reference-title }}{% else %}Discover our features now{% endif %}</a></p>
-    </div>
-  </div>
+  {{ content }}
 </div>
+
+{% include expert-consultation.html %}

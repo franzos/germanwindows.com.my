@@ -12,7 +12,29 @@ Last update: {{ site.time }}
 
 **TODO**
 
+**2017-04-04**
+
+- Added 2x additional condos [/window-replacement/condominium/][/window-replacement/condominium/]
+- Replaced map on contact page to better blend in, to remove Google Maps
+- Enhanced display of glass configuration [/type/fixed-window/#Fixed+Window][/type/fixed-window/#Fixed+Window]
+- Implemented tracking for social media shares
+- Linked new section
+
+**2017-03-30**
+
+- Added new section [/product/alpha-villa-apartments/](/product/alpha-villa-apartments/)
+- Updated sound-level image on [/soundproofing/](/soundproofing/)
+
+**2017-03-16**
+
+- Updated phone number on contact page
+- Added contact banner at top and bottom
+- Made address a required field on quick enquiry (bottom of the page)
+
+**2017-02-26**
+
 - Add Homedec Logo
+- Completely revised homepage
 
 **2017-02-22**
 

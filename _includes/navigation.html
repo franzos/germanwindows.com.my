@@ -1,5 +1,15 @@
-<div class="cover-bg">
+<div class="cover-bg{% if page.type %} index{% endif %}">
   <div class="cover">
+    <div class="quick-contact hidden-xs">
+      <div class="container">
+        <ul>
+          <li class="no-link">Aluminium Window & Door Manufacturing, Installation / Replacement</li>
+        </ul>
+        <ul class="pull-right">
+          <li class=""><a href="tel:+60374950339" onclick="javascript:_paq.push(['trackEvent', 'Contact', 'Phone (Top)']);">Quick question? Call us now! <b>+603 7495 0339</b> (Monday - Friday, 9 AM to 6 PM)</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="navigation">
       <nav class="navbar navbar-default">
         <div class="container">
@@ -14,12 +24,9 @@
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a {% if page.url contains "/about/" %}class="active" {% endif %}href="/about/">About Us</a></li>
-              <li><a {% if page.url contains "/soundproofing/" %}class="active" {% endif %}href="/soundproofing/">Comfort</a></li>
-              <li><a {% if page.url contains "/security/" %}class="active" {% endif %}href="/security/">Security</a></li>
-              <li><a {% if page.url contains "/energy-saving/" %}class="active" {% endif %}href="/energy-saving/">Energy</a></li>
               <li><a {% if page.url contains "/technicals/" %}class="active" {% endif %}href="/windows-doors/technicals/">Technicals</a></li>
-              <li><a href="http://projects.q-windows.com.my/">Projects</a></li>
+              <li><a {% if page.url contains "/projects/" %}class="active" {% endif %}href="/projects/">Projects</a></li>
+              <li><a {% if page.url contains "/window-replacement/condominium/" %}class="active"{% elsif page.url contains "/product/"%}class="active" {% endif %}href="/window-replacement/condominium/">Condo</a></li>
               <li><a {% if page.url contains "/contact/" %}class="active" {% endif %}href="/contact/">Contact</a></li>
             </ul>
           </div>
@@ -28,8 +35,8 @@
     </div>
     <div class="page-title{% if page.subtitle %} subtitle{% endif %}">
       <div class="container">
-        <h1>{% if page.page-title %}{{ page.page-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</h1>
-        {% if page.subtitle %}<h1 class="sub">{{ page.subtitle }}</h1>{% endif %}
+        <h1><span>{% if page.page-title %}{{ page.page-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</span></h1>
+        {% if page.subtitle %}<h1 class="sub"><span>{{ page.subtitle }}</span></h1>{% endif %}
       </div>
     </div>
   </div>

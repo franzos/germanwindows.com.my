@@ -20,13 +20,17 @@ exclude:
 collections:
 - types
 - security-level
+- testimonial
+- products
 
 collections:
   types:
     output: true
     permalink: /type/:path/
   security-level:
-    output: true
   blog:
     output: true
     permalink: /blog/:title/
+  products:
+    output: true
+    permalink: /product/:title/

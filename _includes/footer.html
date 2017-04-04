@@ -55,6 +55,9 @@
             {% endfor %}
           </ul>
         </div>
+        <div class="col-sm-2">
+          <img data-original="/assets/images/innovative-product-award.png" class="img-responsive" >
+        </div>
       </div>
 
       <p><small>© 2017 Q-Windows (Malaysia) / All right reserved / Design and Development by <a target="_blank" href="https://f-a.nz/client/q-windows-malaysia/?utm_source=q-windows&utm_campaign=client_referral&utm_medium=website">f-a.nz</a></small></p>
@@ -95,26 +98,12 @@
 <script src="http://vjs.zencdn.net/5.15.1/video.js"></script>
 {% endif %}
 {% if page.url contains "projects" %}
-<script type="text/javascript" src="/assets/slick/slick.min.js"></script>
-<script>
-$('.projects').slick({
-  lazyLoad: 'progressive',
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  arrows: false,
-  dots: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  infinite: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    }
-  ]
+<script type="text/javascript" src="/assets/swipebox/src/js/jquery.swipebox.js"></script>
+<script type="text/javascript">
+$(window).load(function () {
+  ;( function( $ ) {
+    $( '.swipebox' ).swipebox();
+  } )( jQuery );
 });
 </script>
 {% endif %}
@@ -162,7 +151,6 @@ $('.designs').slick({
   <script type="text/javascript" src="/assets/soundmanager/demo/360-player/script/berniecode-animator.js"></script>
   <script type="text/javascript" src="/assets/soundmanager/script/soundmanager2.js"></script>
   <script type="text/javascript" src="/assets/soundmanager/demo/360-player/script/360player.js"></script>
-  <script type="text/javascript" src="/assets/js/parsley.min.js"></script>
 
   <script type="text/javascript">
     soundManager.setup({
@@ -172,15 +160,6 @@ $('.designs').slick({
 
   <link rel="stylesheet" type="text/css" href="/assets/soundmanager/demo/flashblock/flashblock.css" />
 {% endif %}
-
-<script>
-$(document).ready(function(){
-    var classCycle=['bg1','bg2','bg3','bg4','bg5','bg6','bg7','bg8','bg9','bg10','bg11'];
-    var randomNumber = Math.floor(Math.random() * classCycle.length);
-    var classToAdd = classCycle[randomNumber];
-    $('.cover-bg').addClass(classToAdd);
-});
-</script>
 
 {% if page.url == "/search/" %}
     <script src="/assets/js/lunr.min.js"></script>
@@ -250,3 +229,32 @@ $(document).ready(function(){
     })();
     </script>
 {% endif %}
+<script src="/assets/js/lazyload.min.js"></script>
+<script type="text/javascript">
+$(window).load(function () {
+  var myLazyLoad = new LazyLoad();
+});
+</script>
+{% if page.cover %}
+<style>
+  .cover-bg {
+    background-image: url(/assets/images/{{ page.cover }}.jpg);
+  }
+</style>
+{% elsif page.layout contains 'condo' %}
+  <style>
+    .cover-bg {
+      background-image: url(https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/{{ page.coordinates }},14/1280x350@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q);
+    }
+  </style>
+{% else %}
+<script>
+$(document).ready(function(){
+    var classCycle=['bg1','bg2','bg3','bg4','bg5','bg6','bg7','bg8','bg9','bg10','bg11'];
+    var randomNumber = Math.floor(Math.random() * classCycle.length);
+    var classToAdd = classCycle[randomNumber];
+    $('.cover-bg').addClass(classToAdd);
+});
+</script>
+{% endif %}
+<script type="text/javascript" src="/assets/js/parsley.min.js"></script>
