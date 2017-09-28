@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6, ul.clean-nav a {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.compressed img {
+  max-height: 200px;
+}
+
 .compressed img, .compressed h5 {
   margin-bottom: 2px;
 }
@@ -309,6 +313,7 @@ a.large {
 .types img.preview {
   max-width: 200px;
   margin: 0px 20px 20px 0px;
+  display: inline-block;
 }
 
 .types h4 {
@@ -317,6 +322,10 @@ a.large {
 
 img.pd20 {
   padding:20px;
+}
+
+.pd40 {
+  padding: 40px;
 }
 
 .nav-tabs {
@@ -343,7 +352,7 @@ img.pd20 {
   padding: 50px 12px 50px 12px;
   background-size: cover;
   font-size: 1.2em;
-  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  text-shadow: 1px 1px 20px rgb(0, 0, 0);
 }
 
 .subnav.index a.soundproof {
@@ -693,8 +702,8 @@ h2.thank-you {
 }
 
 img.headshot {
-    width: 92px;
-    padding: 14px 10px 10px 16px;
+  width: 92px;
+  padding: 14px 10px 10px 16px;
 }
 
 .single-quote p {
@@ -990,11 +999,73 @@ a.condo {
   display: block;
   text-transform: uppercase;
   color: #fff;
-  padding: 50px 12px;
-  background-color: #FF530D;
+  padding: 50px 18px;
+  background-color: #1E1E1E;
   font-size: 1.2em;
   text-shadow: 1px 1px 2px #000;
   margin: 0 0 1.75em;
+  min-height: 190px;
+}
+
+a.condo:hover {
+  background-color: #ff530d;
+}
+
+a.condo:hover small {
+  color: #fff;
+}
+
+a.condo small {
+  font-size: .7em;
+  color: #888;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.modal-content.dark {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a2a2a+0,0c0c0c+100 */
+  background: #2a2a2a; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2a2a2a 0%, #0c0c0c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2a2a2a 0%,#0c0c0c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2a2a2a 0%,#0c0c0c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2a2a', endColorstr='#0c0c0c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color: #fff;
+}
+
+.modal-content.dark .modal-header, .modal-content.dark .modal-footer {
+  border:0px;
+}
+
+.modal-content.dark h4.modal-title {
+  font-size:1.8em;
+  color: #ea480d;
+}
+
+.modal-content.dark .btn.btn-link {
+  color: #727272;
+}
+
+.search {
+  padding-bottom: 30px;
+}
+
+.search input {
+  background-color: #ff530d;
+  padding: 20px;
+  height: 62px;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.search .form-control::-moz-placeholder {
+  color: #fff;
+}
+
+.search .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.search .form-control:-ms-input-placeholder {
+  color: #fff;
 }
 
 @media (min-width: 970px) {
@@ -1052,12 +1123,29 @@ a.condo {
   }
 }
 
+.types .description ul {
+  list-style: none;
+}
+.types .description ul li:before {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+  font-size: 9px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -17px;
+  color: #FF530D;
+}
+
 @media (min-width: 768px) {
   .contactform .form .btn-default {
     margin-top:20px;
   }
   .expertise img {
     padding: 30px 30px 0px 30px;
+  }
+  .types .description {
+    margin-left: 220px;
+    min-height: 220px;
   }
 }
 
@@ -1105,4 +1193,8 @@ a.condo {
   .subnav .col-sm-3.text-center {
     padding: 0px;
   }
+}
+
+.interior-door-structure .col-sm-1 {
+  min-height: 80px;
 }

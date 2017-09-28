@@ -7,19 +7,44 @@ callout: "While an energy efficient air-condition is great, the most saving will
 layout: page
 permalink: /window-replacement/condominium/
 offset: one
-cover: bg13
+cover: bg19
 ---
 
-<h2>Current locations</h2>
+<div class="form-group search">
+  <label class="sr-only" for="myInput">Search for your property</label>
+  <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search for your property name, address or area ... ">
+</div>
 
-<p>Select your property to see available options, specs and pricing.</p>
-
-<div class="row">
-{% for product in site.products %}
+<div class="row" id="table">
+  {% for product in site.data.product_condo %}
   <div class="col-sm-3 text-center">
-    <a class="condo" href="{{ product.url }}">{{ product.title }}</a>
+    <a class="condo" href="{{ product.url }}">{{ product.title }}
+    <br><small>at {{ product.address }}</small></a>
   </div>
-{% endfor %}
+  {% endfor %}
 </div>
 
 <p>Can't find your property? <a href="/contact/">Get in touch</a> and <b>be the first to upgrade to <em>awesome</em>!</b></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("table");
+  tr = table.getElementsByTagName("div");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("a")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>

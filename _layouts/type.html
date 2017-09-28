@@ -26,7 +26,7 @@ layout: default
 
       <h2 itemprop="name" id="{{ page.title | url_encode }}">{{ page.title }}</h2>
       <img itemprop="image" class="preview pull-left" src="{{ page.image }}">
-      <p itemprop="description ul-default-overwrite">{{ content }}</p>
+      <div itemprop="description" class="description">{{ content }}</div>
 
       <div class="tabs">
 

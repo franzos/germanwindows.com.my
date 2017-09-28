@@ -10,7 +10,40 @@ Last update: {{ site.time }}
 
 # Changelog
 
-**TODO**
+**2017-09-18**
+
+- Added new condo projects, including images
+- Fixed list style on product type pages
+
+**2017-08-18**
+
+- Pipedrive integration (replace Insightly), minor fixes
+- Removed old backup / reference files
+
+--
+UPDATE GAP
+--
+
+**2017-04-26**
+
+- Integration of Insightly CRM with all contact forms
+- Optimization of pages according to social graph standard (for sharing)
+- Changed thank you page Facebook sharing button to refer to homepage
+- Updated thank you page [/thank-you/](/thank-you/)
+
+**2017-04-11**
+
+- Added email subscription button (Mailchimp integration)
+- added new page [/thank-you/confirm/](/thank-you/confirm/)
+- added new page [/thank-you/confirmed/](/thank-you/confirmed/)
+
+**2017-04-10**
+
+- Fixes, multiple windows show on condo pages
+
+**2017-04-08**
+
+- Added 2x new projects
 
 **2017-04-04**
 

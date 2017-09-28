@@ -124,34 +124,43 @@ layout: landing
         <div class="col-sm-4">
           <div class="contact shadow">
 
-              <h2 id="enquiry">Quick Enquiry</h2>
+            <h2 id="enquiry">Quick Enquiry</h2>
 
-              <form name="insightly_web_to_lead" action="https://qwindows.insight.ly/WebToLead/Create" method="post">
-                <input type="hidden" name="formId" value="Dx301yuUjqY1+oA3aW7rdA==" />
+            <div class="contactform">
+              <div class="form-group">
+                <p><strong>Request a free quote today!</strong>
+                <br><small>Fields marked with * are required</small></p>
+              </div>
+              <form action="https://form.dkkma.com/process.php" method="post" data-parsley-validate>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="insightly_firstName" name="FirstName" placeholder="First Name" required>
+                  <input id="first_name" name="first_name" type="text" class="form-control" placeholder="First Name *" required>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="insightly_lastName" name="LastName" placeholder="Last Name" required>
+                  <input id="last_name" name="last_name" type="text" class="form-control" placeholder="Last Name *" required>
                 </div>
                 <div class="form-group">
-                  <input type="number" class="form-control" id="insightly_Phone" name="phone" placeholder="Mobile Nr." required>
+                  <input id="email_address" name="email_address" type="email" class="form-control" placeholder="Your email address *" required>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="insightly_Email" name="email" placeholder="Email address" required>
+                  <input id="mobile_phone_number" name="mobile_phone_number" type="number" class="form-control" placeholder="Mobile phone *" required>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="insightly_AddressCity" name="AddressCity" placeholder="City" required>
+                  <label for="address_street">Your Address</label>
+                  <input id="address_street" name="address_street" type="text" class="form-control" placeholder="Street">
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" rows="3" id="insightly_Description" name="Description" placeholder="Message" required></textarea>
+                  <input id="address_city" name="address_city" type="text" class="form-control" placeholder="City">
+                </div>
+                <div class="form-group">
+                <label for="comments">Additional Information</label>
+                  <textarea id="comments" name="comments" class="form-control" rows="3"></textarea>
                 </div>
 
-                <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="1226841"/>
-                <input type="hidden" id="insightly_LeadSource" name="LeadSource" value="1375488"/>
+                <input type="hidden" name="form_tools_form_id" value="16" />
 
-                <button type="submit" value="Submit" class="btn btn-default bright" onclick="javascript:_paq.push(['trackEvent', 'Contact-Form-Landing', 'Submit']);">Send Enquiry</button>
+                <button type="submit" value="Submit" class="btn btn-default" onclick="javascript:_paq.push(['trackEvent', 'Contact-Form-Landing', 'Submit']);">Send Enquiry</button>
               </form>
+            </div>
 
           </div>
         </div>

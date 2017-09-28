@@ -16,19 +16,102 @@ layout: default
 
         <h4>Window element</h4>
 
-        {% if prd01_location != '' %}
+        {% if page.prd01_location %}
 
-          <img data-original="/assets/images/products/{{ page.ref }}prd01.png" alt="{{ page.title }} replacement window">
-          <h5>{{ page.prd01_location }}</h5>
+          <img data-original="/assets/images/products/{{ page.ref }}prd01.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd01.png)">
+          <h5>{{ page.prd01_location }}
+          <br><small>Ref: {{ page.ref }}prd01</small></h5>
           <p>Offer: <amount>{{ page.prd01_price }} MYR</amount> only</p>
 
         {% endif %}
 
-        {% if prd02_location %}
+        {% if page.prd02_location %}
 
-          <img data-original="/assets/images/products/{{ page.ref }}prd02.png" alt="{{ page.title }} replacement window">
-          <h5>{{ page.prd02_location }}</h5>
+          <img data-original="/assets/images/products/{{ page.ref }}prd02.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd02.png)">
+          <h5>{{ page.prd02_location }}
+          <br><small>Ref: {{ page.ref }}prd02</small></h5>
           <p>Offer: <amount>{{ page.prd02_price }} MYR</amount> only</p>
+
+        {% endif %}
+
+        {% if page.prd03_location %}
+
+          <img data-original="/assets/images/products/{{ page.ref }}prd03.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd03.png)">
+          <h5>{{ page.prd03_location }}
+          <br><small>Ref: {{ page.ref }}prd03</small></h5>
+          <p>Offer: <amount>{{ page.prd03_price }} MYR</amount> only</p>
+
+        {% endif %}
+
+        {% if page.prd04_location %}
+
+          <img data-original="/assets/images/products/{{ page.ref }}prd04.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd04.png)">
+          <h5>{{ page.prd04_location }}
+          <br><small>Ref: {{ page.ref }}prd04</small></h5>
+          <p>Offer: <amount>{{ page.prd04_price }} MYR</amount> only</p>
+
+        {% endif %}
+
+        {% if page.prd05_location %}
+
+          <img data-original="/assets/images/products/{{ page.ref }}prd05.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd05.png)">
+          <h5>{{ page.prd05_location }}
+          <br><small>Ref: {{ page.ref }}prd05</small></h5>
+          <p>Offer: <amount>{{ page.prd05_price }} MYR</amount> only</p>
+
+        {% endif %}
+
+        {% if page.prd06_location %}
+
+          <img data-original="/assets/images/products/{{ page.ref }}prd06.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd06.png)">
+          <h5>{{ page.prd06_location }}
+          <br><small>Ref: {{ page.ref }}prd06</small></h5>
+          <p>Offer: <amount>{{ page.prd06_price }} MYR</amount> only</p>
+
+        {% endif %}
+
+        {% if page.prd07_location %}
+
+          <img data-original="/assets/images/products/{{ page.ref }}prd07.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd07.png)">
+          <h5>{{ page.prd07_location }}
+          <br><small>Ref: {{ page.ref }}prd07</small></h5>
+          <p>Offer: <amount>{{ page.prd07_price }} MYR</amount> only</p>
+
+        {% endif %}
+
+        {% if page.prd08_location %}
+
+          <img data-original="/assets/images/products/{{ page.ref }}prd08.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd08.png)">
+          <h5>{{ page.prd08_location }}
+          <br><small>Ref: {{ page.ref }}prd08</small></h5>
+          <p>Offer: <amount>{{ page.prd08_price }} MYR</amount> only</p>
+
+        {% endif %}
+
+        {% if page.prd09_location %}
+
+          <img data-original="/assets/images/products/{{ page.ref }}prd09.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd09.png)">
+          <h5>{{ page.prd09_location }}
+          <br><small>Ref: {{ page.ref }}prd09</small></h5>
+          <p>Offer: <amount>{{ page.prd09_price }} MYR</amount> only</p>
+
+        {% endif %}
+
+        {% if page.prd10_location %}
+
+          <img data-original="/assets/images/products/{{ page.ref }}prd10.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd10.png)">
+          <h5>{{ page.prd10_location }}
+          <br><small>Ref: {{ page.ref }}prd10</small></h5>
+          <p>Offer: <amount>{{ page.prd10_price }} MYR</amount> only</p>
+
+        {% endif %}
+
+        {% if page.prd11_location %}
+
+          <img data-original="/assets/images/products/{{ page.ref }}prd11.png" alt="{{ page.title }} replacement window ({{ page.ref }}prd11.png)">
+          <h5>{{ page.prd11_location }}
+          <br><small>Ref: {{ page.ref }}prd11</small></h5>
+          <p>Offer: <amount>{{ page.prd11_price }} MYR</amount> only</p>
 
         {% endif %}
 
@@ -81,18 +164,21 @@ layout: default
         <div class="form">
           <form action="https://form.dkkma.com/process.php" method="post" data-parsley-validate>
             <div class="form-group">
-              <input id="name" name="name" type="text" class="form-control" placeholder="Name *" required>
+              <input id="first_name" name="first_name" type="text" class="form-control" placeholder="First Name" required>
             </div>
             <div class="form-group">
-              <input id="email" name="email" type="email" class="form-control" placeholder="Email address *" required>
+              <input id="last_name" name="last_name" type="text" class="form-control" placeholder="Last Name" required>
             </div>
             <div class="form-group">
-              <input id="phone" name="phone" type="number" class="form-control" placeholder="Mobile phone *" required>
+              <input id="email_address" name="email_address" type="email" class="form-control" placeholder="Your email address *" required>
             </div>
-            <input type="hidden" name="condo" value="{{ page.title }}" />
             <div class="form-group">
-              <label for="apartment">Apartment</label>
-              <input id="apartment" name="apartment" type="text" class="form-control" placeholder="Apartment #">
+              <input id="mobile_phone_number" name="mobile_phone_number" type="number" class="form-control" placeholder="Mobile phone *" required>
+            </div>
+            <input type="hidden" id="address_city" name="address_city" value="{{ page.title }}" />
+            <div class="form-group">
+              <label for="address_street">Apartment</label>
+              <input id="address_street" name="address_street" type="text" class="form-control" placeholder="Apartment #">
               <p class="help-block">at {{ page.title }}</p>
             </div>
             <div class="form-group">
@@ -100,7 +186,7 @@ layout: default
               <textarea id="comments" name="comments" class="form-control" rows="3"></textarea>
             </div>
 
-            <input type="hidden" name="form_tools_form_id" value="15" />
+            <input type="hidden" name="form_tools_form_id" value="16" />
 
             <button type="submit" value="Submit" class="btn btn-default" onclick="javascript:_paq.push(['trackEvent', 'Order-Form', 'Submit']);">Request an appointment</button>
           </form>
@@ -110,5 +196,4 @@ layout: default
     </div>
   </div>
 
-  {{ content }}
 </div>

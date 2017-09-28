@@ -241,10 +241,10 @@ $(window).load(function () {
     background-image: url(/assets/images/{{ page.cover }}.jpg);
   }
 </style>
-{% elsif page.layout contains 'condo' %}
+{% elsif page.url contains '/window-replacement/condominium/' %}
   <style>
     .cover-bg {
-      background-image: url(https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/{{ page.coordinates }},14/1280x350@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q);
+      background-image: url(https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/{{ page.longitude }},{{ page.latitude }},14/1280x350@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q);
     }
   </style>
 {% else %}
@@ -258,3 +258,51 @@ $(document).ready(function(){
 </script>
 {% endif %}
 <script type="text/javascript" src="/assets/js/parsley.min.js"></script>
+
+{% if page.url == "/window-replacement/condominium/" %}
+<script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
+<style>
+  .navbar.navbar-default, .quick-contact, .innovative-product-award.loaded {
+    z-index: 1000;
+  }
+  #map {
+    height:460px;
+    width:100%;
+  }
+</style>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q';
+var map = L.mapbox.map('map', 'mapbox.dark')
+    .setView([3.1430694, 101.6799933], 11);
+    var myLayer = L.mapbox.featureLayer().addTo(map);
+
+    // The GeoJSON representing the two point features
+    var geojson = {
+        type: 'FeatureCollection',
+        features: [{% for product in site.data.product_condo %}{
+            type: 'Feature',
+            properties: {
+                title: '{{ product.title }}',
+                'marker-color': '#FF530D',
+                'marker-size': 'small',
+                'marker-symbol': 'star',
+                'description': '{{ product.address }} ( see links below )'
+            },
+            geometry: {
+                type: 'Point',
+                coordinates: [{{ product.longitude }}, {{ product.latitude }}]
+            }
+        }{% if forloop.last %}{% else %},{% endif %}
+        {% endfor %}
+      ]
+    };
+
+    map.scrollWheelZoom.disable();
+    // Pass features and a custom factory function to the map
+    myLayer.setGeoJSON(geojson);
+    //myLayer.on('click', function(e) {
+    //    window.open(e.layer.feature.properties.url);
+    //});
+</script>
+{% endif %}

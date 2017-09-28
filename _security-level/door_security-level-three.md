@@ -6,4 +6,4 @@ security: three
 sitemap: false
 ---
 
-Multipoint locking system combined with European profile cylinder
+Multipoint locking system with European profile cylinder

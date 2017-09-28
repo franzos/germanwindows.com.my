@@ -150,6 +150,11 @@ img.innovative-product-award {
   right: 0px;
 }
 
+img.headshot {
+  width: 92px;
+  padding: 14px 10px 10px 16px;
+}
+
 @media (max-width: 768px) {
   .highlights .highlight .wrapper {
     min-height: 90px;

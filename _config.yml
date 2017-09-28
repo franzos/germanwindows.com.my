@@ -12,6 +12,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+page_gen-dirs: true
 
 exclude:
   - Gemfile
@@ -21,7 +22,6 @@ collections:
 - types
 - security-level
 - testimonial
-- products
 
 collections:
   types:
@@ -31,6 +31,9 @@ collections:
   blog:
     output: true
     permalink: /blog/:title/
-  products:
-    output: true
-    permalink: /product/:title/
+
+page_gen:
+  - data: product_condo
+    template: product_condo
+    name: url
+    dir: window-replacement/condominium
