@@ -3,7 +3,7 @@ title: Sliding Door
 layout: type
 permalink: /type/sliding-door/
 nav: types
-image: /assets/upload/type/sliding-door.jpg
+image: /assets/images/type/sliding-door.jpg
 animation:
 category: door
 security:
@@ -20,10 +20,10 @@ tabs:
 hardware:
   - sigenia
 designs:
-  - /assets/upload/type/Slider_2-1-1.JPG
-  - /assets/upload/type/Slider_3-1-2.JPG
-  - /assets/upload/type/Slider_3-2-1.JPG
-  - /assets/upload/type/Slider_4-2-2.JPG
+  - /assets/images/type/Slider_2-1-1.JPG
+  - /assets/images/type/Slider_3-1-2.JPG
+  - /assets/images/type/Slider_3-2-1.JPG
+  - /assets/images/type/Slider_4-2-2.JPG
 ---
 
 - Designed for large and heavy elements

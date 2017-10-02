@@ -1,6 +1,6 @@
 ---
 title: Security Level Two
-image: /assets/upload/type/door-security-level-2.jpg
+image: /assets/images/type/door-security-level-2.jpg
 category: door
 security: two
 sitemap: false

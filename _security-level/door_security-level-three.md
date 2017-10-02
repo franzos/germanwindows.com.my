@@ -1,6 +1,6 @@
 ---
 title: Security Level Three
-image: /assets/upload/type/door-security-level-3.jpg
+image: /assets/images/type/door-security-level-3.jpg
 category: door
 security: three
 sitemap: false

@@ -1,6 +1,6 @@
 ---
 title: Security Level One
-image: /assets/upload/type/door-security-level-1.jpg
+image: /assets/images/type/door-security-level-1.jpg
 category: door
 security: one
 sitemap: false

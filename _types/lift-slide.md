@@ -3,8 +3,8 @@ title: Lift & Slide Door
 layout: type
 permalink: /type/lift-slide-door/
 nav: types
-image: /assets/upload/type/lift-slide-door.jpg
-animation: /assets/upload/type/lift-slide-door.mp4
+image: /assets/images/type/lift-slide-door.jpg
+animation: /assets/videos/lift-slide-door.mp4
 category: door
 security:
 tabs:

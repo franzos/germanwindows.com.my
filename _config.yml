@@ -17,6 +17,14 @@ page_gen-dirs: true
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - src
+  - gulpfile.js
+  - package-lock.json
+  - package.json
+  - yarn.lock
+  - s3_website.yml
+  - yarn-error.log
 
 collections:
 - types

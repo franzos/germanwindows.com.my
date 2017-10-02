@@ -1,0 +1,27 @@
+{
+  "name": "q-windows.com.my",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "Franz Geffke <franz@dkkma.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "howler": "^2.0.4",
+    "jquery": "2.2.4",
+    "lunr": "1.0.0",
+    "parsleyjs": "^2.8.0",
+    "slick-carousel": "^1.7.1",
+    "swipebox": "^1.4.6",
+    "vanilla-lazyload": "8.2.0",
+    "vue": "^2.4.4",
+    "wavesurfer.js": "^2.0.0-beta02"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^3.0.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2"
+  }
+}

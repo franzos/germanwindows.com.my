@@ -1,6 +1,6 @@
 ---
 title: High Security Level Two
-image: /assets/upload/type/high-security-level-2.png
+image: /assets/images/type/high-security-level-2.png
 category: window
 security: h-two
 sitemap: false

@@ -3,12 +3,28 @@ layout: black
 title: Changelog
 sitemap: false
 permalink: /changes/
+excluded: true
 ---
 
 Last update: {{ site.time }}
 <br>by <a href="mailto:franz@dkkma.com">Franz Geffke</a>
 
 # Changelog
+
+**2017-10-01**
+
+- Completely revised [/soundproofing/](/soundproofing/)
+- Updated live [/search/](/search/) to include projects
+- Fixed type display on [/windows-doors/reasons-to-replace/](/windows-doors/reasons-to-replace/)
+- Improved error page (404 - Not found) with new content, search [/error.html](/error.html)
+- Markers on the map [/window-replacement/condominium/](/window-replacement/condominium/) now link to their respective properties
+- Cleaned-up layout on [/a-z/](/a-z/), added larger details
+- Improved [/contact/](/contact/) page email link (includes subject, content)
+- *Mobile* Fixed table view, enabled noise comparison on mobile [/soundproofing/](/soundproofing/)
+- Minor updayes [/developer/](/developer/)
+- Set-up new asset / package management based on Yarn and Gulp
+- Included all fonts in dependencies, reduces https connections
+- Huge performance improvement, updated libraries, minified assets
 
 **2017-09-18**
 

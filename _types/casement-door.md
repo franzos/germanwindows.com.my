@@ -3,7 +3,7 @@ title: Casement Door
 layout: type
 permalink: /type/casement-door/
 nav: types
-image: /assets/upload/type/casement-door.jpg
+image: /assets/images/type/casement-door.jpg
 animation:
 category: door
 security:
@@ -20,8 +20,8 @@ tabs:
 hardware:
   - roto
 designs:
-  - /assets/upload/type/Door_2-1-1.JPG
-  - /assets/upload/type/Door_2-1-1_Top.JPG
+  - /assets/images/type/Door_2-1-1.JPG
+  - /assets/images/type/Door_2-1-1_Top.JPG
 ---
 
 - Suitable as interior and balcony door

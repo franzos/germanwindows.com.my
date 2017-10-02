@@ -3,8 +3,8 @@ title: Tilt & Turn
 layout: type
 permalink: /type/tilt-turn-window/
 nav: types
-image: /assets/upload/type/tilt-turn-window.jpg
-animation: /assets/upload/type/tilt-turn-window.mp4
+image: /assets/images/type/tilt-turn-window.jpg
+animation: /assets/videos/tilt-turn-window.mp4
 category: window
 security:
   - one
@@ -23,7 +23,7 @@ tabs:
 hardware:
   - roto
 designs:
-  - /assets/upload/type/Tilt-Turn.png
+  - /assets/images/type/Tilt-Turn.png
 ---
 
 - Opens inward

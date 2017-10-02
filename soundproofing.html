@@ -31,7 +31,7 @@ cover: bg27
 </div>
 
 <h3>What can noise do?</h3>
-<p><b>Noise stress is a major cause of illness</b>. It not only damages one’s hearing, it also leaves persistent marks on the human psyche. For many years, effective protection against undesired noise has not merely been a matter of comfort, but a decisive issue in health protection. If you want to learn more, check out the <a href="/assets/files/noise-brochure.pdf">Q-Windows Noise Brochure</a>.</p>
+<p><b>Noise stress is a major cause of illness</b>. It not only damages one’s hearing, it also leaves persistent marks on the human psyche. For many years, effective protection against undesired noise has not merely been a matter of comfort, but a decisive issue in health protection. If you want to learn more, check out the <a href="/assets/files/Q-Windows-Soundproofing-Brochure.pdf">Q-Windows Noise Brochure <small>(PDF, 4.1 MB)</small></a>.</p>
 
 <h2>Reduce perceived noise by up to 99%</h2>
 <p>A proper sound insulation can only be achieved when all components play well together. The final sound insulation factor depends on the weakest element. Therefore it’s important to take all factors such as glass, profile and installation into consideration.</p>
@@ -43,148 +43,110 @@ cover: bg27
 
 <h3>Compare soundproofing level</h3>
 
-<p>Press the <img data-original="/assets/soundmanager/demo/360-player/360-button-play.gif"> button to compare the different noise levels and sound reduction level one (-32dB) and two (-40dB).</p>
+<p>Press the <button class="btn btn-primary player" onclick="streets_default.playPause()"><i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause</button> button to compare the different noise levels and sound reduction level one (-32dB) and two (-40dB).</p>
 
-<div class="comparison-grid hidden-xs">
+<div class="comparison-grid">
 
-  <div class="row text-center">
-    <div class="col-sm-2 col-sm-offset-5">
+  <div class="row text-center hidden-xs">
+    <div class="col-sm-4">
 
-      <p>open<br>
-      Window</p>
+      <p><br>open
+      <br>Window</p>
 
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
 
       <span class="description">Sound level <br>
-      reduction 32 dB</span>
+      reduction 32 dB</span> <br>
       <span class="brand green">Q-Windows</span> <br>
       <span class="db">-32 dB</span>
 
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
 
       <span class="description">Sound level <br>
-      reduction 40 dB</span>
+      reduction 40 dB</span> <br>
       <span class="brand green">Q-Windows</span> <br>
       <span class="db">-40 dB</span>
 
     </div>
   </div>
 
-  <!-- Street Noise -->
-
+  <h4>Street Noise</h4>
   <div class="row">
-    <div class="col-sm-2 col-sm-offset-1 row-title-box">
-      <div class="row-title">Street noise</div>
+    <div class="col-sm-4 player">
+      <div id="streets_default"></div>
+      <span>Open Window</span>
+      <button class="btn btn-primary" onclick="streets_default.playPause()">
+        <i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause
+      </button>
     </div>
-    <div class="col-sm-2">
-      <img data-original="/assets/images/sound-level-comparison-street-noise.jpg" alt="Street noise">
+    <div class="col-sm-4 player">
+      <div id="streets_minus"></div>
+      <span class="brand green">Q-Windows -32dB</span>
+      <button class="btn btn-primary" onclick="streets_minus.playPause()">
+        <i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause
+      </button>
     </div>
-    <div class="col-sm-2">
-      <div class="grey">
-        <div class="player">
-          <div class="ui360">
-           <a href="/assets/sounds/street_default.mp3"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="grey">
-        <div class="player">
-          <div class="ui360">
-           <a href="/assets/sounds/street_minus-32db.mp3"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="grey">
-        <div class="player">
-          <div class="ui360">
-           <a href="/assets/sounds/street_minus-36db.mp3"></a>
-          </div>
-        </div>
-      </div>
+    <div class="col-sm-4 player">
+      <div id="streets_minus_plus"></div>
+      <span class="brand green">Q-Windows -40dB</span>
+      <button class="btn btn-primary" onclick="streets_minus_plus.playPause()">
+        <i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause
+      </button>
     </div>
   </div>
 
-  <!-- Highway -->
-
+  <h4>Construction Noise</h4>
   <div class="row">
-    <div class="col-sm-2 col-sm-offset-1 row-title-box">
-      <div class="row-title">Highway</div>
+    <div class="col-sm-4 player">
+      <div id="construction_default"></div>
+      <span>Open Window</span>
+      <button class="btn btn-primary" onclick="construction_default.playPause()">
+        <i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause
+      </button>
     </div>
-    <div class="col-sm-2">
-      <img data-original="/assets/images/sound-level-comparison-highway.jpg" alt="Highway noise">
+    <div class="col-sm-4 player">
+      <div id="construction_minus"></div>
+      <span class="brand green">Q-Windows -32dB</span>
+      <button class="btn btn-primary" onclick="construction_minus.playPause()">
+        <i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause
+      </button>
     </div>
-    <div class="col-sm-2">
-      <div class="grey">
-        <div class="player">
-          <div class="ui360">
-           <a href="/assets/sounds/highway_default.mp3"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="grey">
-        <div class="player">
-          <div class="ui360">
-           <a href="/assets/sounds/highway_minus-32db.mp3"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="grey">
-        <div class="player">
-          <div class="ui360">
-           <a href="/assets/sounds/highway_minus-36db.mp3"></a>
-          </div>
-        </div>
-      </div>
+    <div class="col-sm-4 player">
+      <div id="construction_minus_plus"></div>
+        <span class="brand green">Q-Windows -40dB</span>
+      <button class="btn btn-primary" onclick="construction_minus_plus.playPause()">
+        <i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause
+      </button>
     </div>
   </div>
 
-  <!-- Construction -->
-
+  <h4>Highway Noise</h4>
   <div class="row">
-    <div class="col-sm-2 col-sm-offset-1 row-title-box">
-      <div class="row-title">Construction</div>
+    <div class="col-sm-4 player">
+      <div id="highway_default"></div>
+      <span>Open Window</span>
+      <button class="btn btn-primary" onclick="highway_default.playPause()">
+        <i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause
+      </button>
     </div>
-    <div class="col-sm-2">
-      <img data-original="/assets/images/sound-level-comparison-construction.jpg" alt="Counstruction noise">
+    <div class="col-sm-4 player">
+      <div id="highway_minus"></div>
+      <span class="brand green">Q-Windows -32dB</span>
+      <button class="btn btn-primary" onclick="highway_minus.playPause()">
+        <i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause
+      </button>
     </div>
-    <div class="col-sm-2">
-      <div class="grey">
-        <div class="player">
-          <div class="ui360">
-           <a href="/assets/sounds/construction_default.mp3"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="grey">
-        <div class="player">
-          <div class="ui360">
-           <a href="/assets/sounds/construction_minus-32db.mp3"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="grey">
-        <div class="player">
-          <div class="ui360">
-           <a href="/assets/sounds/construction_minus-36db.mp3"></a>
-          </div>
-        </div>
-      </div>
+    <div class="col-sm-4 player">
+      <div id="highway_minus_plus"></div>
+      <span class="brand green">Q-Windows -40dB</span>
+      <button class="btn btn-primary" onclick="highway_minus_plus.playPause()">
+        <i class="fa fa-play"></i>Listen / <i class="fa fa-pause"></i>Pause
+      </button>
     </div>
   </div>
+
 </div>
 
 <h2>Determine healthy sound level</h2>
@@ -240,31 +202,6 @@ cover: bg27
   </tr>
   </thead>
   <tbody class="text-center">
-    <!--
-    <tr>
-      <td>
-        <img data-original="/assets/images/glass-single.png" alt="Single layer glass">
-        <br>Single
-      </td>
-      <td align="center">
-        <p>6
-      	<br>10
-      	<br>19</p>
-      </td>
-      <th></th>
-      <th>
-        <p>32
-      	<br>35
-      	<br>39</p>
-      </th>
-      <th>
-  			<p>14.94
-  			<br>24.9
-  			<br>47.31</p>
-      </th>
-    </tr>
-    -->
-    <!-- row2 -->
     <tr>
       <td rowspan="2">
         <img data-original="/assets/images/glass-laminated.png" alt="Laminated glass">

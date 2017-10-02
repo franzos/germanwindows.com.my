@@ -3,8 +3,8 @@ title: Outward Opening
 layout: type
 permalink: /type/outward-opening-window/
 nav: types
-image: /assets/upload/type/casement-window.jpg
-animation: /assets/upload/type/casement-awning-window.mp4
+image: /assets/images/type/casement-window.jpg
+animation: /assets/videos/casement-awning-window.mp4
 category: window
 security:
   - one
@@ -24,15 +24,15 @@ tabs:
 hardware:
   - roto
 designs:
-  - /assets/upload/type/Outward_Casement_.JPG
-  - /assets/upload/type/Outward_Owning.JPG
-  - /assets/upload/type/Casement_2-1-1_Top.JPG
-  - /assets/upload/type/Casement_2-2-0.JPG
-  - /assets/upload/type/Casement_3-1-2.JPG
-  - /assets/upload/type/Casement_3-2-1.JPG
-  - /assets/upload/type/Casement_3-3-0.JPG
-  - /assets/upload/type/Casement_4-2-2.JPG
-  - /assets/upload/type/Casement_4-4-0.JPG
+  - /assets/images/type/Outward_Casement_.JPG
+  - /assets/images/type/Outward_Owning.JPG
+  - /assets/images/type/Casement_2-1-1_Top.JPG
+  - /assets/images/type/Casement_2-2-0.JPG
+  - /assets/images/type/Casement_3-1-2.JPG
+  - /assets/images/type/Casement_3-2-1.JPG
+  - /assets/images/type/Casement_3-3-0.JPG
+  - /assets/images/type/Casement_4-2-2.JPG
+  - /assets/images/type/Casement_4-4-0.JPG
 ---
 
 - Exceptional value

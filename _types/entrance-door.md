@@ -3,7 +3,7 @@ title: Entrance Door
 layout: type
 permalink: /type/entrance-door/
 nav: types
-image: /assets/upload/type/entrance-door.jpg
+image: /assets/images/type/entrance-door.jpg
 animation:
 category: door
 security:
@@ -22,8 +22,8 @@ tabs:
 hardware:
   - roto
 designs:
-  - /assets/upload/type/Door_2-1-1.JPG
-  - /assets/upload/type/Door_2-1-1_Top.JPG
+  - /assets/images/type/Door_2-1-1.JPG
+  - /assets/images/type/Door_2-1-1_Top.JPG
 ---
 
 - Hardware upgrade to security level four possible

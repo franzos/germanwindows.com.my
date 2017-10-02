@@ -66,39 +66,41 @@
   </div>
 </div>
 
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//stats.dkkma.com/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//stats.dkkma.com/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
+<script src="/assets/js/bundle.min.js"></script>
+
+{% if page.cover %}
+<style>
+.cover-bg {
+  background-image: url(/assets/images/{{ page.cover }}.jpg);
+}
+</style>
+{% else %}
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+var classCycle=['bg1','bg2','bg3','bg4','bg5','bg6','bg7','bg8','bg9','bg10','bg11'];
+var randomNumber = Math.floor(Math.random() * classCycle.length);
+var classToAdd = classCycle[randomNumber];
+$('.cover-bg').addClass(classToAdd);
+</script>
+{% endif %}
 
-  ga('create', 'UA-40757502-1', 'auto');
-  ga('send', 'pageview');
+<script>
+$(window).load(function () {
+  var myLazyLoad = new LazyLoad();
+});
 </script>
 
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+{% if page.url == "/soundproofing/" %}
+<script src="/assets/js/player.min.js"></script>
+{% endif %}
+{% if page.url contains "search" or page.url contains "error.html" %}
+<script src="/assets/js/search.min.js"></script>
+{% endif %}
 {% if page.url contains "videos" %}
 <link href="http://vjs.zencdn.net/5.15.1/video-js.css" rel="stylesheet">
 <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 <script src="http://vjs.zencdn.net/5.15.1/video.js"></script>
 {% endif %}
 {% if page.url contains "projects" %}
-<script type="text/javascript" src="/assets/swipebox/src/js/jquery.swipebox.js"></script>
 <script type="text/javascript">
 $(window).load(function () {
   ;( function( $ ) {
@@ -108,7 +110,6 @@ $(window).load(function () {
 </script>
 {% endif %}
 {% if page.feature contains "slider" %}
-<script type="text/javascript" src="/assets/slick/slick.min.js"></script>
 <script>
 $('.projects').slick({
   lazyLoad: 'progressive',
@@ -143,166 +144,78 @@ $('.designs').slick({
 });
 </script>
 {% endif %}
-
-{% if page.url == "/soundproofing/" %}
-<link rel="stylesheet" type="text/css" href="/assets/soundmanager/demo/360-player/360player.css" />
-  <!-- special IE-only canvas fix -->
-  <!--[if IE]><script type="text/javascript" src="/assets/soundmanager/script/excanvas.js"></script><![endif]-->
-  <script type="text/javascript" src="/assets/soundmanager/demo/360-player/script/berniecode-animator.js"></script>
-  <script type="text/javascript" src="/assets/soundmanager/script/soundmanager2.js"></script>
-  <script type="text/javascript" src="/assets/soundmanager/demo/360-player/script/360player.js"></script>
-
-  <script type="text/javascript">
-    soundManager.setup({
-      url: '/assets/soundmanager/swf/'
-    });
-  </script>
-
-  <link rel="stylesheet" type="text/css" href="/assets/soundmanager/demo/flashblock/flashblock.css" />
-{% endif %}
-
-{% if page.url == "/search/" %}
-    <script src="/assets/js/lunr.min.js"></script>
-    <script src="/assets/js/search.json"></script>
-
-    <script>
-    (function() {
-      function displaySearchResults(results, store) {
-        var searchResults = document.getElementById('search-results');
-
-        if (results.length) { // Are there any results?
-          var appendString = '';
-
-          for (var i = 0; i < results.length; i++) {  // Iterate over the results
-            var item = store[results[i].ref];
-            appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-            appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
-          }
-
-          searchResults.innerHTML = appendString;
-        } else {
-          searchResults.innerHTML = '<li>No results found</li>';
-        }
-      }
-
-      function getQueryVariable(variable) {
-        var query = window.location.search.substring(1);
-        var vars = query.split('&');
-
-        for (var i = 0; i < vars.length; i++) {
-          var pair = vars[i].split('=');
-
-          if (pair[0] === variable) {
-            return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-          }
-        }
-      }
-
-      var searchTerm = getQueryVariable('query');
-
-      if (searchTerm) {
-        document.getElementById('search-box').setAttribute("value", searchTerm);
-
-        // Initalize lunr with the fields it will be searching on. I've given title
-        // a boost of 10 to indicate matches on this field are more important.
-        var idx = lunr(function () {
-          this.field('id');
-          this.field('title', { boost: 10 });
-          this.field('author');
-          this.field('category');
-          this.field('content');
-        });
-
-        for (var key in window.store) { // Add the data to lunr
-          idx.add({
-            'id': key,
-            'title': window.store[key].title,
-            'author': window.store[key].author,
-            'category': window.store[key].category,
-            'content': window.store[key].content
-          });
-
-          var results = idx.search(searchTerm); // Get lunr to perform a search
-          displaySearchResults(results, window.store); // We'll write this in the next section
-        }
-      }
-    })();
-    </script>
-{% endif %}
-<script src="/assets/js/lazyload.min.js"></script>
-<script type="text/javascript">
-$(window).load(function () {
-  var myLazyLoad = new LazyLoad();
-});
-</script>
-{% if page.cover %}
-<style>
-  .cover-bg {
-    background-image: url(/assets/images/{{ page.cover }}.jpg);
-  }
-</style>
-{% elsif page.url contains '/window-replacement/condominium/' %}
-  <style>
-    .cover-bg {
-      background-image: url(https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/{{ page.longitude }},{{ page.latitude }},14/1280x350@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q);
-    }
-  </style>
-{% else %}
-<script>
-$(document).ready(function(){
-    var classCycle=['bg1','bg2','bg3','bg4','bg5','bg6','bg7','bg8','bg9','bg10','bg11'];
-    var randomNumber = Math.floor(Math.random() * classCycle.length);
-    var classToAdd = classCycle[randomNumber];
-    $('.cover-bg').addClass(classToAdd);
-});
-</script>
-{% endif %}
-<script type="text/javascript" src="/assets/js/parsley.min.js"></script>
-
-{% if page.url == "/window-replacement/condominium/" %}
+{% if page.url == "/window-replacement/condominium/" or page.type == "index" %}
 <script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
 <style>
   .navbar.navbar-default, .quick-contact, .innovative-product-award.loaded {
     z-index: 1000;
   }
-  #map {
+  .map {
     height:460px;
     width:100%;
   }
 </style>
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q';
-var map = L.mapbox.map('map', 'mapbox.dark')
+    L.mapbox.accessToken = 'pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q';
+    var mapPopupsJS = L.mapbox.map('map-popups-js', 'mapbox.dark')
     .setView([3.1430694, 101.6799933], 11);
-    var myLayer = L.mapbox.featureLayer().addTo(map);
+    var myLayer = L.mapbox.featureLayer().addTo(mapPopupsJS);
 
-    // The GeoJSON representing the two point features
-    var geojson = {
-        type: 'FeatureCollection',
-        features: [{% for product in site.data.product_condo %}{
-            type: 'Feature',
-            properties: {
-                title: '{{ product.title }}',
-                'marker-color': '#FF530D',
-                'marker-size': 'small',
-                'marker-symbol': 'star',
-                'description': '{{ product.address }} ( see links below )'
-            },
-            geometry: {
-                type: 'Point',
-                coordinates: [{{ product.longitude }}, {{ product.latitude }}]
-            }
-        }{% if forloop.last %}{% else %},{% endif %}
-        {% endfor %}
-      ]
-    };
+    var geojson = [
+      {% for product in site.data.product_condo %}
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [{{ product.longitude }}, {{ product.latitude }}]
+        },
+        properties: {
+          title: '{{ product.title }}',
+          description: 'at {{ product.address }}',
+          url: '/window-replacement/condominium/{{ product.url }}',
+          icon: {
+            iconUrl: '/assets/images/map-marker.png',
+            iconSize: [17, 23],
+            iconAnchor: [17, 23],
+            popupAnchor: [0, -25],
+            className: 'dot'
+          }
+        }
+      }{% if forloop.last %}{% else %},{% endif %}
+      {% endfor %}
+    ];
 
-    map.scrollWheelZoom.disable();
-    // Pass features and a custom factory function to the map
+    myLayer.on('layeradd', function(e) {
+      var marker = e.layer,
+        feature = marker.feature;
+      marker.setIcon(L.icon(feature.properties.icon));
+      var content = '<p><strong><a href="' + feature.properties.url + '">' + feature.properties.title + '</a></strong><br>' + feature.properties.description + '</p>';
+      marker.bindPopup(content);
+    });
     myLayer.setGeoJSON(geojson);
-    //myLayer.on('click', function(e) {
-    //    window.open(e.layer.feature.properties.url);
-    //});
+    mapPopupsJS.scrollWheelZoom.disable();
 </script>
 {% endif %}
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.dkkma.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40757502-1', 'auto');
+  ga('send', 'pageview');
+</script>

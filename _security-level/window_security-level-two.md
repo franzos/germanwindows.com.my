@@ -1,6 +1,6 @@
 ---
 title: Security Level Two
-image: /assets/upload/type/4-point-lock-side.jpg
+image: /assets/images/type/4-point-lock-side.jpg
 category: window
 security: two
 sitemap: false

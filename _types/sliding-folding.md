@@ -3,8 +3,8 @@ title: Sliding Folding Door
 layout: type
 permalink: /type/sliding-folding/
 nav: types
-image: /assets/upload/type/folding-door.jpg
-animation: /assets/upload/type/sliding-folding-door.mp4
+image: /assets/images/type/folding-door.jpg
+animation: /assets/videos/sliding-folding-door.mp4
 category: door
 security:
 tabs:
@@ -15,15 +15,15 @@ tabs:
   - animation
 hardware:
 designs:
-  - /assets/upload/type/Folder_2-0-2.JPG
-  - /assets/upload/type/Folder_3-0-3.JPG
-  - /assets/upload/type/Folder_3-1-2.JPG
-  - /assets/upload/type/Folder_4-0-4.JPG
-  - /assets/upload/type/Folder_4-1-3.JPG
-  - /assets/upload/type/Folder_5-0-5.JPG
-  - /assets/upload/type/Folder_5-1-4.JPG
-  - /assets/upload/type/Folder_6-0-6.JPG
-  - /assets/upload/type/Folder_6-1-5.JPG
+  - /assets/images/type/Folder_2-0-2.JPG
+  - /assets/images/type/Folder_3-0-3.JPG
+  - /assets/images/type/Folder_3-1-2.JPG
+  - /assets/images/type/Folder_4-0-4.JPG
+  - /assets/images/type/Folder_4-1-3.JPG
+  - /assets/images/type/Folder_5-0-5.JPG
+  - /assets/images/type/Folder_5-1-4.JPG
+  - /assets/images/type/Folder_6-0-6.JPG
+  - /assets/images/type/Folder_6-1-5.JPG
 ---
 
 - Designed for large and heavy elements

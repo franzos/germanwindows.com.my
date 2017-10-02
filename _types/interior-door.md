@@ -3,7 +3,7 @@ title: Interior Door
 layout: type
 permalink: /type/interior-door/
 nav: types
-image: /assets/upload/type/casement-door.jpg
+image: /assets/images/type/casement-door.jpg
 animation:
 category: door
 security:

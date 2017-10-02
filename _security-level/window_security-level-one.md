@@ -1,6 +1,6 @@
 ---
 title: Security Level One
-image: /assets/upload/type/4-point-lock-tnt.png
+image: /assets/images/type/4-point-lock-tnt.png
 category: window
 security: one
 sitemap: false

@@ -3,8 +3,8 @@ title: Bay View Window
 layout: type
 permalink: /type/bay-view/
 nav: types
-image: /assets/upload/type/bay-window.jpg
-animation: /assets/upload/type/bay-view.mp4
+image: /assets/images/type/bay-window.jpg
+animation: /assets/videos/bay-view.mp4
 category: window
 security:
   - h-one
@@ -17,8 +17,8 @@ tabs:
   - designs
 hardware:
 designs:
-  - /assets/upload/type/Fix_2-0-2.JPG
-  - /assets/upload/type/Fix_4-0-4.JPG
+  - /assets/images/type/Fix_2-0-2.JPG
+  - /assets/images/type/Fix_4-0-4.JPG
 ---
 
 - Expands the view from any room

@@ -1,29 +1,77 @@
 ---
 title: "404 - Not Found"
-page-title: "Oops!"
-layout: narrow-page
+page-title: "Oops! - Not Found"
+layout: page
 permalink: error.html
 nav: intro
 sitemap: false
+excluded: true
 ---
 
-<p class="large">We can't seem to find the page you're looking for. Here are some helpful links instead:</p>
+<p class="large text-center">We can't seem to find the page you're looking for. Here are some helpful links instead:</p>
 
-<div class="row homepage">
-  <div class="col-sm-3 col-md-3">
-    <h2>I'm Replacing</h2>
-    <a href="/windows-doors/replacement"><img data-original="/assets/images/windows-doors/window-replacement.jpg" class="greyscale"></a>
+<div class="section">
+  <h3>Get inspired for your next project</h3>
+
+  <div class="row homepage">
+    <div class="col-sm-3 col-md-3 text-center">
+      <h4>I'm Replacing</h4>
+      <a href="/windows-doors/replacement"><img data-original="/assets/images/windows-doors/window-replacement.jpg" class="greyscale"></a>
+    </div>
+    <div class="col-sm-3 col-md-3 text-center">
+      <h4>I'm Remodeling</h4>
+      <a href="/windows-doors/remodeling"><img data-original="/assets/images/windows-doors/window-for-renovation.jpg" class="greyscale"></a>
+    </div>
+    <div class="col-sm-3 col-md-3 text-center">
+      <h4>I'm Building</h4>
+      <a href="/windows-doors/building"><img data-original="/assets/images/windows-doors/window-for-construction.jpg" class="greyscale"></a>
+    </div>
+    <div class="col-sm-3 col-md-3 text-center">
+    <h4>Ref. Material</h4>
+    <a href="/windows-doors/technicals"><img data-original="/assets/images/windows-doors/reference-library.jpg" class="greyscale"></a>
+    </div>
   </div>
-  <div class="col-sm-3 col-md-3">
-    <h2>I'm Remodeling</h2>
-    <a href="/windows-doors/remodeling"><img data-original="/assets/images/windows-doors/window-for-renovation.jpg" class="greyscale"></a>
+</div>
+
+<div class="section">
+  <h3>Discover our new, German entrance and interior door range 2017/2018</h3>
+
+  <br>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="/type/burglar-resistant-entrance-doors/">
+        <img data-original="/assets/images/burglar-resistant-entrance-door-example01.png">
+      </a>
+      <h4 class="text-center"><a href="/type/burglar-resistant-entrance-doors/">German Burglar-Resistant Apartment Entrance Door</a></h4>
+    </div>
+    <div class="col-sm-6">
+      <a href="/type/premium-interior-doors/">
+        <img data-original="/assets/images/premium-interior-door-example03.png">
+      </a>
+      <h4 class="text-center"><a href="/type/premium-interior-doors/">German Premium Interior Doors</a></h4>
+    </div>
   </div>
-  <div class="col-sm-3 col-md-3">
-    <h2>I'm Building</h2>
-    <a href="/windows-doors/building"><img data-original="/assets/images/windows-doors/window-for-construction.jpg" class="greyscale"></a>
-  </div>
-  <div class="col-sm-3 col-md-3">
-  <h2>Ref. Material</h2>
-  <a href="/windows-doors/technicals"><img data-original="/assets/images/windows-doors/reference-library.jpg" class="greyscale"></a>
+</div>
+
+<div class="section">
+  <h3>Search for what you're looking for</h3>
+
+  <form action="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" method="get">
+    <div class="form-group search">
+      <input type="text" class="form-control" id="search" placeholder="Enter keyword... ">
+    </div>
+  </form>
+
+  <ul id="results"></ul>
+
+  <div id="ideas">
+    <p class="mb10"><strong>Keyword suggestions</strong></p>
+    <ul class="clean">
+      <li><small>Window & door types</small> Casement Window, Entrance Door, Lift ...</li>
+      <li><small>Ready-to order</small> Mont Kiara, Damansara, KLCC ...</li>
+      <li><small>Features</small> High security, Soundproof, Bulletproof ...</li>
+      <li><small>Ideas</small> Remodeling, Replacing, Building ...</li>
+    </ul>
   </div>
 </div>

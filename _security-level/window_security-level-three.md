@@ -1,6 +1,6 @@
 ---
 title: Security Level Three
-image: /assets/upload/type/6-point-lock-tnt.png
+image: /assets/images/type/6-point-lock-tnt.png
 category: window
 security: three
 sitemap: false

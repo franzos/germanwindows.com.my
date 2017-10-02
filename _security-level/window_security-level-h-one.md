@@ -1,6 +1,6 @@
 ---
 title: High Security Level One
-image: /assets/upload/type/high-security-level-1.png
+image: /assets/images/type/high-security-level-1.png
 category: window
 security: h-one
 sitemap: false
