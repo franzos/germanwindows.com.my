@@ -2,16 +2,21 @@
 <html lang="en">
 
   {% include header.html %}
-  <body>
+  <nav id="menu" class="visible-xs visible-sm">
+    {% include menu.html %}
+  </nav>
+  <main id="panel">
+    <body>
 
-    {% include navigation.html %}
-    {% include subnav.html %}
+      {% include navigation.html %}
+      {% include subnav.html %}
 
-    {{ content }}
+      {{ content }}
 
-    {% include share-bottom.html %}
-    {% include footer.html %}
-    {% include announcement.html %}
+      {% include share-bottom.html %}
+      {% include footer.html %}
+      {% include announcement.html %}
 
-  </body>
+    </body>
+  </main>
 </html>

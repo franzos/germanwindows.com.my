@@ -11,6 +11,7 @@
     "lunr": "1.0.0",
     "parsleyjs": "^2.8.0",
     "slick-carousel": "^1.7.1",
+    "slideout": "^1.0.1",
     "swipebox": "^1.4.6",
     "vanilla-lazyload": "8.2.0",
     "vue": "^2.4.4",

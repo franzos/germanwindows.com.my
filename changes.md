@@ -11,6 +11,11 @@ Last update: {{ site.time }}
 
 # Changelog
 
+**2017-10-02**
+
+- *Mobile* Completely remodeled mobile navigation (BETA)
+- *Mobile* Removed Homedec Award logo from footer
+
 **2017-10-01**
 
 - Completely revised [/soundproofing/](/soundproofing/)

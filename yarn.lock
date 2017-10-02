@@ -385,6 +385,10 @@ decompress@^3.0.0:
     vinyl-assign "^1.0.1"
     vinyl-fs "^2.2.0"
 
+decouple@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/decouple/-/decouple-0.0.2.tgz#cb373640c37f987a5f6866724ccd424a80f9d9a2"
+
 deep-extend@~0.4.0:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.2.tgz#48b699c27e334bf89f10892be432f6e4c7d34a7f"
@@ -452,6 +456,10 @@ each-async@^1.0.0, each-async@^1.1.1:
   dependencies:
     onetime "^1.0.0"
     set-immediate-shim "^1.0.0"
+
+"emitter@git+https://github.com/Mango/emitter.git#0.0.7":
+  version "0.0.7"
+  resolved "git+https://github.com/Mango/emitter.git#41ab8a3956269c7ed468bde50203e15b3274152f"
 
 end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   version "1.4.0"
@@ -893,15 +901,6 @@ gulp-concat@^2.6.1:
     concat-with-sourcemaps "^1.0.0"
     through2 "^2.0.0"
     vinyl "^2.0.0"
-
-gulp-css-useref@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/gulp-css-useref/-/gulp-css-useref-0.0.1.tgz#49046a625bcb861e9ef311b72e4385058b4e66e1"
-  dependencies:
-    gulp-util "^3.0.7"
-    lodash "^4.6.1"
-    micromatch "^2.3.7"
-    through2 "^2.0.1"
 
 gulp-decompress@^1.2.0:
   version "1.2.0"
@@ -1447,7 +1446,7 @@ lodash.templatesettings@^3.0.0:
     lodash._reinterpolate "^3.0.0"
     lodash.escape "^3.0.0"
 
-lodash@^4.13.1, lodash@^4.6.1:
+lodash@^4.13.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -2060,6 +2059,13 @@ slick-carousel@^1.7.1:
   resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.7.1.tgz#51f5489bbb52212542ccbe9f42689f818bd29ed2"
   dependencies:
     jquery ">=1.7.2"
+
+slideout@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/slideout/-/slideout-1.0.1.tgz#49f2fbd7e4155fe0dbe6d95938f012243565f625"
+  dependencies:
+    decouple "0.0.2"
+    emitter "git+https://github.com/Mango/emitter.git#0.0.7"
 
 source-map@0.5.x, source-map@^0.5.1, source-map@^0.5.3, source-map@~0.5.1:
   version "0.5.7"

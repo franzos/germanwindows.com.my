@@ -15,6 +15,7 @@ gulp.task('js', function (cb) {
           'node_modules/swipebox/src/js/jquery.swipebox.js',
           'node_modules/vanilla-lazyload/dist/lazyload.min.js',
           'node_modules/parsleyjs/dist/parsley.min.js',
+          'node_modules/slideout/dist/slideout.min.js',
           'src/custom.js'
         ]),
         concat('bundle.min.js'),
@@ -66,6 +67,7 @@ gulp.task('css', function () {
       'node_modules/bootstrap/dist/css/bootstrap.css',
       'node_modules/slick-carousel/slick/slick.css',
       'node_modules/swipebox/src/css/swipebox.css',
+      'src/slideout.css',
       'src/custom.css'
     ])
     .pipe(concat('custom.min.css'))
