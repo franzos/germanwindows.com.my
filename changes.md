@@ -13,6 +13,11 @@ Last update: {{ site.time }}
 
 **2017-10-04**
 
+- Fixed HTTPS warning for scripts on [/videos/](/videos/)
+- Much faster image loading (lazyload doesn't wait for the site to fully load)
+
+**2017-10-03**
+
 - Added Westag Getalit interior door range (x3) [/type/westag-getalit-premium-interior-doors/](/type/westag-getalit-premium-interior-doors/)
 - 1x Lineo [/type/westag-getalit-premium-interior-doors/lineo/](/type/westag-getalit-premium-interior-doors/lineo/)
 - 2x Provence [/type/westag-getalit-premium-interior-doors/provence/](/type/westag-getalit-premium-interior-doors/provence/)
