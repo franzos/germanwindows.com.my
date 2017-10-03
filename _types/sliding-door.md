@@ -36,3 +36,6 @@ designs:
 - Hardware allows horizontal sliding only
 
 Sliding patio doors, also called sliding glass doors, have at least one door panel that glides smoothly past another door panel to save room where you need it inside or out.
+
+<p><small>Discover our new premium line:</small>
+<br><a href="/type/westag-getalit-premium-interior-doors/sliding/">Westag Getalit Premium Interior Sliding Door</a></p>

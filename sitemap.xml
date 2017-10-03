@@ -17,4 +17,18 @@ sitemap: false
     <url><loc>{{ site.url }}{{ post.url }}</loc></url>
   {% endfor %}
 
+  {% for type in site.types %}
+  {% unless type.excluded == true %}
+    <url><loc>{{ site.url }}{{ type.url }}</loc></url>
+  {% endunless %}
+  {% endfor %}
+
+  {% for product in site.data.product_condo %}
+    <url><loc>{{ site.baseurl }}/window-replacement/condominium/{{ product.url }}/</loc></url>
+  {% endfor %}
+
+  {% for range in site.product_westag %}
+    <url><loc>{{ site.baseurl }}/type/westag-getalit-premium-interior-doors/{{ range.category }}/</loc></url>
+  {% endfor %}
+
 </urlset>

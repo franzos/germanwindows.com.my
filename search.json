@@ -6,7 +6,7 @@
     {
       "title"    : "{{ type.title | escape }}",
       "category" : "{{ type.categories | join: ' ' }}",
-      "content"	 : "{{ type.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" }}",
+      "content"	 : {{ type.content | markdownify | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | json }},
       "href"     : "{{ site.baseurl }}{{ type.url }}",
       "date"     : "{{ type.date }}"
     },
@@ -15,8 +15,15 @@
   {% for product in site.data.product_condo %}
     {
       "title"    : "{{ product.title | escape }}",
-      "content"	 : "at {{ product.address | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" }}",
-      "href"     : "{{ site.baseurl }}{{ product.url }}"
+      "content"	 : {{ product.address | markdownify | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | json }},
+      "href"     : "{{ site.baseurl }}/window-replacement/condominium/{{ product.url }}/"
+    },
+  {% endfor %}
+  {% for range in site.product_westag %}
+    {
+      "title"    : "{{ range.title | escape }}",
+      "content"	 : {{ range.content | markdownify | markdownify | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | json }},
+      "href"     : "{{ site.baseurl }}/type/westag-getalit-premium-interior-doors/{{ range.category }}/"
     },
   {% endfor %}
   {% for page in site.pages %}
@@ -25,7 +32,7 @@
     {
       "title"    : "{{ page.title | escape }}",
       "category" : "{{ page.categories | join: ' ' }}",
-      "content"	 : "{{ page.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" }}",
+      "content"	 : {{ page.content | markdownify | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | json }},
       "href"     : "{{ site.baseurl }}{{ page.url }}",
       "date"     : "{{ page.date }}"
     }

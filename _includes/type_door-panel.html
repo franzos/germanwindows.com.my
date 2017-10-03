@@ -1,3 +1,18 @@
+{% if page.url == "/type/interior-door/" %}
+<div class="row">
+{% for range in site.product_westag %}
+{% if range.type == "door" %}
+  <div class="col-sm-4">
+
+    <h3 class="text-center">{{ range.nav-title }}</h3>
+    <a href="/type/westag-getalit-premium-interior-doors/{{ range.category }}"><img class="pre204" alt="{{ range.image1_alt }}" src="/assets/images/westag/{{ range.category }}/{{ range.image1 }}"></a>
+    <p class="text-center"><small>{{ range.page-title }}</small></p>
+
+  </div>
+{% endif %}
+{% endfor %}
+</div>
+{% else %}
 <h3>Door Panel</h3>
 <p>24 mm aluminium composite panels. Combined with security glazing in stainless steel like frames. High security, sound and thermal proofed. Made in Spain.</p>
 
@@ -9,3 +24,4 @@
     <img src="/assets/images/windows-doors/door-panel02.jpg">
   </div>
 </div>
+{% endif %}

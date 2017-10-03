@@ -13,9 +13,7 @@ tabs:
   - glass
   - georgian
   - color
-  - hardware
   - door-panel
-  - designs
 ---
 
 - Westag & Getalit / Q-Windows Interior door
@@ -28,4 +26,4 @@ tabs:
 Interior doors are hinged on the side and open outward to the left or right. Usually taller than wide, their entire sash opens.
 
 <p><small>Discover our new premium line:</small>
-<br><a href="/type/premium-interior-doors/">German Premium Interior Doors</a></p>
+<br><a href="/type/westag-getalit-premium-interior-doors/">Westag Getalit Premium Interior Doors</a></p>

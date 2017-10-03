@@ -74,6 +74,12 @@
   background-image: url(/assets/images/{{ page.cover }}.jpg);
 }
 </style>
+{% elsif page.url contains '/window-replacement/condominium/' %}
+  <style>
+    .cover-bg {
+      background-image: url(https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/{{ page.longitude }},{{ page.latitude }},14/1280x350@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q);
+    }
+  </style>
 {% else %}
 <script>
 var classCycle=['bg1','bg2','bg3','bg4','bg5','bg6','bg7','bg8','bg9','bg10','bg11'];
@@ -84,9 +90,7 @@ $('.cover-bg').addClass(classToAdd);
 {% endif %}
 
 <script>
-$(window).load(function () {
-  var myLazyLoad = new LazyLoad();
-});
+var myLazyLoad = new LazyLoad();
 </script>
 
 {% if page.url == "/soundproofing/" %}
@@ -218,4 +222,16 @@ $('.designs').slick({
 
   ga('create', 'UA-40757502-1', 'auto');
   ga('send', 'pageview');
+</script>
+
+<script>
+$(window).load( function(){
+  $.preloadImages = function() {
+    for (var i = 0; i < arguments.length; i++) {
+      $("<img />").attr("src", arguments[i]);
+    }
+  }
+  $.preloadImages({% for page in site.pages %}{% unless page.cover == nil %}"/assets/images/{{ page.cover }}.jpg"{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}
+);
+});
 </script>

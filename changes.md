@@ -11,6 +11,23 @@ Last update: {{ site.time }}
 
 # Changelog
 
+**2017-10-04**
+
+- Added Westag Getalit interior door range (x3) [/type/westag-getalit-premium-interior-doors/](/type/westag-getalit-premium-interior-doors/)
+- 1x Lineo [/type/westag-getalit-premium-interior-doors/lineo/](/type/westag-getalit-premium-interior-doors/lineo/)
+- 2x Provence [/type/westag-getalit-premium-interior-doors/provence/](/type/westag-getalit-premium-interior-doors/provence/)
+- 3x Westaline [/type/westag-getalit-premium-interior-doors/westaline/](/type/westag-getalit-premium-interior-doors/westaline/)
+- Added Westag Getalit interior sliding door [/type/westag-getalit-premium-interior-doors/sliding/](/type/westag-getalit-premium-interior-doors/sliding/)
+- Fixed testimonials on [/why-q-windows/](/why-q-windows/)
+- Updated homepage
+- Updated sitemap.xml to include new interior door / sliding door range, condos
+- Minor fixes for [/type/interior-door/](/type/interior-door/)
+- Referenced new interior sliding door range on [/type/sliding-door/#Sliding+Door](/type/sliding-door/#Sliding+Door)
+
+**2017-10-03**
+
+- Put back map cover on condo projects (accidentally removed)
+
 **2017-10-02**
 
 - *Mobile* Completely remodeled mobile navigation (BETA)

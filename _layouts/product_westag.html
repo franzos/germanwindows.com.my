@@ -1,0 +1,147 @@
+---
+layout: default
+---
+
+<div class="container content">
+
+  {{ content }}
+
+  {% unless page.url contains "sliding" %}
+
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="pre204" alt="{{ page.image1_alt }}" data-original="/assets/images/westag/{{ page.category }}/{{ page.image1 }}">
+      <p><small>{{ page.image1_alt }}</small></p>
+    </div>
+    <div class="col-sm-4">
+      <img class="pre204" alt="{{ page.image2_alt }}" data-original="/assets/images/westag/{{ page.category }}/{{ page.image2 }}">
+      <p><small>{{ page.image2_alt }}</small></p>
+    </div>
+    <div class="col-sm-4">
+      <img class="pre204" alt="{{ page.image3_alt }}" data-original="/assets/images/westag/{{ page.category }}/{{ page.image3 }}">
+      <p><small>{{ page.image3_alt }}</small></p>
+    </div>
+  </div>
+
+  <h2>As individual as you</h2>
+
+  <h3>Design options</h3>
+
+  <div class="row">
+  {% for product in site.data.product_westag %}
+    {% if product.category == page.category %}
+    <div class="col-sm-2 text-center">
+      <img class="pre190" data-original="/assets/images/westag/{{ product.image }}.jpg">
+      <h4 class="hf">{{ product.title }}</h4>
+      <hr>
+    </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+
+  <h3>Glazing options</h3>
+
+  <div class="row">
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-01.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-02.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-03.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-04.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-05.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-06.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-07.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-08.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-09.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-11.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-13.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-14.png">
+    </div>
+  </div>
+
+  <h3>Sandblasted glazing options</h3>
+
+  <div class="row">
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-01.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-02.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-03.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-04.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-05.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-08.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-09.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-10.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-11.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-12.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-13.png">
+    </div>
+    <div class="col-xs-2 col-sm-1">
+      <img data-original="/assets/images/premium-interior-door-glass-design-14.png">
+    </div>
+  </div>
+
+  {% endunless %}
+
+  <div class="section">
+
+    <h2>Discover our entire interior door range</h2>
+
+    <div class="row">
+    {% for range in site.product_westag %}
+    {% if range.type == "door" %}
+      <div class="col-sm-4">
+
+        <h3 class="text-center">{{ range.nav-title }}</h3>
+        <a href="/type/westag-getalit-premium-interior-doors/{{ range.category }}"><img class="pre204" alt="{{ range.image1_alt }}" data-original="/assets/images/westag/{{ range.category }}/{{ range.image1 }}"></a>
+        <p class="text-center"><small>{{ range.page-title }}</small></p>
+
+      </div>
+    {% endif %}
+    {% endfor %}
+    </div>
+
+  </div>
+
+
+</div>

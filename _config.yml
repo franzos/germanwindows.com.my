@@ -12,6 +12,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - json
 page_gen-dirs: true
 
 exclude:
@@ -29,16 +30,21 @@ exclude:
 collections:
 - types
 - security-level
-- testimonial
+- testimonials
 
 collections:
   types:
     output: true
     permalink: /type/:path/
+  testimonials:
+    output: true
   security-level:
   blog:
     output: true
     permalink: /blog/:title/
+  product_westag:
+    output: true
+    permalink: /type/westag-getalit-premium-interior-doors/:title/
 
 page_gen:
   - data: product_condo
