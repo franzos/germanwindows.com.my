@@ -1,14 +1,33 @@
-<ul>
-  <li class="title">Quicklinks</li>
-  <li><a {% if page.url contains "/search/" %}class="active" {% endif %}href="/search/">Search</a></li>
-  <li><a {% if page.url contains "/projects/" %}class="active" {% endif %}href="/projects/">Projects</a></li>
-  <li><a {% if page.url contains "/window-replacement/condominium/" %}class="active"{% elsif page.url contains "/product/"%}class="active" {% endif %}href="/window-replacement/condominium/">Condo</a></li>
-  <li><a {% if page.url contains "/contact/" %}class="active" {% endif %}href="/contact/">Contact</a></li>
-  <li class="title">Introduction</li>
-  {% for nav in site.pages %}
-    {% if nav.nav == "cover" %}
+<div class="scroll-wrapper">
+  <ul>
+    <li class="title">Quicklinks</li>
+      <li><a {% if page.url contains "/search/" %}class="active" {% endif %}href="/search/">Search</a></li>
+      <li><a {% if page.url contains "/projects/" %}class="active" {% endif %}href="/projects/">Projects</a></li>
+      <li><a {% if page.url contains "/window-replacement/condominium/" %}class="active"{% elsif page.url contains "/product/"%}class="active" {% endif %}href="/window-replacement/condominium/">Condo Offer</a></li>
+      <li><a {% if page.url contains "/contact/" %}class="active" {% endif %}href="/contact/">Contact</a></li>
+    <li class="title">Introduction</li>
+    {% for nav in site.pages %}
+      {% if nav.nav == "cover" %}
+      {% unless nav.url == "/windows-doors/overview/" %}
       <li><a {% if page.url contains nav.url %}class="active"{% endif %} href="{{ nav.permalink }}">{% if nav.nav-title %}{{ nav.nav-title | escape }}{% else %}{{ nav.title | escape }}{% endif %}</a></li>
-    {% endif %}
-  {% endfor %}
-  <li class="info"><a href="tel:+60374950339" onclick="javascript:_paq.push(['trackEvent', 'Contact', 'Phone (Share Bottom)']);">Quick question? Call us now! <b>+603 7495 0339</b> (Monday - Friday, 9 AM to 6 PM)</a></li>
-</ul>
+      {% endunless %}
+      {% endif %}
+    {% endfor %}
+    <li class="title">Interior</li>
+      <li><a {% if page.url contains "/type/westag-getalit-premium-interior-doors/" %}class="active" {% endif %}href="/type/westag-getalit-premium-interior-doors/">Interior Doors</a></li>
+      <li><a {% if page.url contains "/type/westag-getalit-premium-interior-doors/sliding/" %}class="active" {% endif %}href="/type/westag-getalit-premium-interior-doors/sliding/">Interior Sliding Doors</a></li>
+    <li class="title">Aluminum Windows</li>
+    {% for type in site.types offset:1 %}
+      {% if type.category == "window" %}
+      <li><a {% if page.url contains type.permalink %}class="active" {% endif %}href="{{ type.permalink }}">{{ type.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    <li class="title">Aluminum Doors</li>
+    {% for type in site.types offset:1 %}
+      {% if type.category == "door" %}
+      <li><a {% if page.url contains type.permalink %}class="active" {% endif %}href="{{ type.permalink }}">{{ type.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    <li class="info"><a href="tel:+60374950339" onclick="javascript:_paq.push(['trackEvent', 'Contact', 'Phone (Share Bottom)']);">Quick question? Call us now! <b>+603 7495 0339</b> (Monday - Friday, 9 AM to 6 PM)</a></li>
+  </ul>
+</div>

@@ -41,6 +41,12 @@ body {
   display: block;
 }
 
+.slideout-open .slideout-menu div.scroll-wrapper {
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 #menu {
   background: #ff530d;
   background: -moz-linear-gradient(-45deg,#ff530d 0,#d83f0d 100%);
@@ -66,8 +72,12 @@ body {
   border-bottom: 1px solid #ff530d;
 }
 
-#menu ul li.title, #menu ul li.info, #menu ul li a.active {
+#menu ul li.title, #menu ul li.info {
   background-color: #ff530d;
+}
+
+#menu ul li a.active {
+  background-color: #2a2a2a;
 }
 
 #menu ul li.title {

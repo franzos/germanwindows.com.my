@@ -1301,6 +1301,25 @@ img:not([src]) {
   .index .page-title.subtitle h1 {
     margin-top: 100px;
   }
+  .mbm10 {
+    margin-bottom: 10px;
+  }
+
+  .mbm20 {
+    margin-bottom: 20px;
+  }
+
+  .mbm40 {
+    margin-bottom: 40px;
+  }
+
+  .mtm40 {
+    margin-top: 40px;
+  }
+
+  a.condo {
+    min-height: 160px;
+  }
 }
 
 .types .description ul {

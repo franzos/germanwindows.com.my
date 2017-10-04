@@ -1,6 +1,6 @@
 {% capture share-url %}{{ page.title }} on {{ site.url }}{{ page.url }}{% endcapture %}
 
-<div class="subnav{% if page.type %} index{% endif %}">
+<div class="subnav{% if page.type == "index" %} index{% endif %}">
   <div class="container">
     <div class="row">
       <div class="col-sm-3 text-center">

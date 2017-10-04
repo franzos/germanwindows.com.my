@@ -15,6 +15,8 @@ Last update: {{ site.time }}
 
 - Fixed HTTPS warning for scripts on [/videos/](/videos/)
 - Much faster image loading (lazyload doesn't wait for the site to fully load)
+- *Mobile* Fixed table on mobile [/soundproofing/](/soundproofing/)
+- *Mobile* Greatly extended mobile navigation
 
 **2017-10-03**
 
