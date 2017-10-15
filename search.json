@@ -22,7 +22,7 @@
   {% for range in site.product_westag %}
     {
       "title"    : "{{ range.title | escape }}",
-      "content"	 : {{ range.content | markdownify | markdownify | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | json }},
+      "content"	 : {{ range.content | markdownify | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | json }},
       "href"     : "{{ site.baseurl }}/type/westag-getalit-premium-interior-doors/{{ range.category }}/"
     },
   {% endfor %}

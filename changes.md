@@ -11,6 +11,22 @@ Last update: {{ site.time }}
 
 # Changelog
 
+**2017-10-16**
+
+- Removed vid.js (video player) from CDN, localised assets (faster load times)
+- Added 2x new videos to [/type/burglar-resistant-entrance-doors/](/type/burglar-resistant-entrance-doors/)
+
+**2017-10-12**
+
+- Fixed Email subscription form
+- Added new section: News
+- Added first news entry about HOMEDEC 2017 [/news/visit-our-booth-at-homedec-2017/](/news/visit-our-booth-at-homedec-2017/)
+
+**2017-10-11**
+
+- Adeed new [catalog](/assets/files/Q-Windows-System-Catalogue-2017.pdf)
+- Replaced old [catalog](/assets/files/Q-Windows-System-Catalogue-2016-2017.pdf) on two pages
+
 **2017-10-04**
 
 - Fixed HTTPS warning for scripts on [/videos/](/videos/)

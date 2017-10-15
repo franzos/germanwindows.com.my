@@ -28,20 +28,16 @@ exclude:
   - yarn-error.log
 
 collections:
-- types
-- security-level
-- testimonials
-
-collections:
   types:
     output: true
     permalink: /type/:path/
   testimonials:
     output: true
   security-level:
-  blog:
     output: true
-    permalink: /blog/:title/
+  news:
+    output: true
+    permalink: /news/:title/
   product_westag:
     output: true
     permalink: /type/westag-getalit-premium-interior-doors/:title/

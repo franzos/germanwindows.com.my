@@ -60,4 +60,14 @@ type: index
   {% include types.html %}
 
   </div>
+  <div class="section">
+
+    <h3>Latest News</h3>
+
+    {% for entry in site.news limit:6 %}
+    <h4><a href="{{ entry.url }}">{{ entry.title }}</a></h4>
+    <p>{{ entry.content | truncatewords: "40" | strip_html | strip_newlines }}</p>
+    {% endfor %}
+
+  </div>
 </div>

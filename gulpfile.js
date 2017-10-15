@@ -59,6 +59,10 @@ gulp.task('files', function () {
         .pipe(gulp.dest('assets/upload/'));
     gulp.src('src/runtime.js')
         .pipe(gulp.dest('assets/js/'));
+    gulp.src('node_modules/video.js/dist/video-js.min.css')
+        .pipe(gulp.dest('assets/css/'));
+    gulp.src('node_modules/video.js/dist/video.min.js')
+        .pipe(gulp.dest('assets/js/'));
 });
 
 gulp.task('css', function () {
