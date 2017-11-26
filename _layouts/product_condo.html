@@ -162,33 +162,31 @@ layout: default
         </div>
 
         <div class="form">
-          <form action="https://form.dkkma.com/process.php" method="post" data-parsley-validate>
+          <form id="contact-form" data-parsley-validate>
             <div class="form-group">
-              <input id="first_name" name="first_name" type="text" class="form-control" placeholder="First Name" required>
+              <label for="first_name">Your Details</label>
+              <input id="first_name" name="first_name" type="text" class="form-control" placeholder="First Name *" data-parsley-error-message="Enter your first name." required>
             </div>
             <div class="form-group">
-              <input id="last_name" name="last_name" type="text" class="form-control" placeholder="Last Name" required>
+              <input id="last_name" name="last_name" type="text" class="form-control" placeholder="Last Name *" data-parsley-error-message="Enter your last name." required>
             </div>
             <div class="form-group">
-              <input id="email_address" name="email_address" type="email" class="form-control" placeholder="Your email address *" required>
+              <input id="email_address" name="email_address" type="email" class="form-control" placeholder="Email address *" required>
             </div>
             <div class="form-group">
               <input id="mobile_phone_number" name="mobile_phone_number" type="number" class="form-control" placeholder="Mobile phone *" required>
             </div>
-            <input type="hidden" id="address_city" name="address_city" value="{{ page.title }}" />
             <div class="form-group">
               <label for="address_street">Apartment</label>
               <input id="address_street" name="address_street" type="text" class="form-control" placeholder="Apartment #">
               <p class="help-block">at {{ page.title }}</p>
             </div>
-            <div class="form-group">
-            <label for="comments">Additional Information</label>
-              <textarea id="comments" name="comments" class="form-control" rows="3"></textarea>
-            </div>
 
-            <input type="hidden" name="form_tools_form_id" value="16" />
+            <input type="hidden" name="comments" value="{{ page.title }}" />
+            <input type="hidden" name="page_url" value="{{ page.url }}" />
+            <input type="hidden" name="honey" value="" />
 
-            <button type="submit" value="Submit" class="btn btn-default" onclick="javascript:_paq.push(['trackEvent', 'Order-Form', 'Submit']);">Request an appointment</button>
+            <button type="submit" value="Submit" class="btn btn-default" onclick="javascript:_paq.push(['trackEvent', 'Contact-Form', 'Submit']);">Request a free quote</button>
           </form>
         </div>
       </div>

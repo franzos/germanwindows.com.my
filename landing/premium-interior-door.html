@@ -1,0 +1,88 @@
+---
+title: Westag Getalit Premium Interior Doors
+nav-title: Premium Interior
+layout: page-landing
+permalink: /landing/premium-interior-door/
+nav: info
+cover: bg32
+contactform: "Tell us about your desired range (Lineo, Provence, Westaline), and the number of doors you require."
+---
+
+<h1>Premium Interior Doors for your Home</h1>
+
+<h2>What does your perfect door look like?</h2>
+
+</div>
+
+  <div class="westag-getalit-premium-interior-doors">
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-01.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-02.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-03.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-04.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-05.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-06.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-07.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-08.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-10.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-11.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-12.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-13.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-14.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-15.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-16.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-17.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-18.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-19.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-20.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-21.jpeg"></div>
+    <div class="slide"><img class="img-responsive" src="/assets/images/premium-interior-door-22.jpeg"></div>
+  </div>
+
+<div class="container content">
+
+<p>You want doors that are as individual as a tailor-made suit – doors that complement your style and the way you live. Get inspired! But we all know that looks aren’t everything – what’s on the inside also counts.</p>
+
+<ul class="large">
+  <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 44 decors and lacquerings <small>from trendy white and varied wood reproductions to exciting plain colours</small></li>
+  <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 3 surfaces <small>from hard-wearing CPL and de- cor foils to elegant lacquer</small></li>
+  <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 84 door models <small>from simple to classic, from country house to Design styles</small></li>
+  <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 6 door frame options <small>from round to square or
+pro led; for rebated and  ush-closing doors with a great emphasis on design</small></li>
+<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 30 kinds of glass <small>from transparent glass and structured glass
+to individual sandblasted glazing</small></li>
+<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 2 door edge options <small>low-maintenance round edge or puristic square
+edge ( ush-closing doors always have a square edge)</small></li>
+<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 3 door leaf cores <small>from light honeycomb core and robust hollow chipboard core, to extremely heavy-duty solid chipboard core</small></li>
+</ul>
+
+<h2>Interior Door Range</h2>
+
+<div class="row">
+  <div class="col-sm-8">
+
+  {% for range in site.product_westag %}
+  {% if range.type == "door" %}
+
+  <h3>{{ range.nav-title }}
+  <br><small>{{ range.page-title }}</small></h3>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <img class="pre204" alt="{{ range.image1_alt }}" data-original="/assets/images/westag/{{ range.category }}/{{ range.image1 }}">
+    </div>
+    <div class="col-sm-6">
+      <img class="pre204" alt="{{ range.image2_alt }}" data-original="/assets/images/westag/{{ range.category }}/{{ range.image2 }}">
+    </div>
+  </div>
+
+  <p>{{ range.intro }} <a href="/type/westag-getalit-premium-interior-doors/{{ range.category }}">Find out more >></a></p>
+
+  {% endif %}
+  {% endfor %}
+
+  </div>
+  <div class="col-sm-4">
+    {% include contactform.html %}
+    <p><a href="/contact/">Return to homepage</a></p>
+  </div>
+</div>

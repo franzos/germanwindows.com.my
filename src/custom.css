@@ -695,6 +695,23 @@ ul li.google:hover green {
   border-color: #da460a;
 }
 
+.westag-getalit-premium-interior-doors .slide, .gslider .slide {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.westag-getalit-premium-interior-doors .slide img, .gslider .slide img {
+  height:260px;
+}
+
+.westag-getalit-premium-interior-doors :focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+.interior-door-structure .col-sm-1 {
+  min-height: 80px;
+}
+
 .nav-tabs>li>a:hover, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
   border-color: #ff530d #ff530d #ff530d;
   background: #ff530d; /* Old browsers */
@@ -1070,7 +1087,7 @@ table.glass td p, table.glass th p {
   margin: 2px;
 }
 
-.parsley-errors-list .parsley-required, .parsley-type {
+.parsley-errors-list .parsley-required, .parsley-type, .parsley-custom-error-message {
   font-size: 0.8em;
 }
 
@@ -1337,7 +1354,8 @@ img:not([src]) {
 
 @media (min-width: 768px) {
   .contactform .form .btn-default {
-    margin-top:20px;
+    margin-top: 26px;
+    font-size: 11px;
   }
   .expertise img {
     padding: 30px 30px 0px 30px;
@@ -1400,8 +1418,4 @@ img:not([src]) {
     margin: 0px;
     transform: none;
   }
-}
-
-.interior-door-structure .col-sm-1 {
-  min-height: 80px;
 }

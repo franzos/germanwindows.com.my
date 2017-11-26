@@ -6,10 +6,50 @@ permalink: /changes/
 excluded: true
 ---
 
-Last update: {{ site.time }}
+Last update: {{ site.time }}  
 <br>by <a href="mailto:franz@dkkma.com">Franz Geffke</a>
 
 # Changelog
+
+**2017-11-26**
+
+- Added enquiry form to Westag subpages [/type/westag-getalit-premium-interior-doors/provence/](/type/westag-getalit-premium-interior-doors/provence/)
+- Added new landing page [/landing/premium-interior-door/](/landing/premium-interior-door/)
+- Simplified 'Share' on bottom of each page
+- Temporarily fixed [/search/](/search/) (will be replaced soon)
+
+**2017-11-21**
+
+- Updated form on [/window-replacement/condominium/](/window-replacement/condominium/) subpages
+- Added new slideshow to [/why-q-windows/](/why-q-windows/) and [/news/visit-our-booth-at-homedec-2017/](/news/visit-our-booth-at-homedec-2017/)
+
+**2017-11-12**
+
+- Added new field to [/contact/](/contact/)
+- Modified form on [/contact/](/contact/) to use Webhook > Zapier > Pipedrive API
+- Addition: updated form on [/quote/](/quote/)
+- Addition: updated all 'Request a free, expert consultation' forms
+
+**2017-11-07**
+
+- Minor changes on [/why-q-windows/](/why-q-windows/)
+- Added slideshow on [/type/westag-getalit-premium-interior-doors/](/type/westag-getalit-premium-interior-doors/) (22x slides)
+- Added Catalog to [/type/westag-getalit-premium-interior-doors/](/type/westag-getalit-premium-interior-doors/)
+
+**2017-11-01**
+
+- Replaced contact form on [/quote/](/quote/)
+- Replaced HOMEDEC logo with latest 2017 version
+- Added 16/17 HOMEDEC logo to [/why-q-windows/](/why-q-windows/)
+
+**2017-10-26**
+
+- Minor revision [/why-q-windows/](/why-q-windows/) *- 75% exit rate, OCT 2017*
+- Minor revision [/soundproofing/](/soundproofing/) *- 64% exit rate, OCT 2017*
+- Minor revision [/security/](/security/) *- 30% exit rate, OCT 2017*
+- Minor revision [/energy-saving/](/energy-saving/) *- 29% exit rate, OCT 2017*
+- Revision of [/contact/](/contact/): minor layout adjustments, simplified contact form *- 57% exit rate, OCT 2017*
+- Fixed missing images on [/type/outward-opening-window/#Outward+Opening](/type/outward-opening-window/#Outward+Opening), 'Hardware' tab
 
 **2017-10-16**
 

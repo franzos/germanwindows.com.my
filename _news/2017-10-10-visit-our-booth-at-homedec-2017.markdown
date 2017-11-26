@@ -15,6 +15,14 @@ Meet us between 19. - 22. October 2017 from 10 AM - 8 PM at Kuala Lumpur convent
 
 Our R&D department spends a lot of time to develop a better, more robust type of **aluminium security** sliding window & door.
 
+<div class="gslider">
+{% for image in site.static_files %}
+  {% if image.path contains 'images/news/2017-11-20-impressions-homedec-2017' %}
+  <div class="slide"><img class="img-responsive" src="{{ site.baseurl }}{{ image.path }}"></div>
+  {% endif %}
+{% endfor %}
+</div>
+
 **Here are the key highlights**:
 
 - Multi- chamber profiles

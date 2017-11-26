@@ -6,9 +6,20 @@
 
     <div class="contactform quick">
       <div class="form">
-        <form action="https://form.dkkma.com/process.php" method="post" data-parsley-validate>
+        <form id="contact-form" data-parsley-validate>
 
           <div class="row">
+            <div class="col-sm-2">
+              <div class="form-group">
+                <label for="property_type">Property Type</label>
+                <select class="form-control" id="property_type" name="property_type" type="text" data-parsley-error-message="Please select your property type." required>
+                  <option></option>
+                  <option value="Condominium">Condominium</option>
+                  <option value="Landed">Landed Property</option>
+                  <option value="Commercial">Commercial</option>
+                </select>
+              </div>
+            </div>
             <div class="col-sm-2">
               <div class="form-group">
                 <label for="last_name">Name</label>
@@ -27,17 +38,20 @@
                 <input id="mobile_phone_number" name="mobile_phone_number" type="number" class="form-control" placeholder="Mobile nr. *" required>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <div class="form-group">
                 <label for="address_street">Your Address</label>
                 <input id="address_street" name="address_street" type="text" class="form-control" placeholder="Building, Street, Area, City" required>
               </div>
             </div>
-            <div class="col-sm-2">
-              <button type="submit" value="Submit" class="btn btn-default" onclick="javascript:_paq.push(['trackEvent', 'Call-Back-Form', 'Submit']);">Send request</button>
+            <div class="col-sm-1">
+              <div class="text-right">
+                <button type="submit" value="Submit" class="btn btn-default" onclick="javascript:_paq.push(['trackEvent', 'Call-Back-Form', 'Submit']);">Send</button>
+              </div>
             </div>
           </div>
-          <input type="hidden" name="form_tools_form_id" value="16" />
+          <input type="hidden" name="page_url" value="{{ page.url }}" />
+          <input type="hidden" name="honey" value="" />
         </form>
       </div>
     </div>
