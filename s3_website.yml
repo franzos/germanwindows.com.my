@@ -1,0 +1,95 @@
+# You can remove these two lines to have credentials read from
+# the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY or
+# ~/.aws/credentials.
+profile: qwindows.jekyll
+s3_bucket: q-windows.com.my
+
+# Below are examples of all the available configurations.
+# See README for more detailed info on each of them.
+
+# site: path-to-your-website
+
+index_document: index.html
+error_document: error.html
+
+# 1 day 86400
+# 7 days 604800
+# 30 days 2592000
+# 90 days 7776000
+
+cache_control:
+  "assets/css": public, max-age=86400 # 1 day
+  "assets/js": public, max-age=86400 # 1 day
+  "assets/files": public, max-age=2592000 # 30 days
+  "assets/fonts": public, max-age=7776000 # 90 days
+  "assets/icon": public, max-age=2592000 # 30 days
+  "assets/images": public, max-age=2592000 # 30 days
+  "assets/images_landing": public, max-age=604800 # 7 days
+  "assets/img": public, max-age=604800 # 7 days
+  "assets/sounds": public, max-age=2592000 # 30 days
+  "assets/videos": public, max-age=2592000 # 30 days
+
+gzip: true
+
+# See http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region for valid endpoints
+s3_endpoint: ap-southeast-1
+
+ignore_on_server: s3_website.yml
+
+# exclude_from_upload:
+#   - those_folders_of_stuff
+#   - i_wouldnt_want_to_upload
+
+# s3_reduced_redundancy: true
+
+cloudfront_distribution_id: E1UM4Z0KIYAXN1
+
+# cloudfront_distribution_config:
+#   default_cache_behavior:
+#     min_TTL: <%= 60 * 60 * 24 %>
+#   aliases:
+#     quantity: 1
+#     items:
+#       CNAME: your.website.com
+
+cloudfront_invalidate_root: true
+
+# cloudfront_wildcard_invalidation: true
+
+# concurrency_level: 5
+
+redirects:
+  pages: /
+  pages/benefits: windows-doors/why-choose-us/
+  pages/about: about/
+  pages/contact: contact/
+  pages/sound-insulation: soundproofing/
+  pages/sound-insulation-detail: soundproofing/detail/
+  pages/security: security/
+  pages/security-detail: security/detail/
+  pages/energy-saving: energy-saving/
+  pages/energy-saving-detail: energy-saving/detail/
+  pages/glass-production: glass-production/
+  pages/aluminum: aluminum-profile/
+  pages/terms: terms/
+  type/entry/outward-opening-window: type/outward-opening-window/
+  type/entry/tilt-turn-window: type/tilt-turn-window/
+  type/entry/fixed-window: type/fixed-window/
+  type/entry/bay-view: type/bay-view/
+  type/entry/casement-door: type/casement-door/
+  type/entry/entrance-door: type/entrance-door/
+  type/entry/lift-slide: type/lift-slide/
+  type/entry/sliding-door: type/sliding-door/
+  type/entry/sliding-folding: type/sliding-folding/
+  type/entry/outward-opening-window: type/outward-opening-window/
+  pages/downloads: windows-doors/technicals/
+  projects: /
+  /type/doors: /type/entrance-door/
+
+routing_rules:
+  - condition:
+      key_prefix_equals: projects/detail/
+    redirect:
+      host_name: project.q-windows.com.my
+      replace_key_prefix_with: project/
+      http_redirect_code: 301
