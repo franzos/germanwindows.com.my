@@ -11,6 +11,10 @@ Last update: {{ site.time }}
 
 # Changelog
 
+**2018-01-14**
+
+- Added 3x new projects
+
 **2017-11-26**
 
 - Added enquiry form to Westag subpages [/type/westag-getalit-premium-interior-doors/provence/](/type/westag-getalit-premium-interior-doors/provence/)
