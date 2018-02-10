@@ -9,7 +9,27 @@ excluded: true
 Last update: {{ site.time }}  
 <br>by <a href="mailto:franz@dkkma.com">Franz Geffke</a>
 
+<br>
+related site: [https://q-windows.sg/](https://q-windows.sg/)
+
 # Changelog
+
+**2018-02-10**
+
+- Reworked independent SG site based on new framework [https://q-windows.sg/](https://q-windows.sg/)
+- Updated [/contact/](/contact/) SG email address
+- Updated 'Autumn' to 'Spring' promotion on homepage
+
+**2018-02-07**
+
+- Fixed cover image on SG site [https://q-windows.sg/](https://q-windows.sg/)
+- Updated links on [https://q-windows.com/](https://q-windows.com/)
+
+**2018-02-01**
+
+- Added SG address to [/contact/](/contact/), updated layout
+- Added new SG specific subpage to be published under separate domain [/singapore/](/singapore/)
+- Added new page to select between .my, .sg and the knowledgebase
 
 **2018-01-14**
 

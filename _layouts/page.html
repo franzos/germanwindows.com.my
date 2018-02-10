@@ -13,3 +13,22 @@ layout: default
 <div class="container content">
   {{ content }}
 </div>
+
+{% if page.url == "/contact/" %}
+<div class="container">
+  <div class="pd40" style="padding-bottom:0px;">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-2">
+        <p><strong>Meet our CEO</strong></p>
+        <blockquote>
+          <p>Q-Windows is a company that’s been innovating windows for more than 20 years - a name synonymous with quality - you can be sure we'll be here when you need us.</p>
+          <footer>Andre Geffke <cite title="Source Title">Owner & CEO</cite></footer>
+        </blockquote>
+      </div>
+      <div class="col-sm-4">
+        <img data-original="/assets/images_landing/owner.jpg" alt="Andre Geffke - Owner & CEO, Q-Windows Malaysia" style="margin-bottom:0px;">
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

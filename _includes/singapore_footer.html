@@ -1,74 +1,4 @@
-{% unless page.layout == "page-landing" %}
-<div class="footer-bg">
-  <div class="footer">
-    <div class="container">
-
-      <p>Q-Windows Malaysia is the <b>only manufacturer of German soundproof, high-security aluminium windows and doors</b> in Malaysia and Singapore. For a better life and higher standard of living, select Q-Windows.</p>
-
-      <div class="row">
-        <div class="col-sm-2">
-          <ul>
-            <li class="title">Ideas & Inspiration</li>
-            {% for page in site.pages %}
-              {% if page.nav == "idea" %}
-                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <ul>
-            <li class="title">Introduction</li>
-            {% for page in site.pages %}
-              {% if page.nav == "cover" %}
-                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <ul>
-            <li class="title">Benefits & Features</li>
-            {% for page in site.pages %}
-              {% if page.nav == "feature" %}
-                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <ul>
-            <li class="title">Additional Info</li>
-            {% for page in site.pages %}
-              {% if page.nav == "info" %}
-                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <ul>
-            <li class="title">Q-Windows</li>
-            {% for page in site.pages %}
-              {% if page.nav == "qwin" %}
-                <li><a href="{{ page.permalink }}">{% if page.nav-title %}{{ page.nav-title | escape }}{% else %}{{ page.title | escape }}{% endif %}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <img data-original="/assets/images/innovative-product-award.png" class="img-responsive hidden-xs">
-        </div>
-      </div>
-
-      <p><small>© 2018 Q-Windows (Malaysia) / All right reserved / Design and Development by <a target="_blank" href="https://f-a.nz/client/q-windows-malaysia/?utm_source=q-windows&utm_campaign=client_referral&utm_medium=website">f-a.nz</a></small></p>
-
-    </div>
-  </div>
-</div>
-{% endunless %}
-
-<script src="/assets/js/bundle.min.js"></script>
+<script src="https://q-windows.com.my/assets/js/bundle.min.js"></script>
 <script>
 $(function() {
   $('#contact-form').parsley().subscribe('parsley:form:validate', function (formInstance) {
@@ -86,7 +16,7 @@ $(function() {
 });
 </script>
 {% if page.vue == "true" %}
-<script src="/assets/js/vue.min.js"></script>
+<script src="https://q-windows.com.my/assets/js/vue.min.js"></script>
 {% endif %}
 {% if page.cover %}
 <style>
@@ -114,14 +44,14 @@ var myLazyLoad = new LazyLoad();
 </script>
 
 {% if page.url == "/soundproofing/" %}
-<script src="/assets/js/player.min.js"></script>
+<script src="https://q-windows.com.my/assets/js/player.min.js"></script>
 {% endif %}
 {% if page.url contains "/search/" or page.url contains "error.html" %}
-<script src="/assets/js/search.min.js"></script>
+<script src="https://q-windows.com.my/assets/js/search.min.js"></script>
 {% endif %}
 {% if page.url contains "videos" or page.url contains "burglar-resistant-entrance-doors" %}
-<link href="/assets/css/video-js.min.css" rel="stylesheet">
-<script src="/assets/js/video.min.js"></script>
+<link href="https://q-windows.com.my/assets/css/video-js.min.css" rel="stylesheet">
+<script src="https://q-windows.com.my/assets/js/video.min.js"></script>
 {% endif %}
 {% if page.url contains "projects" %}
 <script type="text/javascript">
@@ -310,7 +240,7 @@ $(window).load( function(){
       $("<img />").attr("src", arguments[i]);
     }
   }
-  $.preloadImages({% for page in site.pages %}{% unless page.cover == nil %}"/assets/images/{{ page.cover }}.jpg"{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}
+  $.preloadImages({% for page in site.pages %}{% unless page.cover == nil %}"https://q-windows.com.my/assets/images/{{ page.cover }}.jpg"{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}
 );
 });
 </script>

@@ -110,6 +110,17 @@ gulp.task('images', function () {
     .pipe(gulp.dest('assets/icon'));
 });
 
+gulp.task('files-ext', function () {
+  gulp.src('assets/icon/**/*')
+      .pipe(gulp.dest('../q-windows.sg/assets/icon/'));
+    gulp.src('assets/images/**/*')
+        .pipe(gulp.dest('../q-windows.sg/assets/images/'));
+    gulp.src('_product_westag/*')
+        .pipe(gulp.dest('../q-windows.sg/_product_westag/'));
+    gulp.src('_types/*')
+        .pipe(gulp.dest('../q-windows.sg/_types/'));
+});
+
 gulp.task('watch', function () {
    gulp.watch('src/*.css', ['css']);
    gulp.watch('src/*.js', ['js']);
@@ -118,3 +129,4 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['js', 'js-player', 'js-search', 'css', 'files']);
+gulp.task('ext', ['js', 'js-player', 'js-search', 'css', 'files']);

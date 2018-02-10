@@ -45,8 +45,8 @@
         <select class="form-control" id="address_country" name="address_country" type="text">
           <option value="Australia">Australia</option>
           <option value="Indonesia">Indonesia</option>
-          <option value="Malaysia" selected>Malaysia</option>
-          <option value="Singapore">Singapore</option>
+          <option value="Malaysia"{% unless page.url == "/singapore/" %} selected{% endunless %}>Malaysia</option>
+          <option value="Singapore"{% if page.url == "/singapore/" %} selected{% endif %}>Singapore</option>
           <option value="Thailand">Thailand</option>
           <option value="Vietnam">Vietnam</option>
           <option></option>
