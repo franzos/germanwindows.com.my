@@ -14,6 +14,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-02-19**
+
+- Added 2x new projects
+
 **2018-02-10**
 
 - Reworked independent SG site based on new framework [https://q-windows.sg/](https://q-windows.sg/)
