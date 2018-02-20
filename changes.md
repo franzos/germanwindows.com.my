@@ -14,9 +14,14 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-02-20**
+
+- Replaced favicon (previously Q-Windows, now Q only)
+
 **2018-02-19**
 
 - Added 2x new projects
+- Corrected spelling "width-stand" error on [https://q-windows.com/](https://q-windows.com/)
 
 **2018-02-10**
 
