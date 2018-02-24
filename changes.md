@@ -25,7 +25,8 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 <br>[18:27:18] gulp-imagemin: Minified 808 images (saved 6.26 MB - 19.2%)
 - Replaced 'aluminum' (American English) with 'aluminium' (British English)
 - Replaced 'Q- Windows' with 'Q-Windows'
-- Improved search to match Q-Windows branding
+- Improved search results on [/search/](/search/) to match Q-Windows branding
+- Optimized Google Adwords
 
 **2018-02-20**
 
