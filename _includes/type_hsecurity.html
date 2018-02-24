@@ -1,6 +1,6 @@
 <h3>High Security</h3>
 
-<p>Q- Windows satisfy even the highest requirements, protecting government officials and individuals under threats.</p>
+<p>Q-Windows satisfy even the highest requirements, protecting government officials and individuals under threats.</p>
 
 <div class="row">
 {% for level in site.security-level reversed %}
@@ -10,7 +10,7 @@
         <div class="col-sm-4">
           <h4>{{ level.title }}</h4>
           <p>{{ level.content }}</p>
-          <img src="{{ level.image }}">
+          <img alt="{{ level.title }}" src="{{ level.image }}">
         </div>
       {% endif %}
     {% endif %}

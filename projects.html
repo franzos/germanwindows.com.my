@@ -11,14 +11,14 @@ cover: bg18
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Landed</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Condo</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Commercial</a></li>
+    <li role="presentation" class="active"><a href="#landed" aria-controls="landed" role="tab" data-toggle="tab">Landed</a></li>
+    <li role="presentation"><a href="#condo" aria-controls="condo" role="tab" data-toggle="tab">Condo</a></li>
+    <li role="presentation"><a href="#commercial" aria-controls="commercial" role="tab" data-toggle="tab">Commercial</a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">
+    <div role="tabpanel" class="tab-pane active" id="landed">
 
       <h2>Landed Projects</h2>
       {% for project in site.data.landed %}
@@ -30,8 +30,8 @@ cover: bg18
         <div class="col-sm-7">
           {% assign pictures = project.pictures_small | split: ";" %}
           {% for picture in pictures %}
-            <a rel="gallery-{{ project.area }}" href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.jpg" class="swipebox" title="{{ project.categories }} Project in <strong>{{ project.location }}</strong>">
-              <img data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.jpg" width="100" height="100">
+            <a rel="gallery-{{ project.area }}" href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.jpg" class="swipebox" title="{{ project.categories }} Project in {{ project.location }}">
+              <img alt="Q-Windows {{ project.categories }} Project in {{ project.location }}" data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.jpg" width="100" height="100">
             </a>
           {% endfor %}
         </div>
@@ -40,7 +40,7 @@ cover: bg18
       {% endfor %}
 
     </div>
-    <div role="tabpanel" class="tab-pane" id="profile">
+    <div role="tabpanel" class="tab-pane" id="condo">
 
       <h2>Condo Projects</h2>
       {% for project in site.data.condo %}
@@ -52,8 +52,8 @@ cover: bg18
         <div class="col-sm-7">
           {% assign pictures = project.pictures_small | split: ";" %}
           {% for picture in pictures %}
-            <a rel="gallery-{{ project.area }}" href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.jpg" class="swipebox" title="{{ project.categories }} Project in <strong>{{ project.location }}</strong>">
-              <img class="lazy" data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.jpg" width="100" height="100">
+            <a rel="gallery-{{ project.area }}" href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.jpg" class="swipebox" title="{{ project.categories }} Project in {{ project.location }}">
+              <img alt="Q-Windows {{ project.categories }} Project in {{ project.location }}" class="lazy" data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.jpg" width="100" height="100">
             </a>
           {% endfor %}
         </div>
@@ -62,7 +62,7 @@ cover: bg18
       {% endfor %}
 
     </div>
-    <div role="tabpanel" class="tab-pane" id="messages">
+    <div role="tabpanel" class="tab-pane" id="commercial">
 
       <h2>Commercial Projects</h2>
       {% for project in site.data.commercial %}
@@ -74,8 +74,8 @@ cover: bg18
         <div class="col-sm-7">
           {% assign pictures = project.pictures_small | split: ";" %}
           {% for picture in pictures %}
-            <a href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.jpg" class="swipebox" title="{{ project.categories }} Project in <strong>{{ project.location }}</strong>">
-              <img data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.jpg" width="100" height="100">
+            <a href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.jpg" class="swipebox" title="{{ project.categories }} Project in {{ project.location }}">
+              <img alt="Q-Windows {{ project.categories }} Project in {{ project.location }}" data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.jpg" width="100" height="100">
             </a>
           {% endfor %}
         </div>

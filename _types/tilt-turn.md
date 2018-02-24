@@ -30,7 +30,7 @@ designs:
 - The most advanced window technology
 - Developed in Germany, already in use in 45 countries around the world
 - Sealed tight, keeps wind, noise and water out
-- High grade 6063-T5 aluminum for security
+- High grade 6063-T5 aluminium for security
 - Strong 50mm profiles
 - Thermal break chamber
 - High-Grade German hardware

@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var cleanCss = require('gulp-clean-css');
-var image = require('gulp-image');
+var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 
@@ -83,30 +83,10 @@ gulp.task('css', function () {
 
 gulp.task('images', function () {
   gulp.src('src/images/**/*')
-    .pipe(image({
-      pngquant: true,
-      optipng: false,
-      zopflipng: true,
-      jpegRecompress: false,
-      mozjpeg: true,
-      guetzli: false,
-      gifsicle: true,
-      svgo: true,
-      concurrent: 10
-    }))
+    .pipe(imagemin())
     .pipe(gulp.dest('assets/images'));
   gulp.src('src/icon/**/*')
-    .pipe(image({
-      pngquant: true,
-      optipng: false,
-      zopflipng: true,
-      jpegRecompress: false,
-      mozjpeg: true,
-      guetzli: false,
-      gifsicle: true,
-      svgo: true,
-      concurrent: 10
-    }))
+    .pipe(imagemin())
     .pipe(gulp.dest('assets/icon'));
 });
 

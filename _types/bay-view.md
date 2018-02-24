@@ -25,7 +25,7 @@ designs:
 - Energy efficient
 - Excellent noise insulation
 - Sealed tight, keeps wind, noise and water out
-- High grade 6063-T5 aluminum for security
+- High grade 6063-T5 aluminium for security
 - Strong profile with 50mm
 - Thermal break chamber
 - High-Grade German hardware

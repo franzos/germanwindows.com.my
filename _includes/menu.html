@@ -16,13 +16,13 @@
     <li class="title">Interior</li>
       <li><a {% if page.url contains "/type/westag-getalit-premium-interior-doors/" %}class="active" {% endif %}href="/type/westag-getalit-premium-interior-doors/">Interior Doors</a></li>
       <li><a {% if page.url contains "/type/westag-getalit-premium-interior-doors/sliding/" %}class="active" {% endif %}href="/type/westag-getalit-premium-interior-doors/sliding/">Interior Sliding Doors</a></li>
-    <li class="title">Aluminum Windows</li>
+    <li class="title">Aluminium Windows</li>
     {% for type in site.types offset:1 %}
       {% if type.category == "window" %}
       <li><a {% if page.url contains type.permalink %}class="active" {% endif %}href="{{ type.permalink }}">{{ type.title }}</a></li>
       {% endif %}
     {% endfor %}
-    <li class="title">Aluminum Doors</li>
+    <li class="title">Aluminium Doors</li>
     {% for type in site.types offset:1 %}
       {% if type.category == "door" %}
       <li><a {% if page.url contains type.permalink %}class="active" {% endif %}href="{{ type.permalink }}">{{ type.title }}</a></li>

@@ -12,7 +12,7 @@ nav: feature
 {% for type in site.types offset:1 %}
   {% if type.category == "window" %}
   <div class="col-sm-2 text-center">
-    <a href="{{ type.permalink }}"><img data-original="{{ type.image }}" class="greyscale img-responsive"></a>
+    <a href="{{ type.permalink }}"><img alt="{{ type.title }}" data-original="{{ type.image }}" class="greyscale img-responsive"></a>
     <a href="{{ type.permalink }}"><h4>{{ type.title }}</h4></a>
   </div>
   {% endif %}
@@ -27,7 +27,7 @@ nav: feature
 {% for type in site.types %}
   {% if type.category == "door" %}
   <div class="col-sm-2 text-center">
-    <a href="{{ type.permalink }}"><img data-original="{{ type.image }}" class="greyscale img-responsive"></a>
+    <a href="{{ type.permalink }}"><img alt="{{ type.title }}" data-original="{{ type.image }}" class="greyscale img-responsive"></a>
     <a href="{{ type.permalink }}"><h4>{{ type.title }}</h4></a>
   </div>
   {% endif %}

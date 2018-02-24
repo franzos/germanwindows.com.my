@@ -6,5 +6,5 @@ security: h-two
 sitemap: false
 ---
 
-- Steel covered aluminum frames
+- Steel covered aluminium frames
 - Bullet proofed laminated security Glass in according the demands

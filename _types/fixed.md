@@ -24,7 +24,7 @@ designs:
 - Maximizes unobstructed view
 - Excellent noise insulation
 - Sealed tight, keeps wind, noise and water out
-- High grade 6063-T5 aluminum for security
+- High grade 6063-T5 aluminium for security
 - Thermal break chamber
 - Fully customizable to suit your requirements
 
