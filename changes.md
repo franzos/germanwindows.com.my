@@ -14,13 +14,17 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-04-02**
+
+- Added 2x new properties
+
 **2018-02-24**
 
 - Added 1x new project
 - Added meta tag name="description"
 - Updated site description: "Q-Windows manufactures and installs German soundproof, high-security, aluminium windows and doors in Malaysia and Singapore."
 - Fixed or added alt tags to images (10+ pages)
-- Corrected company nanme 'Siegenia AUBI'
+- Corrected company name 'Siegenia AUBI'
 - Further minification of assets
 <br>[18:27:18] gulp-imagemin: Minified 808 images (saved 6.26 MB - 19.2%)
 - Replaced 'aluminum' (American English) with 'aluminium' (British English)
