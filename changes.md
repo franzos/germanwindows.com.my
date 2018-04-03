@@ -14,6 +14,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-04-04**
+
+- Added 'Video' link to top navigation, temporarily removed 'Subscibe' to save space
+
 **2018-04-02**
 
 - Added 2x new properties
