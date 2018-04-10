@@ -14,6 +14,12 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-04-10**
+
+- Changed section arrangement on frontpage (priority: windows)
+- Clean-up, removed orphaned SG site
+- Fixed search on [404](/abc) page
+
 **2018-04-04**
 
 - Added 'Video' link to top navigation, temporarily removed 'Subscibe' to save space
