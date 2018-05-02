@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
     "howler": "^2.0.4",
     "jquery": "2.2.4",
@@ -20,7 +21,6 @@
     "wavesurfer.js": "^2.0.0-beta02"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
     "gulp-image": "^3.0.0",

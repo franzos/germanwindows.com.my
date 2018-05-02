@@ -1021,7 +1021,20 @@ img.security-level {
   color: #fff;
 }
 
-.color h2 small, .orange.color h2, .orange.color a, .color .glyphicon {
+.section.blue {
+  background-color: #29448b;
+  color: #fff;
+}
+
+.section.blue a.large.link {
+  border: 1px solid #0074cc;
+}
+
+.section.blue a.large.link:hover {
+  background: #0074cc;
+}
+
+.color h2 small, .orange.color h2, .orange.color a, .blue.color h2, .blue.color a, .color .glyphicon {
     color: #fff;
 }
 

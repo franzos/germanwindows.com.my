@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Visit our Booth 4H472 at HOMEDEC 2017
-date:   2017-10-10 00:01:00 +0100
+title: Visit our Booth 4H472 at HOMEDEC 2017
+date: 2017-10-10 00:01:00 +0100
 categories: exhibition
 url: visit-our-booth-at-homedec-2017
 cover: bg7
