@@ -7,7 +7,7 @@ url: new-automatic-door-locking-system
 cover: bg35
 ---
 
-Close doors securely, provide comfort and a tight seal – exactly what you can expect from the new automatic multi-point locking system from Q- WINDOWS and Winkhaus. In the mechanical variant autoLock AV3, the locking system adapts to your individual demands with its innovative weather seal hooks and the practical daytime latch. And in the truest sense of the word: fully automatic.
+Close doors securely, provide comfort and a tight seal – exactly what you can expect from the new automatic multi-point locking system from Q- WINDOWS and Winkhaus. In the mechanical variant autoLock AV3, __the locking system adapts to your individual demands__ with its innovative weather seal hooks and the practical daytime latch. And in the truest sense of the word: fully automatic.
 
 ## Advantages
 
@@ -32,4 +32,38 @@ Close doors securely, provide comfort and a tight seal – exactly what you can 
   </div>
 </div>
 
-<p><a class="large link" href="/assets/files/Q-Windows-WINKHAUS-autoLock.pdf">Download brochure (PDF, 1.4 MB)</a></p>
+### Door Panel Selection
+
+<div class="row">
+  <div class="col-xs-6 col-sm-1">
+    <img style="width: 99%;" src="/assets/images/news/2018-05-02-new-automatic-door-locking-system/autoLock-01.jpg">
+  </div>
+  <div class="col-xs-6 col-sm-1">
+    <img src="/assets/images/news/2018-05-02-new-automatic-door-locking-system/autoLock-02.jpg">
+  </div>
+  <div class="col-xs-6 col-sm-1">
+    <img src="/assets/images/news/2018-05-02-new-automatic-door-locking-system/autoLock-03.jpg">
+  </div>
+  <div class="col-xs-6 col-sm-1">
+    <img src="/assets/images/news/2018-05-02-new-automatic-door-locking-system/autoLock-04.jpg">
+  </div>
+  <div class="col-xs-6 col-sm-1">
+    <img src="/assets/images/news/2018-05-02-new-automatic-door-locking-system/autoLock-05.jpg">
+  </div>
+  <div class="col-xs-6 col-sm-1">
+    <img src="/assets/images/news/2018-05-02-new-automatic-door-locking-system/autoLock-06.jpg">
+  </div>
+  <div class="col-xs-6 col-sm-1">
+    <img src="/assets/images/news/2018-05-02-new-automatic-door-locking-system/autoLock-07.jpg">
+  </div>
+  <div class="col-xs-6 col-sm-1">
+    <img src="/assets/images/news/2018-05-02-new-automatic-door-locking-system/autoLock-08.jpg">
+  </div>
+  <div class="col-xs-6 col-sm-1">
+    <img src="/assets/images/news/2018-05-02-new-automatic-door-locking-system/autoLock-09.jpg">
+  </div>
+</div>
+
+### Brochure
+
+<p><a class="large link" href="/assets/files/Q-Windows-WINKHAUS-autoLock.pdf" style="max-width: 71rem;">Download Brochure (PDF, 1.4 MB)</a></p>
