@@ -17,6 +17,7 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 **2018-05-03**
 
 - Fixed PDF link
+- Added new article [/news/new-automatic-door-locking-system/](/news/new-automatic-door-locking-system/)
 
 **2018-05-02**
 
