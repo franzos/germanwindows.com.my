@@ -14,6 +14,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-05-03**
+
+- Fixed PDF link
+
 **2018-05-02**
 
 - Added initial version of WINKHAUS autoLock
