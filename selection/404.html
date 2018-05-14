@@ -69,13 +69,6 @@ body {
   top: 0;
   left: 0;
 }
-.content {
-  margin: 0;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .box {
   padding: 60px 40px;
   font-size:2em;
@@ -88,5 +81,19 @@ h1, h3, p {
 span small {
   color: #FF8654;
   font-size:60%;
+}
+@media (min-width: 960px) {
+  .content {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 960px) {
+  .box {
+    margin-bottom: 2rem;
+  }
 }
 </style>

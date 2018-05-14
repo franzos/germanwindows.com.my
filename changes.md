@@ -14,6 +14,12 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-05-14**
+
+- Fixed mobile view [/selection](/selection) for [https://q-windows.com/](https://q-windows.com/)
+- Fixed www redirect for [https://www.q-windows.com/](https://www.q-windows.com/) (only works without https://)
+- Added [/jobs/](/jobs/)
+
 **2018-05-03**
 
 - Fixed PDF link
