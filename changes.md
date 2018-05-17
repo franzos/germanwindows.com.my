@@ -14,6 +14,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-05-17**
+
+- Updated job application form [/jobs/](/jobs/)
+
 **2018-05-14**
 
 - Fixed mobile view [/selection](/selection) for [https://q-windows.com/](https://q-windows.com/)
