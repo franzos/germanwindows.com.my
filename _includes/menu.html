@@ -3,7 +3,7 @@
     <li class="title">Quicklinks</li>
       <li><a {% if page.url contains "/search/" %}class="active" {% endif %}href="/search/">Search</a></li>
       <li><a {% if page.url contains "/projects/" %}class="active" {% endif %}href="/projects/">Projects</a></li>
-      <li><a {% if page.url contains "/window-replacement/condominium/" %}class="active"{% elsif page.url contains "/product/"%}class="active" {% endif %}href="/window-replacement/condominium/">Condo Offer</a></li>
+      <li><a {% if page.url contains "/window-replacement/condominium/" %}class="active" {% elsif page.url contains "/product/"%}class="active" {% endif %}href="/window-replacement/condominium/">Condo Offer</a></li>
       <li><a {% if page.url contains "/contact/" %}class="active" {% endif %}href="/contact/">Contact</a></li>
     <li class="title">Introduction</li>
     {% for nav in site.pages %}

@@ -1320,6 +1320,9 @@ img:not([src]) {
   .navbar>.container .navbar-brand {
     margin-left: 6px;
   }
+  .subnav a {
+    border-bottom: 1px solid #f14c0d;
+  }
   .section {
     padding-top: 20px;
     padding-bottom: 20px;

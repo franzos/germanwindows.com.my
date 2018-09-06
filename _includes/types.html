@@ -1,6 +1,11 @@
 <div class="options">
   <h3>Find out about some of our available options:</h3>
 
+  <p>
+    If you live in one of the following condos or apartments, we have high-quality, soundproof aluminium window-replacement packages for you:
+    <small>{% for product in site.data.product_condo %}<a href="/window-replacement/condominium/{{ product.url }}">{{ product.title }}</a> / {% endfor %}Can't find your place? <a href="/contact/">Contact us today!</a></small>
+  </p>
+
   <div class="row">
     {% for type in site.types limit:6 offset:1 %}
     <div class="col-xs-6 col-sm-2 text-center">

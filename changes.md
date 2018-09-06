@@ -12,7 +12,23 @@ Last update: {{ site.time }}
 <br>
 related site: [https://q-windows.sg/](https://q-windows.sg/)
 
+**2018-09-06**
+
+- Added quick enquiry form to all pages
+
+**2018-08-03**
+
+- Added a list of condos, for which prices are available, to the global 'types' section
+
+**2018-08-02**
+
+- Replaced link in navigation
+
 # Changelog
+
+**2018-06-06**
+
+- Added new video to [/videos/](/videos/)
 
 **2018-05-17**
 

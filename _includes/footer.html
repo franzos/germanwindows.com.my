@@ -116,9 +116,6 @@ var myLazyLoad = new LazyLoad();
 {% if page.url == "/soundproofing/" %}
 <script src="/assets/js/player.min.js"></script>
 {% endif %}
-{% if page.url contains "/search/" or page.url contains "error.html" %}
-<script src="/assets/js/search.min.js"></script>
-{% endif %}
 {% if page.url contains "videos" or page.url contains "burglar-resistant-entrance-doors" %}
 <link href="/assets/css/video-js.min.css" rel="stylesheet">
 <script src="/assets/js/video.min.js"></script>
