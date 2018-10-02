@@ -23,6 +23,7 @@ exclude:
   - yarn.lock
   - s3_website.yml
   - yarn-error.log
+  - .idea
 
 collections:
   types:
