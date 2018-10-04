@@ -12,6 +12,13 @@ Last update: {{ site.time }}
 <br>
 related site: [https://q-windows.sg/](https://q-windows.sg/)
 
+# Changelog
+
+**2018-10-05**
+
+- Added global chat (enabled between 9 AM - 6 PM GMT +8)
+- Added Facebook Messenger link
+
 **2018-09-06**
 
 - Added quick enquiry form to all pages
@@ -23,8 +30,6 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 **2018-08-02**
 
 - Replaced link in navigation
-
-# Changelog
 
 **2018-06-06**
 

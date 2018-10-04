@@ -313,9 +313,28 @@ $(window).load( function(){
 {% endunless %}
 
 <script type="text/javascript">
-	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-      d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-		$.src="https://v2.zopim.com/?62Mnl61mE5Dwurc0OcIq4fqTQLIPproK";z.t=+new Date;$.
-				type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+
+	function calcTime(city, offset) {
+		let d = new Date();
+		let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+		let nd = new Date(utc + (3600000*offset));
+		return nd
+	}
+
+	let now = calcTime('Kuala Lumpur', '+8');
+
+	function isWorkingHour(now) {
+		return now.getDay() >= 1 && now.getDay() <= 5 && now.getHours() >= 9 && now.getHours() < 18;
+	}
+
+	if (isWorkingHour(now)) {
+		window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+				d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+		_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+			$.src="https://v2.zopim.com/?62Mnl61mE5Dwurc0OcIq4fqTQLIPproK";z.t=+new Date;$.
+					type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+	} else {
+		console.log("We're closed; chat is off. " + now);
+	}
+
 </script>
