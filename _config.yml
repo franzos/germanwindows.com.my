@@ -6,23 +6,26 @@ url: "https://q-windows.com.my" # the base hostname & protocol for your site, e.
 
 # Build settings
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
   - json
 page_gen-dirs: true
 
+
+# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - src
-  - gulpfile.js
-  - package-lock.json
-  - package.json
   - yarn.lock
+  - package.json
+  - .gitignore
+  - node_modules
+  - vendor
   - s3_website.yml
-  - yarn-error.log
+  - .gitlab-ci.yml
+  - gulpfile.js
+  - src
+  - README.md
   - .idea
 
 collections:

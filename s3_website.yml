@@ -1,7 +1,8 @@
 # You can remove these two lines to have credentials read from
 # the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY or
 # ~/.aws/credentials.
-profile: qwindows.jekyll
+s3_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+s3_secret: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
 s3_bucket: q-windows.com.my
 
 # Below are examples of all the available configurations.
@@ -9,6 +10,7 @@ s3_bucket: q-windows.com.my
 
 # site: path-to-your-website
 
+site: public/
 index_document: index.html
 error_document: 404.html
 
@@ -33,8 +35,6 @@ gzip: true
 
 # See http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region for valid endpoints
 s3_endpoint: ap-southeast-1
-
-ignore_on_server: s3_website.yml
 
 # exclude_from_upload:
 #   - those_folders_of_stuff
