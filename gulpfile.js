@@ -64,15 +64,25 @@ gulp.task('css', function () {
 
 gulp.task('images', function () {
 	gulp.src('src/images/**/*')
-			.pipe(imagemin())
+			.pipe(imagemin([
+				imagemin.jpegtran({progressive: true}),
+				imagemin.optipng({optimizationLevel: 5})
+			]))
 			.pipe(gulp.dest('assets/images'));
 	gulp.src('src/icon/**/*')
-			.pipe(imagemin())
+			.pipe(imagemin([
+				imagemin.jpegtran({progressive: true}),
+				imagemin.optipng({optimizationLevel: 5})
+			]))
 			.pipe(gulp.dest('assets/icon'));
 });
 
 
 gulp.task('files', function () {
+		gulp.src('node_modules/bootstrap/fonts/*')
+			.pipe(gulp.dest('assets/fonts/'));
+		gulp.src('src/fonts/*')
+				.pipe(gulp.dest('assets/fonts/'));
     gulp.src('src/videos/*')
         .pipe(gulp.dest('assets/videos/'));
     gulp.src('src/files/**/*')
