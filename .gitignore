@@ -4,5 +4,6 @@ _site
 .jekyll-metadata
 .DS_Store
 node_modules
+assets
 /yarn.lock
 .idea
