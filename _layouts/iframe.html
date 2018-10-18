@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>{{ page.title }}</title>
+
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta name="description" content="{{ page.description }}"/>
+
+<html lang="en">
+ <body>
+  <iframe src='//simplebooklet.com/embed.php?wpKey={{ page.wpKey }}&source=embed' width='100%' height='100%'></iframe>
+ </body>
+</html>
+
+<style>
+iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border: 0;
+}
+</style>

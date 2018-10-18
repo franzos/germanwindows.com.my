@@ -14,9 +14,14 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-10-18**
+
+- Added iFrame optimised layout
+- published iFrame based landing page at [/landing/soundproofing/](/landing/soundproofing/)
+
 **2018-10-05**
 
-- Added global chat (enabled between 9 AM - 6 PM GMT +8)
+- Added global chat
 - Added Facebook Messenger link
 
 **2018-09-06**
