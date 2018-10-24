@@ -14,6 +14,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-10-24**
+
+- Adjusted iFrame layout [/landing/soundproofing/](/landing/soundproofing/)
+
 **2018-10-18**
 
 - Added iFrame optimised layout
