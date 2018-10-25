@@ -26,6 +26,23 @@ gulp.task('js', function (cb) {
   );
 });
 
+gulp.task('js-landing', function (cb) {
+	pump([
+				gulp.src
+				([
+					'node_modules/jquery/dist/jquery.js',
+					'node_modules/bootstrap/dist/js/bootstrap.js',
+					'node_modules/parsleyjs/dist/parsley.min.js',
+					'src/custom-landing.js'
+				]),
+				concat('bundle-landing.min.js'),
+				uglify(),
+				gulp.dest('assets/js')
+			],
+			cb
+	);
+});
+
 gulp.task('js-player', function () {
   return gulp.src
     ([
@@ -119,4 +136,4 @@ gulp.task('watch', function () {
   gulp.watch('src/*.js', ['js-search']);
 });
 
-gulp.task('default', ['js', 'js-player', 'js-search', 'css', 'images', 'files', 'files-ext']);
+gulp.task('default', ['js', 'js-landing', 'js-player', 'js-search', 'css', 'images', 'files', 'files-ext']);

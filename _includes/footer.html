@@ -68,23 +68,11 @@
 </div>
 {% endunless %}
 
+{% if page.url == "/landing/promotion/" %}
+<script src="/assets/js/bundle-landing.min.js"></script>
+{% else %}
 <script src="/assets/js/bundle.min.js"></script>
-<script>
-$(function() {
-  $('#contact-form').parsley().subscribe('parsley:form:validate', function (formInstance) {
-    formInstance.submitEvent.preventDefault();
-    if (formInstance.isValid() == true) {
-      $.ajax({
-          url:'https://hooks.zapier.com/hooks/catch/184367/s4wzgw/',
-          type:'post',
-          data:$('#contact-form').serialize(),
-          success:function(){
-            window.location = "https://q-windows.com.my/thank-you/";
-          }
-      });
-  }});
-});
-</script>
+{% endif %}
 {% if page.vue == "true" %}
 <script src="/assets/js/vue.min.js"></script>
 {% endif %}
@@ -194,35 +182,6 @@ $('.designs').slick({
 });
 </script>
 {% endif %}
-<script>
-$('.gslider').slick({
-  lazyLoad: 'progressive',
-  slidesToShow: 3,
-  slidesToScroll: 2,
-  arrows: false,
-  dots: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  infinite: true,
-  variableWidth: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    }
-  ]
-});
-</script>
 {% if page.url == "/window-replacement/condominium/" %}
 <script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
@@ -311,7 +270,6 @@ $(window).load( function(){
 });
 </script>
 {% endunless %}
-
 <script type="text/javascript">
 
 	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
