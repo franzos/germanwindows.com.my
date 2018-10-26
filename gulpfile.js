@@ -72,7 +72,8 @@ gulp.task('css', function () {
 		'node_modules/slick-carousel/slick/slick.css',
 		'node_modules/swipebox/src/css/swipebox.css',
 		'src/slideout.css',
-		'src/custom.css'
+		'src/custom.css',
+		'src/custom-promo.css'
 	])
 			.pipe(concat('custom.min.css'))
 			.pipe(cleanCss())
