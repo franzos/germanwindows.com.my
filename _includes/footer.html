@@ -270,6 +270,7 @@ $(window).load( function(){
 });
 </script>
 {% endunless %}
+{% unless page.chat == false %}
 <script type="text/javascript">
 
 	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -279,3 +280,4 @@ $(window).load( function(){
 				type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 </script>
+{% endunless %}

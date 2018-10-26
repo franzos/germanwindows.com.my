@@ -3,45 +3,52 @@ title: Q-Windows 11-11 Promotion
 layout: page-landing
 permalink: /landing/promotion/
 chat: false
-cover: bg32
 ---
 
 <div class="container promo">
-	<span class="line l1">11% off with any order</span>
+
+	<span class="line l1">11% off on any order</span>
+	<span class="line text">Q-Windows is Malaysia's premier, German Window & Door Supplier based in Kuala Lumpur.</span>
+	<span class="line l2 visible-xs">11.11</span>
+	<span class="line l3 visible-xs">SPECIAL</span>
+	<span class="line l4 visible-xs">From 1/11 - 30/11/2018</span>
 
 	<div class="row">
-		<div class="col-sm-2 hidden-xs">
-			<a href="tel:+60374950339" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Phone']);">
+		<div class="col-sm-2 col-sm-offset-2 hidden-xs">
+			<a href="tel:+60374950339" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Call']);">
 				<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
 			</a>
 		</div>
-		<div class="col-sm-2 hidden-xs">
-			<a href="mailto:enquiry@q-windows.com.my?subject=11-11 Promotion Enquiry" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Email']);">
-				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-			</a>
-		</div>
 		<div class="col-sm-4">
-			<div class="form">
+			<div class="form contactform">
 				<form id="quick-contact-form" data-parsley-validate>
 					<div class="form-group">
-						<textarea id="comments" name="comments" class="form-control" rows="4" placeholder="Your Message *" required></textarea>
+						<input id="first_name" name="name" type="text" class="form-control" placeholder="Your Name *" data-parsley-error-message="Enter your name" required>
+					</div>
+					<div class="form-group">
+						<textarea id="comments" name="comments" class="form-control" rows="4" placeholder="Your Message *" data-parsley-error-message="Enter your message" required></textarea>
 					</div>
 					<div class="form-group">
 						<input id="mobile_phone_number" name="mobile_phone_number" type="number" class="form-control" placeholder="Mobile phone">
 					</div>
 					<div class="form-group">
-						<input id="email_address" name="email_address" type="email" class="form-control" placeholder="Email address *" required>
+						<input id="email_address" name="email_address" type="email" class="form-control" placeholder="Email address *" data-parsley-error-message="Enter your email address" required>
 					</div>
 
 					<input type="hidden" name="page_url" value="{{ page.url }}" />
 					<input type="hidden" name="honey" value="" />
 
-					<button type="submit" value="Submit" class="btn btn-default" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Submit']);">Send</button>
+					<button type="submit" value="Submit" class="btn btn-default" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Request']);">Request your 11% discount</button>
 				</form>
 			</div>
 		</div>
+		<div class="col-sm-2 hidden-xs">
+			<a href="mailto:enquiry@q-windows.com.my?subject=11-11 Promotion Enquiry" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Email']);">
+				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+			</a>
+		</div>
 		<div class="col-xs-4 visible-xs">
-			<a href="tel:+60374950339" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Phone']);">
+			<a href="tel:+60374950339" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Call']);">
 				<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
 			</a>
 		</div>
@@ -50,17 +57,17 @@ cover: bg32
 				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
 			</a>
 		</div>
-		<div class="col-xs-4 col-sm-2">
+		<div class="col-xs-4 visible-xs">
 			<a href="https://www.google.com/maps/place/Q-Windows+(Malaysia)+Sdn+Bhd/@3.164855,101.611438,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc4f3302d5a1e7:0x549460551ca12bbe!8m2!3d3.164855!4d101.613632" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Map']);">
 				<span class="glyphicon glyphicon glyphicon-map-marker" aria-hidden="true"></span>
 			</a>
-			<span class="glyphicon glyphicon glyphicon-map-marker" aria-hidden="true"></span>
 		</div>
 	</div>
 
-	<span class="line l2">11.11</span>
-	<span class="line l3">SPECIAL</span>
-	<span class="line l4">From 1/11 - 30/11/2018</span>
+	<span class="line l2 hidden-xs">11.11</span>
+	<span class="line l3 hidden-xs">SPECIAL</span>
+	<span class="line l4 hidden-xs">From 1/11 - 30/11/2018</span>
+
 </div>
 
 <!-- it's here in order to avoid CSS being cached. -->
@@ -78,6 +85,7 @@ cover: bg32
 	.parsley-custom-error-message, .parsley-errors-list .parsley-required, .parsley-type {
 		color: #fff;
 		font-weight: bold;
+		line-height: 20px;
 	}
 	.promo {
 		text-align: center;
@@ -89,9 +97,7 @@ cover: bg32
 	}
 	.promo .form .btn-default {
 		width: 100%;
-		font-size: 18px;
 		font-weight: bold;
-		border-color: #f14c0d;
 	}
 	.promo .glyphicon {
 		font-size: 30px;
@@ -102,10 +108,9 @@ cover: bg32
 		width: 80px;
 		height: 80px;
 		padding-top: 16px;
-		margin-top: 40px;
 	}
 	.promo .line {
-		color: #f14c0d;
+		color: #fff;
 		font-weight: 900;
 		display: block;
 		width: 100%;
@@ -113,6 +118,10 @@ cover: bg32
 	.promo .line.l1 {
 		font-size: 80px;
 		margin-top: 40px;
+	}
+	.promo .line.text {
+		font-size: 20px;
+		line-height: 40px;
 	}
 	.promo .line.l2 {
 		font-size: 100px;
@@ -123,28 +132,43 @@ cover: bg32
 	}
 	.promo .line.l4 {
 		font-size: 30px;
-		margin-bottom: 30px;
 	}
 	@media (max-width: 970px) {
 		.promo {
 
 		}
-		.promp .glyphicon {
+		.promo .glyphicon {
 			margin-top: 12px;
+			margin-bottom: 30px;
 		}
 		.promo .line.l1 {
-			font-size: 30px;
+			font-size: 26px;
+		}
+		.promo .line.text {
+			font-size: 20px;
+			line-height: 26px;
+			margin-top: 10px;
 		}
 		.promo .line.l2 {
-
+			line-height: 60px;
 		}
 		.promo .line.l4 {
-			margin-bottom: 70px;
+			font-size: 22px;
 		}
 	}
 	@media (min-width: 970px) {
+		.promo .glyphicon {
+			margin-top: 110px;
+		}
 		.promo {
 			line-height: 82px;
+		}
+		.promo .form .btn-default {
+			font-size: 18px;
+		}
+		.promo .line.l4 {
+			font-size: 30px;
+			margin-bottom: 30px;
 		}
 	}
 </style>

@@ -905,6 +905,11 @@ blockquote p {
   border-color: #fff;
 }
 
+.form.contactform .btn-default {
+  color: #ff530d;
+  background: #fff;
+}
+
 .form .btn-default:hover {
   color: #ff530d;
   background: #fff;
