@@ -13,6 +13,7 @@ This is the code-base of the Q-Windows website.
 3. Make changes and commit (will go live after max. 10 minutes)
 
 <img alt="Edit promotion" src="README_assets/edit-promotion.gif">
+_(There's a short clip here - it may take a moment to load.)_
 
 ### Add new
 
@@ -22,6 +23,7 @@ This is the code-base of the Q-Windows website.
 3. Make changes and commit (will go live after max. 10 minutes)
 
 <img alt="Add new promotion" src="README_assets/add-promotion.gif">
+_(There's a short clip here - it may take a moment to load.)_
 
 ## Requirements
 
