@@ -27,6 +27,7 @@ exclude:
   - src
   - README.md
   - .idea
+  - README_assets
 
 collections:
   types:

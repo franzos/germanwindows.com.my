@@ -4,6 +4,25 @@ This is the code-base of the Q-Windows website.
 
 **CAUTION:** Any changes to the codebase are compiled and uploaded automatically. That means, they will go live on the website within max. 10 minutes.
 
+## Promotions
+
+### Edit existing
+
+1. Open the folder `landing`
+2. Open the file, ex. `booklet_soundproof.md`
+3. Make changes and commit (will go live after max. 10 minutes)
+
+<img alt="Edit promotion" src="README_assets/edit-promotion.gif">
+
+### Add new
+
+1. Open the folder `landing`
+2. Open an existing file, ex. `booklet_soundproof.md` and copy the content as template
+3. Create a new file, ex. `booklet_doors.md` and paste the content
+3. Make changes and commit (will go live after max. 10 minutes)
+
+<img alt="Add new promotion" src="README_assets/add-promotion.gif">
+
 ## Requirements
 
 To work on the Q-Windows website, you should fulfill the following requirements:
