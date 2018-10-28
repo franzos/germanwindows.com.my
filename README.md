@@ -2,6 +2,8 @@
 
 This is the code-base of the Q-Windows website.
 
+**CAUTION:** Any changes to the codebase are compiled and uploaded automatically. That means, they will go live on the website within max. 10 minutes.
+
 ## Requirements
 
 To work on the Q-Windows website, you should fulfill the following requirements:
