@@ -44,10 +44,10 @@
         </div>
       </nav>
     </div>
-    {% if page.cover == "bg_promo" %}
+    {% if page.promo.active == true %}
     <div class="page-title{% if page.subtitle %} subtitle{% endif %}">
       <div class="container promo">
-        <a href="/landing/promotion/">
+        <a href="{{ page.promo.destination }}">
           <span class="line l1">11% off on any order</span>
           <span class="line l2">11.11</span>
           <span class="line l3">SPECIAL</span>
