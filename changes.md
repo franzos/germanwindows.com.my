@@ -14,9 +14,15 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-11-01**
+
+- Updated payment page
+- Re-arranged contact page address block
+
 **2018-10-24**
 
 - Adjusted iFrame layout [/landing/soundproofing/](/landing/soundproofing/)
+- Reworked landing page in HTML
 
 **2018-10-18**
 

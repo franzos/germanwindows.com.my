@@ -154,6 +154,10 @@ h1 {
   color: #FF530D;
 }
 
+.content a.btn.btn-default {
+  color: #fff;
+}
+
 .content p.title {
 
 }

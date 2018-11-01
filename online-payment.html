@@ -9,23 +9,19 @@ cover: bg31
 ---
 
 <div class="section">
-  <p>Pay your Q-Windows order with credit card
-    <br><small>MasterCard, Visa, AMEX, Discovery</small></p>
 
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="2MGJNVDWXRFE4">
-    <input type="hidden" name="on0" value="Payment Steps">
+  <p>
+    Pay your Q-Windows order with credit card
+    <br><small>MasterCard, Visa via MOLPay</small>
+  </p>
 
-    <div class="form-group">
-      <select class="os0">
-        <option value="1st advance payment">1st advance payment</option>
-        <option value="2nd advance payment">2nd advance payment</option>
-        <option value="Final payment">Final payment</option>
-      </select>
+  <div class="row">
+    <div class="col-sm-3">
+      <a class="btn btn-default" href="https://www.onlinepayment.com.my/MOLPay/pay/qwindow/index.php?amount=10.00&orderid=Order+Number+And+Name&cur=MYR&vcode=ef985e55178c2f99f47f225f6307dad2&bill_desc=Kindly+key+in+your+order+number+and+description.+Thank+you" onclick="javascript:_paq.push(['trackEvent', 'Payment', 'Start']);">Make Online Payment</a>
     </div>
+    <div class="col-sm-3">
+      <img src="/assets/images/logo_molpay.svg" alt="MOLPay Logo">
+    </div>
+  </div>
 
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-  </form>
 </div>
