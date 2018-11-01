@@ -47,8 +47,8 @@
     {% if page.promo.active == true %}
     <div class="page-title{% if page.subtitle %} subtitle{% endif %}">
       <div class="container promo">
-        <a href="{{ page.promo.destination }}">
-          <span class="line l1">11% off on any order</span>
+        <a href="{{ page.promo.destination }}" onclick="javascript:_paq.push(['trackEvent', 'Promo-11-11', 'Homepage to Landing Page']);">
+          <span class="line l1">11% off any order</span>
           <span class="line l2">11.11</span>
           <span class="line l3">SPECIAL</span>
           <span class="line l4">From 1/11 - 30/11/2018</span>

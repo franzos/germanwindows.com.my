@@ -18,6 +18,8 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 - Updated payment page
 - Re-arranged contact page address block
+- Improved coverage for tracking related to 11-11
+- Revisions related to 11-11
 
 **2018-10-24**
 
