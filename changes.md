@@ -14,6 +14,12 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-11-11**
+
+- New page for [windowsill](/type/windowsill/)
+- Modified front-page, link to [windowsill](/type/windowsill/)
+- Correct spelling mistakes
+
 **2018-11-01**
 
 - Updated payment page
