@@ -14,6 +14,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-11-13**
+
+- Fixed missing images, PDF
+
 **2018-11-12**
 
 - Removed news from front-page

@@ -10,7 +10,6 @@ security:
   - one
 tabs:
   - security
-  - glass
   - georgian
   - color
   - door-panel
@@ -18,7 +17,6 @@ tabs:
 
 - Westag & Getalit / Q-Windows Interior door
 - Inward or outward opening
-- Low or no threshold for barrier free entry
 - Hundreds of design, panel and glazing options
 - High-Grade German hardware
 - Fully customizable to suit your requirements
