@@ -14,6 +14,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2018-11-14**
+
+- Fixed missing images, video
+
 **2018-11-13**
 
 - Fixed missing images, PDF
