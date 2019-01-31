@@ -7,12 +7,16 @@ excluded: true
 ---
 
 Last update: {{ site.time }}  
-<br>by <a href="mailto:franz@dkkma.com">Franz Geffke</a>
+<br>by <a href="mailto:m@f-a.nz">Franz Geffke</a>
 
 <br>
 related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
+
+**2019-01-31**
+
+- updated projects from source, fixed some images (jpg,jpeg)
 
 **2018-11-14**
 
