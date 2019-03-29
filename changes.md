@@ -14,6 +14,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2019-03-29**
+
+- Updated IGU image to reflect specification
+
 **2019-03-11**
 
 - Updated IGU image to reflect specification
