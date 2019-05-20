@@ -33,5 +33,9 @@ designs:
 - Optionally glazing can be replaced with imported, designer door panels
 - Fully customizable to suit your requirements
 
+<!--
+
 <p><small>Discover our new premium line:</small>
 <br><a href="/type/burglar-resistant-entrance-doors/">German Burglar-Resistant Apartment Entrance Door</a></p>
+
+-->
