@@ -14,6 +14,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2019-06-06**
+
+- Updated catalog [System Catalogue 2020](/assets/files/Q-Windows-System-Catalogue-2020.pdf)
+
 **2019-03-29**
 
 - Updated IGU image to reflect specification
