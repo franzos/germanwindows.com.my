@@ -6,10 +6,9 @@ permalink: /changes/
 excluded: true
 ---
 
-Last update: {{ site.time }}  
-<br>by <a href="mailto:m@f-a.nz">Franz Geffke</a>
+Last update: {{ site.time }}
+<br>[Franz Geffke](mailto:m@f-a.nz)
 
-<br>
 related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
