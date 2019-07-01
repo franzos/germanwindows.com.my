@@ -13,6 +13,12 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2019-07-01**
+
+- Replaces `jobs` with `downloads` in menubar
+- Upgraded gulp to v4
+- migrated `gulpfile.js`
+
 **2019-06-06**
 
 - Updated catalog [System Catalogue 2020](/assets/files/Q-Windows-System-Catalogue-2020.pdf)

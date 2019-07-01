@@ -5,7 +5,10 @@ var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 
-gulp.task('js', function (cb) {
+const { series } = require('gulp');
+const { src, dest } = require('gulp');
+
+function js(cb) {
   pump([
         gulp.src
         ([
@@ -24,9 +27,9 @@ gulp.task('js', function (cb) {
     ],
     cb
   );
-});
+};
 
-gulp.task('js-landing', function (cb) {
+function jsLanding(cb) {
 	pump([
 				gulp.src
 				([
@@ -41,9 +44,9 @@ gulp.task('js-landing', function (cb) {
 			],
 			cb
 	);
-});
+};
 
-gulp.task('js-player', function () {
+function jsPlayer() {
   return gulp.src
     ([
       'node_modules/wavesurfer.js/dist/wavesurfer.min.js',
@@ -52,9 +55,9 @@ gulp.task('js-player', function () {
 		.pipe(concat('player.min.js'))
     .pipe(uglify())
 		.pipe(gulp.dest('assets/js'));
-});
+};
 
-gulp.task('js-search', function () {
+function jsSearch() {
   return gulp.src
     ([
       'node_modules/lunr/lunr.min.js',
@@ -63,9 +66,9 @@ gulp.task('js-search', function () {
 		.pipe(concat('search.min.js'))
     .pipe(uglify())
 		.pipe(gulp.dest('assets/js'));
-});
+};
 
-gulp.task('css', function () {
+function css() {
 	return gulp.src
 	([
 		'node_modules/bootstrap/dist/css/bootstrap.css',
@@ -78,63 +81,92 @@ gulp.task('css', function () {
 			.pipe(concat('custom.min.css'))
 			.pipe(cleanCss())
 			.pipe(gulp.dest('assets/css'));
-});
+};
 
-gulp.task('images', function () {
-	gulp.src('src/images/**/*')
+function images() {
+	return gulp.src('src/images/**/*')
 			.pipe(imagemin([
 				imagemin.jpegtran({progressive: true}),
 				imagemin.optipng({optimizationLevel: 5})
 			]))
 			.pipe(gulp.dest('assets/images'));
-	gulp.src('src/icon/**/*')
+};
+
+function imagesIcon() {
+	return gulp.src('src/icon/**/*')
 			.pipe(imagemin([
 				imagemin.jpegtran({progressive: true}),
 				imagemin.optipng({optimizationLevel: 5})
 			]))
 			.pipe(gulp.dest('assets/icon'));
-});
+};
 
+function moveFonts() {
+  return src('src/fonts/*')
+      .pipe(dest('assets/fonts/'));
+}
 
-gulp.task('files', function () {
-		gulp.src('node_modules/bootstrap/fonts/*')
-			.pipe(gulp.dest('assets/fonts/'));
-		gulp.src('src/fonts/*')
-				.pipe(gulp.dest('assets/fonts/'));
-    gulp.src('src/videos/*')
-        .pipe(gulp.dest('assets/videos/'));
-    gulp.src('src/files/**/*')
-        .pipe(gulp.dest('assets/files/'));
-    gulp.src('src/sounds/*')
-        .pipe(gulp.dest('assets/sounds/'));
-    gulp.src('src/upload/*')
-        .pipe(gulp.dest('assets/upload/'));
-    gulp.src('src/runtime.js')
-        .pipe(gulp.dest('assets/js/'));
-    gulp.src('node_modules/video.js/dist/video-js.min.css')
-        .pipe(gulp.dest('assets/css/'));
-    gulp.src('node_modules/video.js/dist/video.min.js')
-        .pipe(gulp.dest('assets/js/'));
-    gulp.src('node_modules/vue/dist/vue.min.js')
-        .pipe(gulp.dest('assets/js/'));
-});
+function moveBootstrapFonts() {
+  return src('node_modules/bootstrap/fonts/*')
+    .pipe(dest('assets/fonts/'));
+}
 
-gulp.task('files-ext', function () {
-  gulp.src('assets/icon/**/*')
-      .pipe(gulp.dest('../q-windows.sg/assets/icon/'));
-    gulp.src('assets/images/**/*')
-        .pipe(gulp.dest('../q-windows.sg/assets/images/'));
-    gulp.src('_product_westag/*')
-        .pipe(gulp.dest('../q-windows.sg/_product_westag/'));
-    gulp.src('_types/*')
-        .pipe(gulp.dest('../q-windows.sg/_types/'));
-});
+function moveVideos() {
+  return src('src/videos/*')
+      .pipe(dest('assets/videos/'));
+}
 
-gulp.task('watch', function () {
+function moveFiles() {
+  return src('src/files/**/*')
+      .pipe(dest('assets/files/'));
+}
+
+function moveSounds() {
+  return src('src/sounds/*')
+      .pipe(dest('assets/sounds/'));
+}
+
+function moveVideoCss() {
+  return src('node_modules/video.js/dist/video-js.min.css')
+      .pipe(dest('assets/css/'));
+}
+
+function moveVideoJs() {
+  return src('node_modules/video.js/dist/video.min.js')
+      .pipe(dest('assets/js/'));
+}
+
+function moveVue() {
+  return src('node_modules/vue/dist/vue.min.js')
+      .pipe(dest('assets/js/'));
+}
+
+function moveIcons() {
+  return src('assets/icon/**/*')
+      .pipe(dest('../q-windows.sg/assets/icon/'));
+}
+
+function moveImages() {
+  return src('assets/images/**/*')
+      .pipe(dest('../q-windows.sg/assets/images/'));
+}
+
+function moveWestag() {
+  return src('_product_westag/*')
+      .pipe(dest('../q-windows.sg/_product_westag/'));
+}
+
+function moveTypes() {
+  return src('_types/*')
+      .pipe(dest('../q-windows.sg/_types/'));
+}
+
+function watch() {
    gulp.watch('src/*.css', ['css']);
    gulp.watch('src/*.js', ['js']);
    gulp.watch('src/*.js', ['js-player']);
   gulp.watch('src/*.js', ['js-search']);
-});
+};
 
-gulp.task('default', ['js', 'js-landing', 'js-player', 'js-search', 'css', 'images', 'files', 'files-ext']);
+exports.moveVue = moveVue
+exports.default = series(js, jsLanding, jsPlayer, jsSearch, css, images, imagesIcon, moveFonts, moveBootstrapFonts, moveVideos, moveFiles, moveSounds, moveVideoCss, moveVideoJs, moveIcons, moveImages, moveWestag, moveTypes, moveVue);
