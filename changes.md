@@ -13,6 +13,12 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2019-07-29**
+
+- Updated 404 page
+- Removed a couple of Westag related pages, mostly doors
+- Removed 'Short View' from navigation; underlying site doesn't work: https://q-windows-malaysia.business.site/
+
 **2019-07-01**
 
 - Replaces `jobs` with `downloads` in menubar
