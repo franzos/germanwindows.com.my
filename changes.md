@@ -13,6 +13,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2019-07-30**
+
+- Re-added 'Short View' to navigation; new URL
+
 **2019-07-29**
 
 - Updated 404 page
