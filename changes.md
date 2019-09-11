@@ -17,6 +17,7 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 - Updated soundproofing values
 - Added relevant soundproofing PDF's
+- Added terms and definitions for soundproofing table
 
 **2019-07-30**
 
