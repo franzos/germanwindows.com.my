@@ -15,7 +15,8 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 **2019-09-11**
 
-- Updated Soundproofing values
+- Updated soundproofing values
+- Added relevant soundproofing PDF's
 
 **2019-07-30**
 
