@@ -13,6 +13,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2019-09-18**
+
+- Updated soundproofing table; fixed linked PDF's
+
 **2019-09-11**
 
 - Updated soundproofing values
