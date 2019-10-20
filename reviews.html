@@ -1,0 +1,40 @@
+---
+title: Reviews for Q-Windows on Google
+nav-title: Why Q-Windows
+page-title: German aluminium windows in South-East Asia
+subtitle: "- the original"
+callout: "While an energy efficient air-condition is great, the most saving will come from windows and doors that are optimised to reduce the heat transfer between the humid, hot, tropical outside and the cool, comfortable inside of your property. Let's have a look at the 2 most important factors: Glass and Profile."
+layout: cover-page
+permalink: /reviews/
+nav: cover
+offset: one
+cover: bg23
+---
+
+<h2>The best aluminium window and door system in Malaysia: Hundreds of satisfied customers</h2>
+<p>Q-Windows Malaysia is the only manufacturer of German soundproof, high-security aluminium windows and doors in Malaysia and Singapore. For a better life and higher standard of living, select Q-Windows.</p>
+
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+  {% for review in site.data.reviews %}
+    <div class="row">
+      <div class="col-sm-1">
+        <img style="margin-top: 5px;" src="/assets/images/photo.png">
+      </div>
+      <div class="col-sm-11">
+        <p class="source">
+          {% if review.link %}<a target="_blank" href="{{ review.link }}">{{ review.name }}</a>{% else %}{{ review.name }}{% endif %}
+          on <cite title="{{ review.source }}">{{ review.source }}</cite>
+          <br>
+          {% for num in (1..review.stars) %}
+          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          {% endfor %}
+          <small>{{ review.date }}</small>
+        </p>
+        <p class="testimonial">{{ review.review }}</p>
+        <hr>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>

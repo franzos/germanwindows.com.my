@@ -68,6 +68,16 @@ function jsSearch() {
 		.pipe(gulp.dest('assets/js'));
 };
 
+function jsReviews() {
+    return gulp.src
+    ([
+        'src/reviews.js'
+    ])
+        .pipe(concat('reviews.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('assets/js'));
+};
+
 function css() {
 	return gulp.src
 	([
@@ -168,5 +178,5 @@ function watch() {
   gulp.watch('src/*.js', ['js-search']);
 };
 
-exports.moveVue = moveVue
-exports.default = series(js, jsLanding, jsPlayer, jsSearch, css, images, imagesIcon, moveFonts, moveBootstrapFonts, moveVideos, moveFiles, moveSounds, moveVideoCss, moveVideoJs, moveIcons, moveImages, moveWestag, moveTypes, moveVue);
+exports.moveVue = moveVue;
+exports.default = series(js, jsLanding, jsPlayer, jsSearch, jsReviews, css, images, imagesIcon, moveFonts, moveBootstrapFonts, moveVideos, moveFiles, moveSounds, moveVideoCss, moveVideoJs, moveIcons, moveImages, moveWestag, moveTypes, moveVue);

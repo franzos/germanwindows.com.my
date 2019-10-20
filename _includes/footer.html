@@ -74,9 +74,27 @@
 <script src="/assets/js/bundle.min.js"></script>
 {% endif %}
 
-{% if page.vue == "true" %}
+<script src="/assets/js/reviews.min.js"></script>
 <script src="/assets/js/vue.min.js"></script>
-{% endif %}
+<script>
+const reviews = new Vue({
+    delimiters: ['<{', '}>'],
+    el: '#reviews',
+    data: {
+        reviewsData: reviewsData
+    },
+    computed: {
+        reviewRandom() {
+            return reviewsData[Math.floor(Math.random()*reviewsData.length)];
+        }
+    },
+    mounted: function () {
+        console.log('Yeah!');
+        console.log(this.reviewsData);
+        console.log(this.reviewRandom);
+    }
+});
+</script>
 
 {% if page.cover %}
 <style>
