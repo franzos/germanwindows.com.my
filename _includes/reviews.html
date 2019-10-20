@@ -9,7 +9,7 @@
           <a target="_blank" :href="'/reviews/'"><{ reviewRandom.name }></a>
           on <cite title="{{ reviewRandom.source }}"><{ reviewRandom.source }></cite>
           <br>
-          <span v-for="index in 5" :key="index" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span v-for="index in reviewRandom.stars" :key="index" class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <small><{ reviewRandom.date }></small>
         </p>
         <p class="testimonial" v-html="reviewRandom.review"></p>

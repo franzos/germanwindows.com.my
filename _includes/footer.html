@@ -87,11 +87,6 @@ const reviews = new Vue({
         reviewRandom() {
             return reviewsData[Math.floor(Math.random()*reviewsData.length)];
         }
-    },
-    mounted: function () {
-        console.log('Yeah!');
-        console.log(this.reviewsData);
-        console.log(this.reviewRandom);
     }
 });
 </script>
