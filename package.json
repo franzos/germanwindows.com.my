@@ -10,7 +10,6 @@
     "gulp-imagemin": "^4.1.0",
     "howler": "^2.0.4",
     "jquery": "2.2.4",
-    "lunr": "^2.0.0",
     "parsleyjs": "^2.8.0",
     "slick-carousel": "^1.7.1",
     "slideout": "^1.0.1",

@@ -57,17 +57,6 @@ function jsPlayer() {
 		.pipe(gulp.dest('assets/js'));
 };
 
-function jsSearch() {
-  return gulp.src
-    ([
-      'node_modules/lunr/lunr.min.js',
-      'src/search.js'
-    ])
-		.pipe(concat('search.min.js'))
-    .pipe(uglify())
-		.pipe(gulp.dest('assets/js'));
-};
-
 function jsReviews() {
     return gulp.src
     ([
@@ -179,4 +168,4 @@ function watch() {
 };
 
 exports.moveVue = moveVue;
-exports.default = series(js, jsLanding, jsPlayer, jsSearch, jsReviews, css, images, imagesIcon, moveFonts, moveBootstrapFonts, moveVideos, moveFiles, moveSounds, moveVideoCss, moveVideoJs, moveIcons, moveImages, moveWestag, moveTypes, moveVue);
+exports.default = series(js, jsLanding, jsPlayer, jsReviews, css, images, imagesIcon, moveFonts, moveBootstrapFonts, moveVideos, moveFiles, moveSounds, moveVideoCss, moveVideoJs, moveIcons, moveImages, moveWestag, moveTypes, moveVue);
