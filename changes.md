@@ -13,6 +13,12 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2019-10-21**
+
+- Added new downloads
+- Replaced "Condo" in top nav with "Reviews"
+- Added Reviews from Google and Facebook
+
 **2019-09-18**
 
 - Updated soundproofing table; fixed linked PDF's
