@@ -13,6 +13,10 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2019-11-11**
+
+- Fixes on Warranty page; added new PDF
+
 **2019-10-21**
 
 - Added new downloads
