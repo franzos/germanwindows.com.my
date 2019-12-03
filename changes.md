@@ -13,6 +13,12 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2019-12-03**
+
+- Added 2x new reviews
+- Fixed mobile sidebar; removed some links
+- Updated review page title
+
 **2019-11-11**
 
 - Fixes on Warranty page; added new PDF
@@ -162,7 +168,7 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 - Fixed or added alt tags to images (10+ pages)
 - Corrected company name 'Siegenia AUBI'
 - Further minification of assets
-<br>[18:27:18] gulp-imagemin: Minified 808 images (saved 6.26 MB - 19.2%)
+  <br>[18:27:18] gulp-imagemin: Minified 808 images (saved 6.26 MB - 19.2%)
 - Replaced 'aluminum' (American English) with 'aluminium' (British English)
 - Replaced 'Q- Windows' with 'Q-Windows'
 - Improved search results on [/search/](/search/) to match Q-Windows branding
@@ -231,11 +237,11 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 **2017-10-26**
 
-- Minor revision [/why-q-windows/](/why-q-windows/) *- 75% exit rate, OCT 2017*
-- Minor revision [/soundproofing/](/soundproofing/) *- 64% exit rate, OCT 2017*
-- Minor revision [/security/](/security/) *- 30% exit rate, OCT 2017*
-- Minor revision [/energy-saving/](/energy-saving/) *- 29% exit rate, OCT 2017*
-- Revision of [/contact/](/contact/): minor layout adjustments, simplified contact form *- 57% exit rate, OCT 2017*
+- Minor revision [/why-q-windows/](/why-q-windows/) _- 75% exit rate, OCT 2017_
+- Minor revision [/soundproofing/](/soundproofing/) _- 64% exit rate, OCT 2017_
+- Minor revision [/security/](/security/) _- 30% exit rate, OCT 2017_
+- Minor revision [/energy-saving/](/energy-saving/) _- 29% exit rate, OCT 2017_
+- Revision of [/contact/](/contact/): minor layout adjustments, simplified contact form _- 57% exit rate, OCT 2017_
 - Fixed missing images on [/type/outward-opening-window/#Outward+Opening](/type/outward-opening-window/#Outward+Opening), 'Hardware' tab
 
 **2017-10-16**
@@ -258,8 +264,8 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 - Fixed HTTPS warning for scripts on [/videos/](/videos/)
 - Much faster image loading (lazyload doesn't wait for the site to fully load)
-- *Mobile* Fixed table on mobile [/soundproofing/](/soundproofing/)
-- *Mobile* Greatly extended mobile navigation
+- _Mobile_ Fixed table on mobile [/soundproofing/](/soundproofing/)
+- _Mobile_ Greatly extended mobile navigation
 
 **2017-10-03**
 
@@ -280,8 +286,8 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 **2017-10-02**
 
-- *Mobile* Completely remodeled mobile navigation (BETA)
-- *Mobile* Removed Homedec Award logo from footer
+- _Mobile_ Completely remodeled mobile navigation (BETA)
+- _Mobile_ Removed Homedec Award logo from footer
 
 **2017-10-01**
 
@@ -292,7 +298,7 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 - Markers on the map [/window-replacement/condominium/](/window-replacement/condominium/) now link to their respective properties
 - Cleaned-up layout on [/a-z/](/a-z/), added larger details
 - Improved [/contact/](/contact/) page email link (includes subject, content)
-- *Mobile* Fixed table view, enabled noise comparison on mobile [/soundproofing/](/soundproofing/)
+- _Mobile_ Fixed table view, enabled noise comparison on mobile [/soundproofing/](/soundproofing/)
 - Minor updayes [/developer/](/developer/)
 - Set-up new asset / package management based on Yarn and Gulp
 - Included all fonts in dependencies, reduces https connections
@@ -337,7 +343,7 @@ UPDATE GAP
 
 - Added 2x additional condos [/window-replacement/condominium/][/window-replacement/condominium/]
 - Replaced map on contact page to better blend in, to remove Google Maps
-- Enhanced display of glass configuration [/type/fixed-window/#Fixed+Window][/type/fixed-window/#Fixed+Window]
+- Enhanced display of glass configuration [/type/fixed-window/#Fixed+Window][/type/fixed-window/#fixed+window]
 - Implemented tracking for social media shares
 - Linked new section
 
@@ -408,8 +414,8 @@ _est. 60min_
 
 - Revised landing page
 - Optimize landing page https://developers.google.com/speed/pagespeed/insights/
-<br>original: Mobile (61/100), Desktop (73/100), YSlow 83%, 962KB
-<br>new: Mobile (69/100), Desktop (84/100), YSlow 85%, 459KB (50% reduction in page size!)
+  <br>original: Mobile (61/100), Desktop (73/100), YSlow 83%, 962KB
+  <br>new: Mobile (69/100), Desktop (84/100), YSlow 85%, 459KB (50% reduction in page size!)
 
 _est. 45min_
 
@@ -428,8 +434,8 @@ _est. 60min_
 
 - Moved tracking snippet location in order to improve accuracy
 - Reduced size of landing page, improved overall performance
-<br>original: https://gtmetrix.com/reports/q-windows.com.my/8zz3cvEQ (YSlow 77%, 1.05MB)
-<br>new: https://gtmetrix.com/reports/q-windows.com.my/jC9qg5KE (YSlow 83%, 962KB)
+  <br>original: https://gtmetrix.com/reports/q-windows.com.my/8zz3cvEQ (YSlow 77%, 1.05MB)
+  <br>new: https://gtmetrix.com/reports/q-windows.com.my/jC9qg5KE (YSlow 83%, 962KB)
 - Added active form submission event tracking via "trackEvent()"
 
 _est. 20min_
@@ -437,7 +443,7 @@ _est. 20min_
 **2017-02-05**
 
 - Fixed link on landing page
-- Completely revised, simplified landing page layout __#land01:update__
+- Completely revised, simplified landing page layout **#land01:update**
 
 **2017-02-02**
 
@@ -450,7 +456,7 @@ _est. 45min_
 **2017-02-01**
 
 - Added [CrazyEgg Heatmap Tracking](crazyegg.com) to [/landing/](/landing/)
-<br>_This will help us determine what people do on this page: What they look at, for how long, where they click_
+  <br>_This will help us determine what people do on this page: What they look at, for how long, where they click_
 - **Analytics:** Added campaign groups (Mail me for user access)
 - **Adwords:** URL for "Fishing Old Visits, Idea 1" was still wrong, corrected.
 
@@ -486,7 +492,7 @@ _est. 30min_
 - Integrated new contact form processor, SSL certificate is now valid on this page [/contact/](/contact/)
 - New call-to-action on detail pages
 
-"Reduce the noise in your house with Q-Windows: Get in touch now!"  [/soundproofing/detail/](/soundproofing/detail/)
+"Reduce the noise in your house with Q-Windows: Get in touch now!" [/soundproofing/detail/](/soundproofing/detail/)
 <br>"Make your home safe again with Q-Windows: Get in touch now!" [/security/detail/](/security/detail/)
 <br>"Reduce the heat in your house, use less air-condition, save energy with Q-Windows: Get in touch now!" [/energy-saving/detail/](/energy-saving/detail/)
 

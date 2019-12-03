@@ -2,6 +2,8 @@
   <ul>
     <li class="title">Quicklinks</li>
       <li><a {% if page.url contains "/search/" %}class="active" {% endif %}href="/search/">Search</a></li>
+      <li><a {% if page.url contains "/downloads/" %}class="active" {% endif %}href="/downloads/">Downloads</a></li>
+      <li><a {% if page.url contains "/videos/" %}class="active" {% endif %}href="/videos/">Videos</a></li>
       <li><a {% if page.url contains "/projects/" %}class="active" {% endif %}href="/projects/">Projects</a></li>
       <li><a {% if page.url contains "/window-replacement/condominium/" %}class="active" {% elsif page.url contains "/product/"%}class="active" {% endif %}href="/window-replacement/condominium/">Condo Offer</a></li>
       <li><a {% if page.url contains "/contact/" %}class="active" {% endif %}href="/contact/">Contact</a></li>
@@ -13,9 +15,11 @@
       {% endunless %}
       {% endif %}
     {% endfor %}
+    <!--
     <li class="title">Interior</li>
       <li><a {% if page.url contains "/type/westag-getalit-premium-interior-doors/" %}class="active" {% endif %}href="/type/westag-getalit-premium-interior-doors/">Interior Doors</a></li>
       <li><a {% if page.url contains "/type/westag-getalit-premium-interior-doors/sliding/" %}class="active" {% endif %}href="/type/westag-getalit-premium-interior-doors/sliding/">Interior Sliding Doors</a></li>
+    -->
     <li class="title">Aluminium Windows</li>
     {% for type in site.types offset:1 %}
       {% if type.category == "window" %}
