@@ -3,7 +3,7 @@
 # ~/.aws/credentials.
 s3_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
 s3_secret: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
-s3_bucket: q-windows.com.my
+s3_bucket: germanwindows.com.my
 
 # Below are examples of all the available configurations.
 # See README for more detailed info on each of them.
@@ -42,7 +42,7 @@ s3_endpoint: ap-southeast-1
 
 # s3_reduced_redundancy: true
 
-cloudfront_distribution_id: E1UM4Z0KIYAXN1
+# cloudfront_distribution_id: E1UM4Z0KIYAXN1
 
 # cloudfront_distribution_config:
 #   default_cache_behavior:
@@ -57,34 +57,6 @@ cloudfront_invalidate_root: true
 # cloudfront_wildcard_invalidation: true
 
 # concurrency_level: 5
-
-redirects:
-  pages: /
-  pages/benefits: windows-doors/why-choose-us/
-  pages/about: about/
-  pages/contact: contact/
-  pages/sound-insulation: soundproofing/
-  pages/sound-insulation-detail: soundproofing/detail/
-  pages/security: security/
-  pages/security-detail: security/detail/
-  pages/energy-saving: energy-saving/
-  pages/energy-saving-detail: energy-saving/detail/
-  pages/glass-production: glass-production/
-  pages/aluminum: aluminum-profile/
-  pages/terms: terms/
-  type/entry/outward-opening-window: type/outward-opening-window/
-  type/entry/tilt-turn-window: type/tilt-turn-window/
-  type/entry/fixed-window: type/fixed-window/
-  type/entry/bay-view: type/bay-view/
-  type/entry/casement-door: type/casement-door/
-  type/entry/entrance-door: type/entrance-door/
-  type/entry/lift-slide: type/lift-slide/
-  type/entry/sliding-door: type/sliding-door/
-  type/entry/sliding-folding: type/sliding-folding/
-  type/entry/outward-opening-window: type/outward-opening-window/
-  pages/downloads: windows-doors/technicals/
-  projects: /
-  /type/doors: /type/entrance-door/
 
 routing_rules:
   - condition:

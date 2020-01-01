@@ -2,7 +2,7 @@ title: Q-Windows Malaysia
 email: your-email@domain.com
 description: "Q-Windows manufactures and installs German soundproof, high-security, aluminium windows and doors in Malaysia and Singapore."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://q-windows.com.my" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://germanwindows.com.my" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
@@ -10,7 +10,6 @@ gems:
   - jekyll-feed
   - json
 page_gen-dirs: true
-
 
 # Exclude from processing
 exclude:
