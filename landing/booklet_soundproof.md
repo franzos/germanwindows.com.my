@@ -1,7 +1,7 @@
 ---
 layout: iframe
-title: "Tired about traffic noise? Q-Windows Soundproof Windows"
-description: "Q-Windows aluminium soundproof windows eliminate all traffic noise, even close to busy roads and high-ways."
+title: "Tired about traffic noise? German Windows Soundproof Windows"
+description: "German Windows aluminium soundproof windows eliminate all traffic noise, even close to busy roads and high-ways."
 permalink: /landing/soundproofing/
 excluded: true
 chat: false

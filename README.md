@@ -1,6 +1,6 @@
-# Q-Windows Malaysia Website
+# German Windows Malaysia Website
 
-This is the code-base of the Q-Windows website.
+This is the code-base of the German Windows website.
 
 **CAUTION:** Any changes to the codebase are compiled and uploaded automatically. That means, they will go live on the website within max. 10 minutes.
 
@@ -29,7 +29,7 @@ _(There's a short clip here - it may take a moment to load. - 3.2MB)_
 
 ## Requirements
 
-To work on the Q-Windows website, you should fulfill the following requirements:
+To work on the German Windows website, you should fulfill the following requirements:
 
 **Necessary**
 

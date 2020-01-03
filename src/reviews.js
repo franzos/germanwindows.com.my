@@ -22,7 +22,7 @@ var reviewsData = [
             "link": "https://www.google.com/maps/contrib/116502557965058695648/reviews?hl=en-DE&sa=X&ved=2ahUKEwi19bDg5KnlAhWMKlAKHajRCb0QvvQBegQIARAs",
             "stars": 5,
             "date": "August 2019",
-            "review": "Although we were living in noisy Tokyo and used to be familiar with noise from vehicles and trains, after we moved in we realised Malaysia is much noisier! Also windows are cheap made and do not shut noise from outside. During our house renovation we chose Q-Windows for replacing bedroom windows and sliding door at living facing next house.<br>The workmanship was extremely high than I expected. I used be a mechanical engineer in Japan and from my eyes they have very good skills. No comparison with the workers for other part of renovation.<br>After replacing bedroom windows, we have overslept several times due to the quietness. We are very much satisfied with the quality and performance of the windows and doors.",
+            "review": "Although we were living in noisy Tokyo and used to be familiar with noise from vehicles and trains, after we moved in we realised Malaysia is much noisier! Also windows are cheap made and do not shut noise from outside. During our house renovation we chose German Windows for replacing bedroom windows and sliding door at living facing next house.<br>The workmanship was extremely high than I expected. I used be a mechanical engineer in Japan and from my eyes they have very good skills. No comparison with the workers for other part of renovation.<br>After replacing bedroom windows, we have overslept several times due to the quietness. We are very much satisfied with the quality and performance of the windows and doors.",
             "source": "Google",
             "id": ""
         },
@@ -85,7 +85,7 @@ var reviewsData = [
             "link": "https://www.google.com/maps/contrib/101809743050352839555/reviews",
             "stars": 5,
             "date": "August 2019",
-            "review": "The product is of high quality with a wide range of glass panels combination that you can customise to suit your needs. The aluminium frames are strong and sturdy with so many colours available. Most important of all is the friendly service and also the excellent after sales service.even for outstation customers like me. The product is reasonably priced and I've made the right choice by engaging Q-Windows for my renovation project.",
+            "review": "The product is of high quality with a wide range of glass panels combination that you can customise to suit your needs. The aluminium frames are strong and sturdy with so many colours available. Most important of all is the friendly service and also the excellent after sales service.even for outstation customers like me. The product is reasonably priced and I've made the right choice by engaging German Windows for my renovation project.",
             "source": "Google",
             "id": ""
         },
@@ -148,7 +148,7 @@ var reviewsData = [
             "link": "",
             "stars": 5,
             "date": "2018",
-            "review": "Dealing with Q-Windows was very professional. Fantastic product, looks great, security brilliant, fantastic after installation service.",
+            "review": "Dealing with German Windows was very professional. Fantastic product, looks great, security brilliant, fantastic after installation service.",
             "source": "Facebook",
             "picture": "/assets/images/landing/headshot_delia.jpg",
             "id": ""
@@ -158,7 +158,7 @@ var reviewsData = [
             "link": "",
             "stars": 5,
             "date": "2018",
-            "review": "Sound proof as promised, competent service and timely delivery. The communication with Q-Windows and the service was excellent. Definitely a recommendation.",
+            "review": "Sound proof as promised, competent service and timely delivery. The communication with German Windows and the service was excellent. Definitely a recommendation.",
             "source": "Facebook",
             "picture": "/assets/images/landing/headshot_joerg.jpg",
             "id": ""

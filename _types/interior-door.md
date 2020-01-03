@@ -14,7 +14,7 @@ tabs:
   - color
 ---
 
-- Q-Windows Interior door
+- German Windows Interior door
 - Inward or outward opening
 - Hundreds of design, panel and glazing options
 - High-Grade German hardware

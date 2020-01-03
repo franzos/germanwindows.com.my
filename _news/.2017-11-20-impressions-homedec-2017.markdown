@@ -9,7 +9,7 @@ cover: bg7
 
 An award-winning exhibition, HOMEDEC brings ideas, fun and inspiration to Malaysian homeowners through its exciting highlights and life-size showhome themes, forums as well as successful partnerships with sponsors/exhibitors alike. With 15 years of experience in the market since it opened its doors in 2003, HOMEDEC has grown into more than an exhibition.
 
-## Impressions Q-Windows Malaysia
+## Impressions German Windows Malaysia
 
 <div class="gslider">
 {% for image in site.static_files %}

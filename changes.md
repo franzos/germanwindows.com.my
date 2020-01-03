@@ -164,14 +164,14 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 - Added 1x new project
 - Added meta tag name="description"
-- Updated site description: "Q-Windows manufactures and installs German soundproof, high-security, aluminium windows and doors in Malaysia and Singapore."
+- Updated site description: "German Windows manufactures and installs German soundproof, high-security, aluminium windows and doors in Malaysia and Singapore."
 - Fixed or added alt tags to images (10+ pages)
 - Corrected company name 'Siegenia AUBI'
 - Further minification of assets
   <br>[18:27:18] gulp-imagemin: Minified 808 images (saved 6.26 MB - 19.2%)
 - Replaced 'aluminum' (American English) with 'aluminium' (British English)
 - Replaced 'Q- Windows' with 'Q-Windows'
-- Improved search results on [/search/](/search/) to match Q-Windows branding
+- Improved search results on [/search/](/search/) to match German Windows branding
 - Optimized Google Adwords
 
 **2018-02-20**
@@ -365,8 +365,8 @@ UPDATE GAP
 
 **2017-02-22**
 
-- [EXT] Updated Q-Windows Twitter account https://twitter.com/QwindowsMY
-- [EXT] Updated Q-Windows Facebook account https://www.facebook.com/q.windows/
+- [EXT] Updated German Windows Twitter account https://twitter.com/QwindowsMY
+- [EXT] Updated German Windows Facebook account https://www.facebook.com/q.windows/
 - [EXT] DNS, Added DMARK to track email deliverability (first report due on 2017-02-27)
 - landing.q-windows.com.my now redirects to q-windows.com.my
 - landing.q-windows.com now redirects to q-windows.com.my
@@ -384,7 +384,7 @@ UPDATE GAP
 
 **2017-02-20**
 
-- Completely revised Q-Windows landing page
+- Completely revised German Windows landing page
 
 _est. 90min_
 
@@ -504,8 +504,8 @@ _est. 45min_
 - Created new page [/videos/](/videos/)
 - Selected, touched-up 15x project reference images (w. watermark)
 - Created new page [/projects/](/projects/)
-- Replaced all Q-Windows background images with project references (w/o Watermark)
+- Replaced all German Windows background images with project references (w/o Watermark)
 - Initial version of new slider on homepage
-- Google Map on contact page now opens in a new tab and correctly points to 'Q-Windows Malaysia'
+- Google Map on contact page now opens in a new tab and correctly points to 'German Windows Malaysia'
 
 _est. 90min_

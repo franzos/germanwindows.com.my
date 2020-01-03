@@ -10,7 +10,7 @@ One of the best things about building a home is you get to decide exactly what i
 
 **Invest in Quality**
 
-While you can postpone frills like fancy chandeliers early on, it doesn’t pay to be cheap when it comes to features that can’t be easily changed. Invest your home-building dollars in quality budget items like Q-Windows windows and patio doors and other construction materials that will bear the test of time.
+While you can postpone frills like fancy chandeliers early on, it doesn’t pay to be cheap when it comes to features that can’t be easily changed. Invest your home-building dollars in quality budget items like German Windows windows and patio doors and other construction materials that will bear the test of time.
 Good windows contribute to both the comfort and beauty of your home and are key to controlling heat loss and gain, as well as air leakage. They’re also highly visible from the street, contributing to the curb appeal, and serve as a decorative element from the interior.
 
 **Postpone the frills**
