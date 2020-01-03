@@ -42,7 +42,7 @@ s3_endpoint: ap-southeast-1
 
 # s3_reduced_redundancy: true
 
-# cloudfront_distribution_id: E1UM4Z0KIYAXN1
+cloudfront_distribution_id: E3VCZHTBNE3YIY
 
 # cloudfront_distribution_config:
 #   default_cache_behavior:
