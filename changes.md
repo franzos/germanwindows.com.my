@@ -13,6 +13,11 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2020-01-04**
+
+- Moved to new domain [germanwindows.com.my](https://germanwindows.com.my/)
+- "Q-Windows" is now "German Windows"
+
 **2019-12-03**
 
 - Added 2x new reviews
