@@ -2,18 +2,32 @@
   <div id="reviews">
     <div class="row">
       <div class="col-sm-1">
-        <img style="margin-top: 5px;" src="/assets/images/photo.png">
+        <img style="margin-top: 5px;" src="/assets/images/photo.png" />
       </div>
       <div class="col-sm-11">
-        <p class="source">
+        <p class="source" style="margin-bottom: 0.5rem;">
           <a target="_blank" :href="'/reviews/'"><{ reviewRandom.name }></a>
-          on <cite title="{{ reviewRandom.source }}"><{ reviewRandom.source }></cite>
-          <br>
-          <span v-for="index in reviewRandom.stars" :key="index" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          on
+          <cite title="{{ reviewRandom.source }}"
+            ><{ reviewRandom.source }></cite
+          >
+          <br />
+          <span
+            v-for="index in reviewRandom.stars"
+            :key="index"
+            class="glyphicon glyphicon-star"
+            aria-hidden="true"
+          ></span>
           <small><{ reviewRandom.date }></small>
         </p>
-        <p class="testimonial" v-html="reviewRandom.review"></p>
-        <p><a href="/reviews/">See all <{ reviewsData.length + 10 }>+ reviews</a></p>
+        <p
+          class="testimonial"
+          style="margin-bottom: 1rem;"
+          v-html="reviewRandom.review"
+        ></p>
+        <p>
+          <a href="/reviews/">See all <{ reviewsData.length + 10 }>+ reviews</a>
+        </p>
       </div>
     </div>
   </div>

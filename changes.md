@@ -13,6 +13,12 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2020-01-09**
+
+- New homepage cover
+- Improved look of logo
+- improved review layout
+
 **2020-01-04**
 
 - Moved to new domain [germanwindows.com.my](https://germanwindows.com.my/)

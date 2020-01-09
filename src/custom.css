@@ -714,8 +714,9 @@ ul li.google:hover green {
 }
 
 .cover-bg {
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .cover-bg.bg1 {
@@ -1578,7 +1579,8 @@ img:not([src]) {
 
 @media (max-width: 970px) {
   .navbar-default .navbar-brand {
-    margin: 5px;
+    margin-left: 16px;
+    margin-top: 14px;
   }
   .types .col-sm-9 {
     margin-top: 30px;
@@ -1589,7 +1591,8 @@ img:not([src]) {
     font-size: 2em;
   }
   .navbar > .container .navbar-brand {
-    margin-left: 6px;
+    margin-left: 14px;
+    margin-top: 12px;
   }
   .subnav a {
     border-bottom: 1px solid #f14c0d;
@@ -1623,6 +1626,11 @@ img:not([src]) {
 
   a.condo {
     min-height: 160px;
+  }
+  .cover-bg {
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
   }
 }
 
