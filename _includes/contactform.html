@@ -10,6 +10,9 @@
         <label for="comments">Your Message</label>
         <textarea id="comments" name="comments" class="form-control" rows="4"{% if page.contactform %} placeholder="{{ page.contactform }}"{% endif %}></textarea>
       </div>
+      {% if page.permalink == "/cny/"%}
+      <input id="property_type" name="property_type" type="text" value="CNY2020" hidden>
+      {% else %}
       <div class="form-group">
         <label for="property_type">Property Type</label>
         <select class="form-control" id="property_type" name="property_type" type="text" data-parsley-error-message="Please select your property type." required>
@@ -19,6 +22,7 @@
           <option value="Commercial">Commercial</option>
         </select>
       </div>
+      {% endif %}
       <div class="form-group">
         <label for="first_name">Your Details</label>
         <input id="first_name" name="first_name" type="text" class="form-control" placeholder="First Name *" data-parsley-error-message="Enter your first name." required>
