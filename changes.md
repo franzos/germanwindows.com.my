@@ -16,6 +16,7 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 **2020-01-10**
 
 - Added enquiry form to CNY promo
+- Added Global Site Tag (gtag.js)
 
 **2020-01-09**
 
