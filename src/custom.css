@@ -714,7 +714,7 @@ ul li.google:hover green {
 }
 
 .cover-bg {
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }

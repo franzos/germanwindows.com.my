@@ -13,6 +13,13 @@ related site: [https://q-windows.sg/](https://q-windows.sg/)
 
 # Changelog
 
+**2020-05-11**
+
+- Upgrade to Jekyll 4
+- Updated copyright date to 2020
+- Added Facebook Pixel
+- Added new Google review
+
 **2020-01-10**
 
 - Added enquiry form to CNY promo

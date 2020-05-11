@@ -7,3 +7,6 @@ node_modules
 assets
 /yarn.lock
 .idea
+.jekyll-cache
+.bundle
+vendor/
