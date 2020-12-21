@@ -18,10 +18,13 @@
             <li class="title">Ideas & Inspiration</li>
             {% for page in site.pages %} {% if page.nav == "idea" %}
             <li>
-              <a href="{{ page.permalink }}"
-                >{% if page.nav-title %}{{ page.nav-title | escape }}{% else
-                %}{{ page.title | escape }}{% endif %}</a
-              >
+              <a href="{{ page.permalink }}">
+                {% if page.nav-title %}
+                {{ page.nav-title | escape }}
+                {% else %}
+                {{ page.title | escape }}
+                {% endif %}
+              </a>
             </li>
             {% endif %} {% endfor %}
           </ul>
@@ -31,10 +34,13 @@
             <li class="title">Introduction</li>
             {% for page in site.pages %} {% if page.nav == "cover" %}
             <li>
-              <a href="{{ page.permalink }}"
-                >{% if page.nav-title %}{{ page.nav-title | escape }}{% else
-                %}{{ page.title | escape }}{% endif %}</a
-              >
+              <a href="{{ page.permalink }}">
+                {% if page.nav-title %}
+                {{ page.nav-title | escape }}
+                {% else %}
+                {{ page.title | escape }}
+                {% endif %}
+              </a>
             </li>
             {% endif %} {% endfor %}
           </ul>
@@ -44,10 +50,13 @@
             <li class="title">Benefits & Features</li>
             {% for page in site.pages %} {% if page.nav == "feature" %}
             <li>
-              <a href="{{ page.permalink }}"
-                >{% if page.nav-title %}{{ page.nav-title | escape }}{% else
-                %}{{ page.title | escape }}{% endif %}</a
-              >
+              <a href="{{ page.permalink }}">
+                {% if page.nav-title %}
+                {{ page.nav-title | escape }}
+                {% else %}
+                {{ page.title | escape }}
+                {% endif %}
+              </a>
             </li>
             {% endif %} {% endfor %}
           </ul>
@@ -57,10 +66,13 @@
             <li class="title">Additional Info</li>
             {% for page in site.pages %} {% if page.nav == "info" %}
             <li>
-              <a href="{{ page.permalink }}"
-                >{% if page.nav-title %}{{ page.nav-title | escape }}{% else
-                %}{{ page.title | escape }}{% endif %}</a
-              >
+              <a href="{{ page.permalink }}">
+                {% if page.nav-title %}
+                {{ page.nav-title | escape }}
+                {% else %}
+                {{ page.title | escape }}
+                {% endif %}
+              </a>
             </li>
             {% endif %} {% endfor %}
           </ul>
@@ -70,10 +82,13 @@
             <li class="title">German Windows</li>
             {% for page in site.pages %} {% if page.nav == "qwin" %}
             <li>
-              <a href="{{ page.permalink }}"
-                >{% if page.nav-title %}{{ page.nav-title | escape }}{% else
-                %}{{ page.title | escape }}{% endif %}</a
-              >
+              <a href="{{ page.permalink }}">
+                {% if page.nav-title %}
+                {{ page.nav-title | escape }}
+                {% else %}
+                {{ page.title | escape }}
+                {% endif %}
+              </a>
             </li>
             {% endif %} {% endfor %}
           </ul>
@@ -89,7 +104,7 @@
 
       <p>
         <small
-          >© 2020 German Windows (M) Sdn Bhd / All right reserved / Design and
+          >© 2021 German Windows (Malaysia) Sdn Bhd (965167-T) / All right reserved / Design and
           Development by
           <a
             target="_blank"
@@ -134,9 +149,7 @@
 <style>
   .cover-bg {
     background-image: url(
-      https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/{{page.longitude}},
-      {{page.latitude}},
-      14/1280x350@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q
+      https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/{{page.longitude}},{{page.latitude}},14/1280x350@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2owdzlneDYyMDAwZjMycGI4N2txNG9payJ9.M83WLXQ1oaLidrGmlin0_Q
     );
   }
 </style>
@@ -241,9 +254,9 @@ page.url contains "/landing/premium-interior-door/" %}
   });
 </script>
 {% endif %} {% if page.url == "/window-replacement/condominium/" %}
-<script src="https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js"></script>
+<script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
 <link
-  href="https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css"
+  href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css"
   rel="stylesheet"
 />
 <style>

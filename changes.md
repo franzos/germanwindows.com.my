@@ -9,9 +9,16 @@ excluded: true
 Last update: {{ site.time }}
 <br>[Franz Geffke](mailto:m@f-a.nz)
 
-related site: [https://q-windows.sg/](https://q-windows.sg/)
-
 # Changelog
+
+**2020-12-21**
+
+- Updated address and related maps
+- Switch project view image source to https
+- Replaced legacy mail address with new one
+- Removed old promotional page from 2018
+- Fixed some missing fonts; updated others to latest release
+- Fixed project map (Mapbox depreciation)
 
 **2020-05-11**
 

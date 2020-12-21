@@ -30,7 +30,7 @@ cover: bg18
         <div class="col-sm-7">
           {% assign pictures = project.pictures_small | split: ";" %}
           {% for picture in pictures %}
-            <a rel="gallery-{{ project.area }}" href="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.{% unless picture contains "whatsapp" %}jpg{% else %}jpeg{% endunless %}" class="swipebox" title="{{ project.categories }} Project in {{ project.location }}">
+            <a rel="gallery-{{ project.area }}" href="https://projects.q-windows.com.my/assets/upload/projects{{ picture }}__large.{% unless picture contains "whatsapp" %}jpg{% else %}jpeg{% endunless %}" class="swipebox" title="{{ project.categories }} Project in {{ project.location }}">
               <img alt="German Windows {{ project.categories }} Project in {{ project.location }}" data-original="http://projects.q-windows.com.my/assets/upload/projects{{ picture }}__small.{% unless picture contains "whatsapp" %}jpg{% else %}jpeg{% endunless %}" width="100" height="100">
             </a>
           {% endfor %}

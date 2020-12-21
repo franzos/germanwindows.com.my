@@ -10,3 +10,4 @@ assets
 .jekyll-cache
 .bundle
 vendor/
+project.config

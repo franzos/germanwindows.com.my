@@ -8,15 +8,15 @@
     "bootstrap": "^3.3.7",
     "gulp": "^4",
     "gulp-imagemin": "^4.1.0",
-    "howler": "^2.0.4",
+    "howler": "^2.2.1",
     "jquery": "2.2.4",
-    "parsleyjs": "^2.8.0",
+    "parsleyjs": "^2.9.2",
     "slick-carousel": "^1.7.1",
     "slideout": "^1.0.1",
     "swipebox": "^1.4.6",
     "vanilla-lazyload": "8.2.0",
     "video.js": "^6.2.8",
-    "vue": "^2.5.2",
+    "vue": "^2.6.12",
     "wavesurfer.js": "^2.0.0-beta02"
   },
   "devDependencies": {
