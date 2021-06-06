@@ -11,6 +11,10 @@ Last update: {{ site.time }}
 
 # Changelog
 
+**2021-06-06**
+
+- Updated security page
+
 **2021-02-28**
 
 - Updated phone number
