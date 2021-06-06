@@ -11,6 +11,10 @@ Last update: {{ site.time }}
 
 # Changelog
 
+**2021-02-28**
+
+- Updated phone number
+
 **2020-12-21**
 
 - Updated address and related maps
