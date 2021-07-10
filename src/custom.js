@@ -20,7 +20,7 @@ $(function() {
 				type:'post',
 				data:$('#contact-form').serialize(),
 				success:function(){
-					window.location = "https://q-windows.com.my/thank-you/";
+					window.location = "https://germanwindows.com.my/thank-you/";
 				}
 			});
 		}});
