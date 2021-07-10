@@ -2,7 +2,7 @@ title: German Windows Malaysia
 email: your-email@domain.com
 description: "German Windows manufactures and installs German soundproof, high-security, aluminium windows and doors in Malaysia and Singapore."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://germanwindows.com.my" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://germanwindows.com.my"
 
 # Build settings
 markdown: kramdown

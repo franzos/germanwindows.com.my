@@ -11,6 +11,12 @@ Last update: {{ site.time }}
 
 # Changelog
 
+**2021-07-10**
+
+- Fixed a bunch of links
+- Updated some old assets to default to https://
+- 
+
 **2021-06-06**
 
 - Updated security page
