@@ -23,7 +23,6 @@ designs:
 - Excellent noise insulation
 - Sealed tight, keeps wind, noise and water out
 - Strong 125 mm profiles
-- Thermal break chamber
 - Hardware lifts the door before horizontal sliding
 - German made HAUTAU hardware can carry up to 300 kg sash weight
 

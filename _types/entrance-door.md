@@ -21,8 +21,7 @@ designs:
 - Hardware upgrade to security level four possible
 - Excellent noise insulation
 - Strong 50mm profile
-- Thermal break chamber
-- Optionally glazing can be replaced with imported, designer door panels
+- Optionally glazing can be replaced with designer door panels
 - Fully customizable to suit your requirements
 
 At German Windows you can put together your own individual doors with the exact technical features you need.
@@ -32,10 +31,6 @@ At German Windows you can put together your own individual doors with the exact 
 		<button class="btn btn-default" style="margin-bottom:0.5rem">
 			Find out more
 		</button>
-	</a>
-	<br/>
-	<a href="https://dev.doorconfigurator.com/?partner=41f5f68badbaf6fc09824b21d938277a" target="_blank">
-		Configure and preview your door online
 	</a>
 </div>
 
