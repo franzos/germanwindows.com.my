@@ -6,11 +6,7 @@ nav: types
 image: /assets/images/type/bay-window.jpg
 animation: /assets/videos/bay-view.mp4
 category: window
-security:
-  - h-one
-  - h-two
 tabs:
-  - hsecurity
   - glass
   - georgian
   - color
@@ -27,7 +23,6 @@ designs:
 - Sealed tight, keeps wind, noise and water out
 - High grade 6063-T5 aluminium for security
 - Strong profile with 50mm
-- Thermal break chamber
 - High-Grade German hardware
 - Fully customizable to suit your requirements
 

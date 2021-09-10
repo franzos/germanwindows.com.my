@@ -66,4 +66,23 @@ Close doors securely, provide comfort and a tight seal – exactly what you can 
 
 ### Brochure
 
-<p><a class="large link" href="/assets/files/Q-Windows-WINKHAUS-autoLock.pdf" style="max-width: 71rem;">Download Brochure (PDF, 1.4 MB)</a></p>
+<p>
+	<a class="large link" href="/assets/files/Q-Windows-WINKHAUS-autoLock.pdf" style="max-width: 50%;">Download Brochure (PDF, 1.4 MB)</a>
+</p>
+
+## Configure your dream door
+
+<a href="https://dev.doorconfigurator.com/?partner=41f5f68badbaf6fc09824b21d938277a">
+	<img src="/assets/images/door-configurator.jpg" alt="German Windows door configurator" style="margin-bottom: 0.5rem;">
+</a>
+
+<p>
+	<a 
+		class="large link" 
+		href="https://dev.doorconfigurator.com/?partner=41f5f68badbaf6fc09824b21d938277a" 
+		target="_blank" 
+		style="max-width: 50%;"
+	>
+		Configure Online Now
+	</a>
+</p>

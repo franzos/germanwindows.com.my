@@ -6,11 +6,7 @@ nav: types
 image: /assets/images/type/fixed-window.jpg
 animation: /assets/videos/fixed-window.mp4
 category: window
-security:
-  - h-one
-  - h-two
 tabs:
-  - hsecurity
   - glass
   - georgian
   - color
@@ -25,7 +21,6 @@ designs:
 - Excellent noise insulation
 - Sealed tight, keeps wind, noise and water out
 - High grade 6063-T5 aluminium for security
-- Thermal break chamber
 - Fully customizable to suit your requirements
 
 Fixed windows are stationary, often rectangular, non-opening windows that allow light into the room.

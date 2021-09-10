@@ -15,7 +15,6 @@ tabs:
   - georgian
   - color
   - hardware
-  - door-panel
   - designs
 hardware:
   - roto
@@ -30,8 +29,6 @@ designs:
 - Hardware upgrade to security level two possible
 - Excellent noise insulation
 - Strong 50mm profile
-- Thermal break chamber
-- Optionally glazing can be replaced with imported, designer door panels
 - Fully customizable to suit your requirements
 
 Casement doors are hinged on the side and open outward to the left or right. Usually taller than wide, their entire sash opens.

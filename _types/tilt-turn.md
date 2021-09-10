@@ -12,8 +12,6 @@ security:
   - h-one
   - h-two
 tabs:
-  - security
-  - hsecurity
   - glass
   - georgian
   - color
@@ -32,7 +30,6 @@ designs:
 - Sealed tight, keeps wind, noise and water out
 - High grade 6063-T5 aluminium for security
 - Strong 50mm profiles
-- Thermal break chamber
 - High-Grade German hardware
 - Fully customizable to suit your requirements
 

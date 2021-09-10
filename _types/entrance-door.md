@@ -11,14 +11,6 @@ security:
   - two
   - three
   - four
-tabs:
-  - security
-  - glass
-  - georgian
-  - color
-  - hardware
-  - door-panel
-  - designs
 hardware:
   - roto
 designs:
@@ -32,6 +24,20 @@ designs:
 - Thermal break chamber
 - Optionally glazing can be replaced with imported, designer door panels
 - Fully customizable to suit your requirements
+
+At German Windows you can put together your own individual doors with the exact technical features you need.
+
+<div style="margin-bottom:2rem;">
+	<a href="/type/burglar-resistant-entrance-doors/">
+		<button class="btn btn-default" style="margin-bottom:0.5rem">
+			Find out more
+		</button>
+	</a>
+	<br/>
+	<a href="https://dev.doorconfigurator.com/?partner=41f5f68badbaf6fc09824b21d938277a" target="_blank">
+		Configure and preview your door online
+	</a>
+</div>
 
 <!--
 

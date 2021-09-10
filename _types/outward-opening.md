@@ -7,14 +7,8 @@ image: /assets/images/type/casement-window.jpg
 animation: /assets/videos/casement-awning-window.mp4
 category: window
 security:
-  - one
-  - two
-  - three
-  - h-one
-  - h-two
 tabs:
   - security
-  - hsecurity
   - glass
   - georgian
   - color
@@ -40,7 +34,6 @@ designs:
 - Sealed tight, keeps wind, noise and water out
 - High grade 6063-T5 aluminium for security
 - 50mm strong profile width
-- Thermal break chamber
 - High-Grade German hardware
 - Fully customizable to suit your requirements
 
