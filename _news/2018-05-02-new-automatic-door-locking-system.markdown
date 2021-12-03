@@ -7,7 +7,7 @@ url: new-automatic-door-locking-system
 cover: bg35
 ---
 
-Close doors securely, provide comfort and a tight seal – exactly what you can expect from the new automatic multi-point locking system from Q- WINDOWS and Winkhaus. In the mechanical variant autoLock AV3, __the locking system adapts to your individual demands__ with its innovative weather seal hooks and the practical daytime latch. And in the truest sense of the word: fully automatic.
+Close doors securely, provide comfort and a tight seal – exactly what you can expect from the new automatic multi-point locking system from Q- WINDOWS and Winkhaus. In the mechanical variant autoLock AV3, **the locking system adapts to your individual demands** with its innovative weather seal hooks and the practical daytime latch. And in the truest sense of the word: fully automatic.
 
 ## Advantages
 
@@ -72,14 +72,14 @@ Close doors securely, provide comfort and a tight seal – exactly what you can 
 
 ## Configure your dream door
 
-<a href="https://dev.doorconfigurator.com/?partner=41f5f68badbaf6fc09824b21d938277a">
+<a href="https://germanwindows.doorconfigurator.com">
 	<img src="/assets/images/door-configurator.jpg" alt="German Windows door configurator" style="margin-bottom: 0.5rem;">
 </a>
 
 <p>
 	<a 
 		class="large link" 
-		href="https://dev.doorconfigurator.com/?partner=41f5f68badbaf6fc09824b21d938277a" 
+		href="https://germanwindows.doorconfigurator.com" 
 		target="_blank" 
 		style="max-width: 50%;"
 	>
