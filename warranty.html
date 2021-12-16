@@ -47,41 +47,7 @@ nav: qwin
 </button>
 
 <div id="form" class="collapse">
-  <div id="wufoo-q7w8k1">
-    Fill out my
-    <a href="http://dunkelkammer.wufoo.com/forms/q7w8k1">online form</a>.
-  </div>
-
-  <script type="text/javascript">
-    var q7w8k1;
-    (function(d, t) {
-      var s = d.createElement(t),
-        options = {
-          userName: "dunkelkammer",
-          formHash: "q7w8k1",
-          autoResize: true,
-          height: "859",
-          async: true,
-          header: "hide",
-          ssl: true
-        };
-      s.src =
-        ("https:" == d.location.protocol ? "https://" : "http://") +
-        "wufoo.com/scripts/embed/form.js";
-      s.onload = s.onreadystatechange = function() {
-        var rs = this.readyState;
-        if (rs) if (rs != "complete") if (rs != "loaded") return;
-        try {
-          q7w8k1 = new WufooForm();
-          q7w8k1.initialize(options);
-          q7w8k1.display();
-        } catch (e) {}
-      };
-      var scr = d.getElementsByTagName(t)[0],
-        par = scr.parentNode;
-      par.insertBefore(s, scr);
-    })(document, "script");
-  </script>
+	{% include warrantyform.html %}
 </div>
 
 <h2>Warranties</h2>
